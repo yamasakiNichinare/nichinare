@@ -1,0 +1,137 @@
+@charset "Shift_JIS";
+
+body { color: #333; }
+table { margin-bottom: 5px; }
+
+td {
+  font-size: 12px;
+  line-height: 120%;
+}
+
+form { margin: 0; }
+
+a:link {
+  color: #339;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #339;
+  text-decoration: none;
+}
+
+a:active {
+  color: #339;
+  text-decoration: none;
+}
+
+a:hover { color: #f70; }
+a.koukai-0 { color: #f00; }
+a.koukai-1 { color: #00f; }
+
+.title {
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 20px;
+  padding: 3px 0px 3px 10px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  background: #4e92d6;
+}
+
+.title a { color: #ff0; }
+.title a:hover { color: #f93; }
+.stripe { background: #aaa; }
+.stripe tr { background: #fff; }
+.stripe tr.odd { background: #eee; }
+.stripe tr.hover { background: #ffa; }
+
+tr.head td {
+  font-size: 10px;
+  color: #333;
+  text-align: center;
+  background: #ddddcc;
+}
+
+tr.head td a { font-size: 10px; }
+
+col.search {
+  color: #000;
+  text-align: center;
+  background: #ddc;
+}
+
+col.input {
+  color: #000;
+  background: #fff;
+}
+
+col.midashi {
+  color: #000;
+  text-align: center;
+  background: #eee;
+}
+
+.pwd {
+  font-size: x-small;
+  color: #333;
+  text-align: left;
+  padding: 3px;
+  height: 20px;
+  background: #bad3ee;
+  filter: progid: dximagetransform.microsoft.gradient(gradienttype=1, startcolorstr=#ffffff, endcolorstr=#4a8bd1);
+}
+
+.ime_act { ime-mode: active; }
+.ime_dis { ime-mode: disabled; }
+
+.numeric {
+  ime-mode: disabled;
+  text-align: right;
+}
+
+.need { color: #c00; }
+
+input.need, select.need {
+  color: #000;
+  border: 1px solid #f99;
+  background-color: #fee;
+}
+
+.google_seek { text-align: center; }
+
+.google_seek a {
+  font-weight: bold;
+  color: #7af;
+  padding: 0 4px 0 4px;
+}
+
+.google_seek a:hover {
+  font-weight: bold;
+  color: #7af;
+}
+
+.google_seek .now {
+  font-weight: bold;
+  color: #fff;
+  padding: 0 4px 0 4px;
+  border: 1px #7af solid;
+  width: 20px;
+  background-color: #7af;
+}
+
+.google_seek .num a {
+  border: 1px #7af solid;
+  width: 20px;
+}
+
+.google_seek .num a:hover {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  border: 1px #7af solid;
+  width: 20px;
+  background-color: #7af;
+}
