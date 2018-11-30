@@ -1,0 +1,80 @@
+@charset "shift_jis";
+
+/** -------------------------------- **
+	スマホ最適化
+*** ----------------------------------------------------------------- ***/
+
+/**********************
+　ニュースリスト
+**********************/
+
+#contents .right_contents .sec_main dl {
+	margin:0;
+	padding:12px 0 12px 0;
+	text-align:left;
+	background:url(../../common/images/dotted_line01.gif) left bottom repeat-x;
+}
+
+#contents .right_contents .sec_main dl dt {
+	float:left;
+	width:25%;
+	height:auto;
+	margin:0;
+	padding:0 0 0 16px;
+	text-indent:0;
+	text-align:left;
+	background:url(../../common/images/icon_arr01.gif) left no-repeat;
+}
+
+#contents .right_contents .sec_main dl dd {
+	float:left;
+	width:65%;
+	margin:0;
+	padding:0 0 0 10px;
+	text-align:left;
+	background:none;
+}
+
+/*** リンク ***/
+#contents .right_contents .sec_main .line-none_column dl dd a {
+	padding-left:0px;
+	background:none;
+}
+
+
+#contents .right_contents .sec_main dl dd img {
+	margin-left:10px;
+	vertical-align:text-bottom;
+}
+
+
+/**********************
+　ニュース詳細
+**********************/
+
+.right_contents .sec_main .date {
+	padding:0 0 15px;
+	text-align:right;
+}
+
+
+/**********************
+　見出し
+**********************/
+
+
+
+/**********************
+　テキスト関係
+**********************/
+
+#contents .right_contents .sec_main .line-none_column p {
+	padding-bottom:15px;
+}
+
+/*** リンク ***/
+
+#contents .right_contents .sec_main .line-none_column a {
+	padding-left:16px;
+	background:url(../../common/images/icon_arr01.gif) left no-repeat;
+}

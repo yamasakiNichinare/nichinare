@@ -1,0 +1,19 @@
+@charset "shift_jis";
+
+dl.limit {
+	padding:10px 0 0;
+	margin:0;
+	text-align:left;
+}
+
+dl.limit dt {
+	padding:0;
+	margin:0;
+	text-align:left;
+}
+
+dl.limit dd {
+	padding:0;
+	margin:0;
+	text-align:left;
+}

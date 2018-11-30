@@ -1,0 +1,1080 @@
+
+identify
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/b452c6886175bf82297403b259525784
+identify: array (
+  'h' => NULL,
+  'w' => NULL,
+)
+
+detect_format
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/b452c6886175bf82297403b259525784
+failure to detect: <b>Err
+
+build_cache
+arguments: common/hd-tit.jpg,230,320,6,3,240,47,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/hd-tit.jpg2303207324047075N;10137600
+original image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/b452c6886175bf82297403b259525784
+failure to identify: array (
+  'h' => NULL,
+  'w' => NULL,
+  'format' => NULL,
+)
+
+identify
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/3eb0b5b2a93be79db3ecbe21481056be
+identify: array (
+  'h' => NULL,
+  'w' => NULL,
+)
+
+detect_format
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/3eb0b5b2a93be79db3ecbe21481056be
+failure to detect: <b>Err
+
+build_cache
+arguments: common/hd-main.jpg,230,320,6,3,240,79,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/hd-main.jpg2303207324079075N;10137600
+original image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/3eb0b5b2a93be79db3ecbe21481056be
+failure to identify: array (
+  'h' => NULL,
+  'w' => NULL,
+  'format' => NULL,
+)
+
+identify
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/6ff3a0c22ed510ea5a2bdfdca96c55d3
+identify: array (
+  'h' => NULL,
+  'w' => NULL,
+)
+
+detect_format
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/6ff3a0c22ed510ea5a2bdfdca96c55d3
+failure to detect: <b>Err
+
+build_cache
+arguments: common/hd-txt.gif,230,320,6,3,240,16,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/hd-txt.gif2303207324016075N;10137600
+original image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/6ff3a0c22ed510ea5a2bdfdca96c55d3
+failure to identify: array (
+  'h' => NULL,
+  'w' => NULL,
+  'format' => NULL,
+)
+
+build_cache
+arguments: img/top_tit01.jpg,230,320,6,3,240,20,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/top_tit01.jpg2303207324020075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/13552a1d6cc28f8ce7687e3623c082c2
+
+build_cache
+arguments: img/top_tit02.jpg,230,320,6,3,240,20,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/top_tit02.jpg2303207324020075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/cd89b9047462d3a0edc000c3e2652881
+
+build_cache
+arguments: img/top_tit03.jpg,230,320,6,3,240,20,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/top_tit03.jpg2303207324020075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/0c3bea1cfa8cae7b3d2339ca149d3270
+
+build_cache
+arguments: img/top_tit04.jpg,230,320,6,3,240,20,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/top_tit04.jpg2303207324020075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/378ca6469cc515150cf3117b2f0fa17f
+
+build_cache
+arguments: common/dotted-line.jpg,230,320,6,3,222,1,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/dotted-line.jpg230320732221075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/d204b22dc739fb002bb8d838936ec56a
+
+build_cache
+arguments: common/dotted-line.jpg,230,320,6,3,222,1,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/dotted-line.jpg230320732221075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/d204b22dc739fb002bb8d838936ec56a
+
+build_cache
+arguments: img/bnr_shiryo.jpg,230,320,6,3,220,52,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/bnr_shiryo.jpg2303207322052075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/fc38f12f17c5453cbb4a02ffe9175951
+
+build_cache
+arguments: common/dotted-line.jpg,230,320,6,3,222,1,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/dotted-line.jpg230320732221075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/d204b22dc739fb002bb8d838936ec56a
+
+build_cache
+arguments: img/top_bnr.jpg,230,320,6,3,220,52,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/top_bnr.jpg2303207322052075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/274fd6445e3528996611fdf05b4e73b1
+
+identify
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/b452c6886175bf82297403b259525784
+identify: array (
+  'h' => NULL,
+  'w' => NULL,
+)
+
+detect_format
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/b452c6886175bf82297403b259525784
+failure to detect: <b>Err
+
+build_cache
+arguments: common/hd-tit.jpg,240,320,6,3,240,47,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/hd-tit.jpg2403207324047075N;10137600
+original image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/b452c6886175bf82297403b259525784
+failure to identify: array (
+  'h' => NULL,
+  'w' => NULL,
+  'format' => NULL,
+)
+
+identify
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/3eb0b5b2a93be79db3ecbe21481056be
+identify: array (
+  'h' => NULL,
+  'w' => NULL,
+)
+
+detect_format
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/3eb0b5b2a93be79db3ecbe21481056be
+failure to detect: <b>Err
+
+build_cache
+arguments: common/hd-main.jpg,240,320,6,3,240,79,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/hd-main.jpg2403207324079075N;10137600
+original image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/3eb0b5b2a93be79db3ecbe21481056be
+failure to identify: array (
+  'h' => NULL,
+  'w' => NULL,
+  'format' => NULL,
+)
+
+identify
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/6ff3a0c22ed510ea5a2bdfdca96c55d3
+identify: array (
+  'h' => NULL,
+  'w' => NULL,
+)
+
+detect_format
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/6ff3a0c22ed510ea5a2bdfdca96c55d3
+failure to detect: <b>Err
+
+build_cache
+arguments: common/hd-txt.gif,240,320,6,3,240,16,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/hd-txt.gif2403207324016075N;10137600
+original image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/6ff3a0c22ed510ea5a2bdfdca96c55d3
+failure to identify: array (
+  'h' => NULL,
+  'w' => NULL,
+  'format' => NULL,
+)
+
+build_cache
+arguments: img/top_tit01.jpg,240,320,6,3,240,20,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/top_tit01.jpg2403207324020075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/7f23ee467ff1d1132d690d7b9fcd5e1e
+
+build_cache
+arguments: img/top_tit02.jpg,240,320,6,3,240,20,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/top_tit02.jpg2403207324020075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/8e367b8c7f471989d064f1e08dda7be2
+
+build_cache
+arguments: img/top_tit03.jpg,240,320,6,3,240,20,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/top_tit03.jpg2403207324020075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/94c57e828d5e91fd4a0862ecee911c91
+
+build_cache
+arguments: img/top_tit04.jpg,240,320,6,3,240,20,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/top_tit04.jpg2403207324020075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/195a02f0796371ba2ad9884d525e3d7b
+
+build_cache
+arguments: common/dotted-line.jpg,240,320,6,3,222,1,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/dotted-line.jpg240320732221075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/b867be448b6b5ad570838e5270ba6de6
+
+build_cache
+arguments: common/dotted-line.jpg,240,320,6,3,222,1,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/dotted-line.jpg240320732221075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/b867be448b6b5ad570838e5270ba6de6
+
+build_cache
+arguments: img/bnr_shiryo.jpg,240,320,6,3,220,52,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/bnr_shiryo.jpg2403207322052075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/e326f5fb1c8b9e73086010a0af653179
+
+build_cache
+arguments: common/dotted-line.jpg,240,320,6,3,222,1,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/dotted-line.jpg240320732221075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/b867be448b6b5ad570838e5270ba6de6
+
+build_cache
+arguments: img/top_bnr.jpg,240,320,6,3,220,52,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/top_bnr.jpg2403207322052075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/582c47c93b8ac76ec0e9d25bcbc47871
+
+identify
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/b452c6886175bf82297403b259525784
+identify: array (
+  'h' => NULL,
+  'w' => NULL,
+)
+
+detect_format
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/b452c6886175bf82297403b259525784
+failure to detect: <b>Err
+
+build_cache
+arguments: common/hd-tit.jpg,232,336,6,15,240,47,,0,,,,,130048
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/hd-tit.jpg23233671524047075N;13004800
+original image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/b452c6886175bf82297403b259525784
+failure to identify: array (
+  'h' => NULL,
+  'w' => NULL,
+  'format' => NULL,
+)
+
+identify
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/3eb0b5b2a93be79db3ecbe21481056be
+identify: array (
+  'h' => NULL,
+  'w' => NULL,
+)
+
+detect_format
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/3eb0b5b2a93be79db3ecbe21481056be
+failure to detect: <b>Err
+
+build_cache
+arguments: common/hd-main.jpg,232,336,6,15,240,79,,0,,,,,130048
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/hd-main.jpg23233671524079075N;13004800
+original image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/3eb0b5b2a93be79db3ecbe21481056be
+failure to identify: array (
+  'h' => NULL,
+  'w' => NULL,
+  'format' => NULL,
+)
+
+identify
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/6ff3a0c22ed510ea5a2bdfdca96c55d3
+identify: array (
+  'h' => NULL,
+  'w' => NULL,
+)
+
+detect_format
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/6ff3a0c22ed510ea5a2bdfdca96c55d3
+failure to detect: <b>Err
+
+build_cache
+arguments: common/hd-txt.gif,232,336,6,15,240,16,,0,,,,,130048
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/hd-txt.gif23233671524016075N;13004800
+original image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/6ff3a0c22ed510ea5a2bdfdca96c55d3
+failure to identify: array (
+  'h' => NULL,
+  'w' => NULL,
+  'format' => NULL,
+)
+
+build_cache
+arguments: img/top_tit01.jpg,232,336,6,15,240,20,,0,,,,,130048
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/top_tit01.jpg23233671524020075N;13004800
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/382c3bcb05681327dff594f55ca04c5b
+
+build_cache
+arguments: img/top_tit02.jpg,232,336,6,15,240,20,,0,,,,,130048
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/top_tit02.jpg23233671524020075N;13004800
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/8619110799b5a2bc59acdc0ec65fdccd
+
+build_cache
+arguments: img/top_tit03.jpg,232,336,6,15,240,20,,0,,,,,130048
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/top_tit03.jpg23233671524020075N;13004800
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/14fafdbcd74e05a86ec076b255f1d793
+
+build_cache
+arguments: img/top_tit04.jpg,232,336,6,15,240,20,,0,,,,,130048
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/top_tit04.jpg23233671524020075N;13004800
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/f1578f1e0909df761326a34ba4e374f8
+
+build_cache
+arguments: common/dotted-line.jpg,232,336,6,15,222,1,,0,,,,,130048
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/dotted-line.jpg2323367152221075N;13004800
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/5e9fd045a668bec35d9902cb68c2c880
+
+build_cache
+arguments: common/dotted-line.jpg,232,336,6,15,222,1,,0,,,,,130048
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/dotted-line.jpg2323367152221075N;13004800
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/5e9fd045a668bec35d9902cb68c2c880
+
+build_cache
+arguments: img/bnr_shiryo.jpg,232,336,6,15,220,52,,0,,,,,130048
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/bnr_shiryo.jpg23233671522052075N;13004800
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/cf50c672a998a7533ecb196ca3c7736f
+
+build_cache
+arguments: common/dotted-line.jpg,232,336,6,15,222,1,,0,,,,,130048
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/dotted-line.jpg2323367152221075N;13004800
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/5e9fd045a668bec35d9902cb68c2c880
+
+build_cache
+arguments: img/top_bnr.jpg,232,336,6,15,220,52,,0,,,,,130048
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/top_bnr.jpg23233671522052075N;13004800
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/e4f66bab28cdccd08408dfc87e4bb10f
+
+identify
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/b452c6886175bf82297403b259525784
+identify: array (
+  'h' => NULL,
+  'w' => NULL,
+)
+
+detect_format
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/b452c6886175bf82297403b259525784
+failure to detect: <b>Err
+
+build_cache
+arguments: common/hd-tit.jpg,240,270,6,3,240,47,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/hd-tit.jpg2402707324047075N;10137600
+original image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/b452c6886175bf82297403b259525784
+failure to identify: array (
+  'h' => NULL,
+  'w' => NULL,
+  'format' => NULL,
+)
+
+identify
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/3eb0b5b2a93be79db3ecbe21481056be
+identify: array (
+  'h' => NULL,
+  'w' => NULL,
+)
+
+detect_format
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/3eb0b5b2a93be79db3ecbe21481056be
+failure to detect: <b>Err
+
+build_cache
+arguments: common/hd-main.jpg,240,270,6,3,240,79,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/hd-main.jpg2402707324079075N;10137600
+original image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/3eb0b5b2a93be79db3ecbe21481056be
+failure to identify: array (
+  'h' => NULL,
+  'w' => NULL,
+  'format' => NULL,
+)
+
+identify
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/6ff3a0c22ed510ea5a2bdfdca96c55d3
+identify: array (
+  'h' => NULL,
+  'w' => NULL,
+)
+
+detect_format
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/6ff3a0c22ed510ea5a2bdfdca96c55d3
+failure to detect: <b>Err
+
+build_cache
+arguments: common/hd-txt.gif,240,270,6,3,240,16,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/hd-txt.gif2402707324016075N;10137600
+original image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/6ff3a0c22ed510ea5a2bdfdca96c55d3
+failure to identify: array (
+  'h' => NULL,
+  'w' => NULL,
+  'format' => NULL,
+)
+
+build_cache
+arguments: img/top_tit01.jpg,240,270,6,3,240,20,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/top_tit01.jpg2402707324020075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/ee444d932f87120979a868ab388ffc3b
+
+build_cache
+arguments: img/top_tit02.jpg,240,270,6,3,240,20,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/top_tit02.jpg2402707324020075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/ac260d93fc63a33db3b0ec984eea950a
+
+build_cache
+arguments: img/top_tit03.jpg,240,270,6,3,240,20,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/top_tit03.jpg2402707324020075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/f8ea6c29d8d6566bd09030267c18eb55
+
+build_cache
+arguments: img/top_tit04.jpg,240,270,6,3,240,20,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/top_tit04.jpg2402707324020075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/7881a42b5062150415db885196b94b34
+
+build_cache
+arguments: common/dotted-line.jpg,240,270,6,3,222,1,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/dotted-line.jpg240270732221075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/3527731b7c5f5c5e031da44bdc2ada92
+
+build_cache
+arguments: common/dotted-line.jpg,240,270,6,3,222,1,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/dotted-line.jpg240270732221075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/3527731b7c5f5c5e031da44bdc2ada92
+
+build_cache
+arguments: img/bnr_shiryo.jpg,240,270,6,3,220,52,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/bnr_shiryo.jpg2402707322052075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/66c16cffa9efc80a1abfd304c652c42b
+
+build_cache
+arguments: common/dotted-line.jpg,240,270,6,3,222,1,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/dotted-line.jpg240270732221075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/3527731b7c5f5c5e031da44bdc2ada92
+
+build_cache
+arguments: img/top_bnr.jpg,240,270,6,3,220,52,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/top_bnr.jpg2402707322052075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/3bfc1115ad40a8c053e8378186e79b98
+
+identify
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/b452c6886175bf82297403b259525784
+identify: array (
+  'h' => NULL,
+  'w' => NULL,
+)
+
+detect_format
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/b452c6886175bf82297403b259525784
+failure to detect: <b>Err
+
+build_cache
+arguments: common/hd-tit.jpg,240,270,6,3,240,47,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/hd-tit.jpg2402707324047075N;10137600
+original image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/b452c6886175bf82297403b259525784
+failure to identify: array (
+  'h' => NULL,
+  'w' => NULL,
+  'format' => NULL,
+)
+
+identify
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/3eb0b5b2a93be79db3ecbe21481056be
+identify: array (
+  'h' => NULL,
+  'w' => NULL,
+)
+
+detect_format
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/3eb0b5b2a93be79db3ecbe21481056be
+failure to detect: <b>Err
+
+build_cache
+arguments: common/hd-main.jpg,240,270,6,3,240,79,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/hd-main.jpg2402707324079075N;10137600
+original image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/3eb0b5b2a93be79db3ecbe21481056be
+failure to identify: array (
+  'h' => NULL,
+  'w' => NULL,
+  'format' => NULL,
+)
+
+identify
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/6ff3a0c22ed510ea5a2bdfdca96c55d3
+identify: array (
+  'h' => NULL,
+  'w' => NULL,
+)
+
+detect_format
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/6ff3a0c22ed510ea5a2bdfdca96c55d3
+failure to detect: <b>Err
+
+build_cache
+arguments: common/hd-txt.gif,240,270,6,3,240,16,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/hd-txt.gif2402707324016075N;10137600
+original image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/6ff3a0c22ed510ea5a2bdfdca96c55d3
+failure to identify: array (
+  'h' => NULL,
+  'w' => NULL,
+  'format' => NULL,
+)
+
+build_cache
+arguments: img/top_tit01.jpg,240,270,6,3,240,20,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/top_tit01.jpg2402707324020075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/ee444d932f87120979a868ab388ffc3b
+
+build_cache
+arguments: img/top_tit02.jpg,240,270,6,3,240,20,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/top_tit02.jpg2402707324020075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/ac260d93fc63a33db3b0ec984eea950a
+
+build_cache
+arguments: img/top_tit03.jpg,240,270,6,3,240,20,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/top_tit03.jpg2402707324020075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/f8ea6c29d8d6566bd09030267c18eb55
+
+build_cache
+arguments: img/top_tit04.jpg,240,270,6,3,240,20,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/top_tit04.jpg2402707324020075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/7881a42b5062150415db885196b94b34
+
+build_cache
+arguments: common/dotted-line.jpg,240,270,6,3,222,1,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/dotted-line.jpg240270732221075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/3527731b7c5f5c5e031da44bdc2ada92
+
+build_cache
+arguments: common/dotted-line.jpg,240,270,6,3,222,1,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/dotted-line.jpg240270732221075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/3527731b7c5f5c5e031da44bdc2ada92
+
+build_cache
+arguments: img/bnr_shiryo.jpg,240,270,6,3,220,52,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/bnr_shiryo.jpg2402707322052075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/66c16cffa9efc80a1abfd304c652c42b
+
+build_cache
+arguments: common/dotted-line.jpg,240,270,6,3,222,1,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/dotted-line.jpg240270732221075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/3527731b7c5f5c5e031da44bdc2ada92
+
+build_cache
+arguments: img/top_bnr.jpg,240,270,6,3,220,52,,0,,,,,101376
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/top_bnr.jpg2402707322052075N;10137600
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/3bfc1115ad40a8c053e8378186e79b98
+
+identify
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/b452c6886175bf82297403b259525784
+identify: array (
+  'h' => NULL,
+  'w' => NULL,
+)
+
+detect_format
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/b452c6886175bf82297403b259525784
+failure to detect: <b>Err
+
+build_cache
+arguments: common/hd-tit.jpg,234,358,5,15,240,47,,0,,,,,130048
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/hd-tit.jpg23435871524047075N;13004800
+original image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/b452c6886175bf82297403b259525784
+failure to identify: array (
+  'h' => NULL,
+  'w' => NULL,
+  'format' => NULL,
+)
+
+identify
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/3eb0b5b2a93be79db3ecbe21481056be
+identify: array (
+  'h' => NULL,
+  'w' => NULL,
+)
+
+detect_format
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/3eb0b5b2a93be79db3ecbe21481056be
+failure to detect: <b>Err
+
+build_cache
+arguments: common/hd-main.jpg,234,358,5,15,240,79,,0,,,,,130048
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/hd-main.jpg23435871524079075N;13004800
+original image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/3eb0b5b2a93be79db3ecbe21481056be
+failure to identify: array (
+  'h' => NULL,
+  'w' => NULL,
+  'format' => NULL,
+)
+
+identify
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/6ff3a0c22ed510ea5a2bdfdca96c55d3
+identify: array (
+  'h' => NULL,
+  'w' => NULL,
+)
+
+detect_format
+file: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/6ff3a0c22ed510ea5a2bdfdca96c55d3
+failure to detect: <b>Err
+
+build_cache
+arguments: common/hd-txt.gif,234,358,5,15,240,16,,0,,,,,130048
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/hd-txt.gif23435871524016075N;13004800
+original image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/6ff3a0c22ed510ea5a2bdfdca96c55d3
+failure to identify: array (
+  'h' => NULL,
+  'w' => NULL,
+  'format' => NULL,
+)
+
+build_cache
+arguments: img/top_tit01.jpg,234,358,5,15,240,20,,0,,,,,130048
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/top_tit01.jpg23435871524020075N;13004800
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/043f660281970fc2e9fd5fa1e83f0dba
+
+build_cache
+arguments: img/top_tit02.jpg,234,358,5,15,240,20,,0,,,,,130048
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/top_tit02.jpg23435871524020075N;13004800
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/e5ac4ba4bd21400dba361df6ffa6ce0e
+
+build_cache
+arguments: img/top_tit03.jpg,234,358,5,15,240,20,,0,,,,,130048
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/top_tit03.jpg23435871524020075N;13004800
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/1c5883cdccbdc5e11735958e5082eee3
+
+build_cache
+arguments: img/top_tit04.jpg,234,358,5,15,240,20,,0,,,,,130048
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/top_tit04.jpg23435871524020075N;13004800
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/25fb28425e08bbfb075c1a9ee1ced013
+
+build_cache
+arguments: common/dotted-line.jpg,234,358,5,15,222,1,,0,,,,,130048
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/dotted-line.jpg2343587152221075N;13004800
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/fd0ca9eca6a61933de7f1b75514579af
+
+build_cache
+arguments: common/dotted-line.jpg,234,358,5,15,222,1,,0,,,,,130048
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/dotted-line.jpg2343587152221075N;13004800
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/fd0ca9eca6a61933de7f1b75514579af
+
+build_cache
+arguments: img/bnr_shiryo.jpg,234,358,5,15,220,52,,0,,,,,130048
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/bnr_shiryo.jpg23435871522052075N;13004800
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/d3f435b027a040c61542c7bacc681019
+
+build_cache
+arguments: common/dotted-line.jpg,234,358,5,15,222,1,,0,,,,,130048
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/common/dotted-line.jpg2343587152221075N;13004800
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/fd0ca9eca6a61933de7f1b75514579af
+
+build_cache
+arguments: img/top_bnr.jpg,234,358,5,15,220,52,,0,,,,,130048
+graphic: gd
+graphic url: 
+copyright : 
+wallpaper : N;
+maximize : false
+cache_expires : 1209600
+original id: http://nichinare.com/m/img/top_bnr.jpg23435871522052075N;13004800
+converted image file has existed: /usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp/9cc13d749dcd55ac8b33823fe100a9c0
