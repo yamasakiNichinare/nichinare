@@ -1,0 +1,94 @@
+<mt:if name="_type" eq="category">
+  <mt:setvarblock name="object_name"><__trans phrase="Categories"></mt:setvarblock>
+  <mt:setvarblock name="page_title"><__trans phrase="Category management"></mt:setvarblock>
+</mt:if>
+<mt:if name="_type" eq="folder">
+  <mt:setvarblock name="object_name"><__trans phrase="Folders"></mt:setvarblock>
+  <mt:setvarblock name="page_title"><__trans phrase="Folder management"></mt:setvarblock>
+</mt:if>
+
+<mt:include name="include/header.tmpl">
+
+<div class="system">
+  <form method="post" action="<mt:var name="mt_uri">">
+  <input type="hidden" name="__mode" value="<mt:var name="_type">_im_exporter" />
+  <input type="hidden" name="blog_id" value="<mt:var name="blog_id">" />
+  <input type="hidden" name="do" value="export" />
+
+  <div class="field-header">
+    <h3><__trans phrase="Export [_1] Setting" params="<mt:var name="object_name">"></h3>
+    <p><__trans phrase="Exporting the [_1] setting as a CSV file." params="<mt:var name="object_name">"></p>
+  </div>
+
+  <div class="actions-bar settings-actions-bar">
+    <div class="actions-bar-inner pkg actions">
+      <button type="submit" class="primary-button action"><__trans phrase="Export settings"></button>
+    </div>
+  </div>
+  </form>
+</div>
+
+<br /><hr /><br />
+
+<div class="system">
+  <form method="post" action="<mt:var name="mt_uri">" enctype='multipart/form-data'>
+  <input type="hidden" name="__mode" value="<mt:var name="_type">_im_exporter" />
+  <input type="hidden" name="blog_id" value="<mt:var name="blog_id">" />
+  <input type="hidden" name="do" value="import" />
+
+  <div class="field-header">
+    <h3><__trans phrase="Import [_1] Setting" params="<mt:var name="object_name">"></h3>
+    <p><__trans phrase="Importing the [_1] setting from the uploaded CSV file." params="<mt:var name="object_name">"></p>
+  </div>
+
+<TMPL_IF NAME=ERROR_MSG>
+  <div id="generic-error" class="msg msg-error">
+<MTIf name="mt_version" like="5.">
+    <p><TMPL_VAR NAME=ERROR_MSG></p>
+    <img class="mt-close-msg" src="<$mt:var name="static_uri"$>images/icon_close.png" alt="<__trans phrase="Close">"/>
+<MTElseIf name="mt_version" like="4.">
+    <a href="javascript:void(0)" onclick="javascript:hide('generic-error');return false;" class="close-me"><span>close</span></a>
+    <TMPL_VAR NAME=ERROR_MSG>
+</MTIf>
+  </div>
+</TMPL_IF>
+
+<TMPL_IF NAME=MSG>
+<MTIf name="mt_version" like="5.">
+  <div id="saved" class="msg msg-success">
+    <p><TMPL_VAR NAME=MSG></p>
+    <img class="mt-close-msg" src="<$mt:var name="static_uri"$>images/icon_close.png" alt="<__trans phrase="Close">"/>
+  </div>
+<MTElse>
+ <div id="reset" class="msg msg-success">
+    <a href="javascript:void(0)" onclick="javascript:hide('reset');return false;" class="close-me"><span>close</span></a>
+    <TMPL_VAR NAME=MSG>
+ </div>
+</MTIf>
+</TMPL_IF>
+
+	<mtapp:setting
+		id="csv_file"
+		label="<__trans phrase="CSV File">"
+		hint="<__trans phrase="Select the CSV file of exported setting">"
+		show_hint="1">
+		<input type="file" name="file" size="50" />
+	</mtapp:setting>
+
+	<mtapp:setting
+		id="overwrite_setting"
+		label="<__trans phrase="Overwrite">"
+		hint="<__trans phrase="If there are any items have same ID, The old one will be over-written.">"
+		show_hint="1">
+		<input type="checkbox" name="overwrite" value="1" />
+	</mtapp:setting>
+
+  <div class="actions-bar settings-actions-bar">
+    <div class="actions-bar-inner pkg actions">
+      <button type="submit" class="primary-button action"><__trans phrase="Import settings"></button>
+    </div>
+  </div>
+  </form>
+</div>
+
+<mt:include name="include/footer.tmpl">

@@ -1,0 +1,50 @@
+<mt:Ignore>Copyright (c) 2008 ARK-Web Co.,Ltd.</mt:Ignore>
+<mt:if name="use_mt_blog_template_set_ver42">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+  <$mt:include module="HTMLヘッダー"$>
+<title><$mt:var name="title" escape="html"$></title>
+</head>
+<body id="<$mt:BlogTemplateSetID$>" class="mt-entry-archive <$mt:Var name="page_layout"$>">
+    <div id="container">
+        <div id="container-inner">
+            <$mt:include module="バナーヘッダー"$>
+            <div id="content">
+                <div id="content-inner">
+<mt:else>
+<$mt:include module="ヘッダー">
+</mt:if>
+
+<link rel="stylesheet" type="text/css" href="<mt:var name="static_uri">plugins/AForm/style.css" />
+
+<div id="aform-<$mt:var name="id"$>" class="aform">
+<div class="aform-header"><$mt:var name="aform_title"$></div>
+<div class="aform-content">
+<dl class="aform-error-list">
+  <dt>エラーが発生しました</dt>
+    <mt:loop name="error_msgs">
+      <dd>
+        <$mt:var name="__value__" escape="html"$>
+      </dd>
+    </mt:loop>
+</dl>
+<mt:ignore>
+<div><input type="button" value="戻る" onclick="history.back();" /></div>
+</mt:ignore>
+<div>ブラウザの戻るボタンでお戻りください。</div>
+</div>
+</div>
+
+<mt:if name="use_mt_blog_template_set_ver42">
+                </div>
+            </div>
+            <$mt:include module="バナーフッター"$>
+        </div>
+    </div>
+</body>
+</html>
+<mt:else>
+<$mt:Include module="フッター"$>
+</mt:if>

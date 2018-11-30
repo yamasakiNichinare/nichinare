@@ -1,0 +1,102 @@
+@charset "shift_jis";
+
+* {
+margin: 0px;
+padding: 0px;
+}
+
+html {
+width:100%;
+background-color:#ebf4eb;
+overflow-y:scroll;/* For Mozilla's bug */
+}
+
+body {
+margin:0;
+padding:0px;
+text-align:center;
+color: #444444;
+background-color:#ebf4eb;
+font-size: 81.25%; /*13pxに設定*/
+font-family:"ＭＳ Ｐゴシック", "MS PGothic", Osaka, sans-serif;
+}
+
+
+/** -------------------------------- **
+	Reset & 初期設定
+*** ----------------------------------------------------------------- ***/
+
+h1, h2, h3, h4, h5, h6, p, span, ul, ol, li, dl, dt, dd, table, th, td, input, legend, div, form, hr, address {
+margin:0;
+padding:0;
+list-style:none;
+font-weight: normal;
+font-style: normal;
+}
+
+p, h1, h2, h3, h4, h5, h6, ul, ol, dl, div, pre, blockquote, input {
+word-break:break-all;
+}
+
+hr {display: none;}
+
+a {
+/*\*/
+overflow: hidden;
+/**/
+}
+
+
+/** -------------------------------- **
+	Float ＆ Float Clear指定
+*** ----------------------------------------------------------------- ***/
+
+.clear{clear:both;}
+
+div:after, ul:after, dl:after, dt:after, dd:after, td:after  {
+content:"";
+height:0;
+clear:both;
+display:block;
+visibility:hidden;
+}
+
+/* IE7用*/
+div {zoom:100%;}
+
+
+/** -------------------------------- **
+	Link指定
+*** ----------------------------------------------------------------- ***/
+
+a:link {text-decoration:underline; color:#005cb8;}
+a:visited {text-decoration:underline; color:#005cb8;}
+a:hover, a:active {text-decoration:underline; color:#4ca778;}
+
+a img {border:none;}
+
+
+/** -------------------------------- **
+	基本フォントサイズ指定
+*** ----------------------------------------------------------------- ***/
+
+.small {
+font-size: 76.93%;
+line-height: 140%;
+}
+
+.normal {
+font-size: 92.31%;
+line-height: 166.7%;
+}
+
+.s-large {
+font-size: 107.77%;
+line-height: 110%;
+}
+
+.large {
+font-size: 138.47%;
+line-height: 110%;
+}
+

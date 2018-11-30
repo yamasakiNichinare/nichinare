@@ -1,0 +1,79 @@
+---
+author_link: ''
+class: blog
+description: ''
+elements:
+  custom_fields:
+    component: commercial
+    data:
+      linkurl:
+        default: ''
+        description: 直接ページにリンクを貼る場合
+        name: 直接ページリンク
+        obj_type: entry
+        options: ~
+        required: 0
+        tag: urldata
+        type: url
+    importer: custom_fields
+  template_set:
+    component: ~
+    data:
+      base_path: templates
+      label: 'exported_template set'
+      templates:
+        archive:
+          template_254:
+            label: 月別一覧
+            mappings:
+              monthly:
+                archive_type: Monthly
+                file_template: '%y/%m/%i'
+                preferred: 1
+        index:
+          javascript:
+            label: JavaScript
+            outfile: mt.js
+            rebuild_me: 1
+          main_index:
+            label: メインページ
+            outfile: index.html
+            rebuild_me: 1
+        individual:
+          entry:
+            label: 最新情報詳細
+            mappings:
+              individual:
+                archive_type: Individual
+                file_template: '%y/%m/%m%d-%E.html'
+                preferred: 1
+        module:
+          template_304:
+            label: 外部ファイル読み込み
+        system:
+          comment_listing:
+            label: コメント一覧
+          comment_preview:
+            label: コメントプレビュー
+          comment_response:
+            label: コメント完了
+          dynamic_error:
+            label: ダイナミックパブリッシングエラー
+          popup_image:
+            label: ポップアップ画像
+          search_results:
+            label: 検索結果
+        widget:
+          monthly_archive_list:
+            label: 月別アーカイブ
+        widgetset:
+          template_302:
+            label: 左メニュー
+            order: 1000
+            widgets:
+              - 月別アーカイブ
+    importer: template_set
+id: theme_from_news
+label: 最新情報のテーマ
+name: 最新情報のテーマ
+version: 1.0

@@ -1,0 +1,100 @@
+@charset "shift_jis";
+
+/** -------------------------------- **
+	カテゴリーメニュー
+*** ----------------------------------------------------------------- ***/
+
+#contents .left_contents h4 {
+width:200px;
+height:36px;
+margin:0;
+padding:0;
+text-align:left;
+text-indent:-9999px;
+background:url(../images/menu-tit.gif) no-repeat;
+}
+
+
+/**********************
+　ローカルメニュー
+**********************/
+
+#contents .left_contents ul.local_menu {
+width:200px;
+margin:0;
+padding:0;
+list-style:none;
+font-size:1%;
+line-height:1%;
+}
+
+#contents .left_contents ul.local_menu li {
+width:189px;
+height:42px;
+margin:0 auto;
+padding:0;
+text-align:left;
+text-indent:-9999px;
+}
+
+#contents .left_contents ul.local_menu li a {
+display:block;
+width:189px;
+height:42px;
+}
+
+#contents .left_contents ul.local_menu li.menu01 {
+height:49px;
+background:url(../images/local_menu01_on.jpg) no-repeat;
+}
+#contents .left_contents ul.local_menu li.menu01 a {
+height:49px;
+background:url(../images/local_menu01.jpg) no-repeat;
+}
+
+#contents .left_contents ul.local_menu li.menu02 {
+background:url(../images/local_menu02_on.jpg) no-repeat;
+}
+#contents .left_contents ul.local_menu li.menu02 a {
+background:url(../images/local_menu02.jpg) no-repeat;
+}
+
+#contents .left_contents ul.local_menu li.menu03 {
+background:url(../images/local_menu03_on.jpg) no-repeat;
+}
+#contents .left_contents ul.local_menu li.menu03 a {
+background:url(../images/local_menu03.jpg) no-repeat;
+}
+
+#contents .left_contents ul.local_menu li.menu04 {
+background:url(../images/local_menu04_on.jpg) no-repeat;
+}
+#contents .left_contents ul.local_menu li.menu04 a {
+background:url(../images/local_menu04.jpg) no-repeat;
+}
+
+#contents .left_contents ul.local_menu li.menu05 {
+background:url(../images/local_menu05_on.jpg) no-repeat;
+}
+#contents .left_contents ul.local_menu li.menu05 a {
+background:url(../images/local_menu05.jpg) no-repeat;
+}
+
+#contents #index ul.local_menu li.menu01 a,
+#contents #threedays ul.local_menu li.menu02 a,
+#contents #starting ul.local_menu li.menu03 a,
+#contents #narrater ul.local_menu li.menu04 a,
+#contents #jr ul.local_menu li.menu05 a,
+#contents .left_contents ul.local_menu li.menu01 a:hover,
+#contents .left_contents ul.local_menu li.menu02 a:hover,
+#contents .left_contents ul.local_menu li.menu03 a:hover,
+#contents .left_contents ul.local_menu li.menu04 a:hover,
+#contents .left_contents ul.local_menu li.menu05 a:hover {background:none;}
+
+
+
+/** -------------------------------- **
+	詳細ページ
+*** ----------------------------------------------------------------- ***/
+
+.accentuation {	color:#ff6600;}

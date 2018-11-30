@@ -1,0 +1,17 @@
+@charset "Shift_JIS";
+
+html { height: 100%; }
+body { margin: 0px; padding: 0px; height: 100%; }
+#pageContent { width: 1200px; }
+#otherContent { font-size: 12px; padding: 10px; padding-left: 10px; width: 950px; float: left; }
+a { color: red; }
+
+/* Entire pane */
+#dhtmlgoodies_xpPane { width: 200px; height: 1200px; background-color: #7190e0; float: left; }
+#dhtmlgoodies_xpPane .dhtmlgoodies_panel { margin-left: 10px; margin-right: 10px; margin-top: 10px; }
+#dhtmlgoodies_xpPane .dhtmlgoodies_panel .menu { line-height: 1.3em; padding-bottom: 10px; padding-top: 10px; }
+#dhtmlgoodies_xpPane .panelContent { font-size: 12px; padding-left: 2px; padding-right: 2px; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; background-image: url('images/bg_pane_right.gif'); background-position: top right; background-repeat: repeat-y; clear: both; overflow: hidden; position: relative; }
+#dhtmlgoodies_xpPane .panelContent div { position: relative; }
+#dhtmlgoodies_xpPane .dhtmlgoodies_panel .topBar { padding-right: 5px; height: 25px; background-image: url('images/bg_panel_top_right.gif'); background-position: top right; background-repeat: no-repeat; cursor: pointer; overflow: hidden; }
+#dhtmlgoodies_xpPane .dhtmlgoodies_panel .topBar span { font-family: arial; font-size: 0.9em; font-weight: bold; color: #215DC6; line-height: 25px; vertical-align: middle; padding-left: 5px; float: left; }
+#dhtmlgoodies_xpPane .dhtmlgoodies_panel .topBar img { cursor: pointer; float: right; }

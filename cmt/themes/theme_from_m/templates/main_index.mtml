@@ -1,0 +1,160 @@
+<?php
+  // UA
+  $UA_ACCOUNT = "MO-26631444-2";
+$UA_PIXEL = "/ua.php";
+
+  function googleAnalyticsImageUrl() {
+    global $UA_ACCOUNT, $UA_PIXEL;
+    $url = "";
+    $url .= $UA_PIXEL . "?";
+    $url .= "utmac=" . $UA_ACCOUNT;
+    $url .= "&utmn=" . rand(0, 0x7fffffff);
+
+    $referer = $_SERVER["HTTP_REFERER"];
+    $query = $_SERVER["QUERY_STRING"];
+    $path = $_SERVER["REQUEST_URI"];
+
+    if (empty($referer)) {
+      $referer = "-";
+    }
+    $url .= "&utmr=" . urlencode($referer);
+
+    if (!empty($path)) {
+      $url .= "&utmp=" . urlencode($path);
+    }
+
+    $url .= "&guid=ON";
+
+    return $url;
+  }
+?>
+
+
+
+<MTKeitaiKit ixhtml="1" xml_declaration="1" doctype="1">
+<html>
+<head>
+<title>声優・ﾅﾚーﾀーをめざすなら 日本ﾅﾚーｼｮﾝ演技研究所</title>
+<MTKeitaiBlock class="meta"></MTKeitaiBlock>
+</head>
+
+<MTKeitaiBlock class="Body">
+<MTKeitaiBlock class="TitleMain"></MTKeitaiBlock>
+
+<div style="background:#6cbd85; text-align:center;"><img src="img/top_tit01.jpg" width="240" height="20" alt="最新情報" /></div>
+<div style="text-align:left;">
+<table border="0" cellpadding="0" cellspacing="0" style="margin-top:5px;">
+<mt:Entries lastn="5">
+<tr>
+<td valign="top" style="font-size:x-small; width:10px;"><span style="color:#98d1a9;">■</span></td>
+<td valign="top" style="font-size:x-small; text-align:left;">
+<mtifnonempty tag="urldata">
+<a href="<mt:urldata>"><$mt:EntryTitle$></a>
+<mtelse>
+<a href="<mt:EntryPermalink>"><$mt:EntryTitle$></a>
+</mtelse>  
+</mtifnonempty>
+</td>
+</tr>
+</mt:Entries>
+</table>
+</div>
+<div style="text-align:right;"><span style="color:#ff6600;">⇒</span><a href="news/index.php">もっと見る</a></div>
+
+<div style="background:#ff6600; text-align:center; margin-top:10px; padding:3px 0 3px 0;"><span style="color:#ffffff;">&gt;&gt; <a href="https://nichinare.com/m/request/form.cgi">資料請求【無料】</a> &lt;&lt;</span></div>
+
+<div style="background:#6cbd85; text-align:center; margin-top:10px;"><img src="img/top_tit02.jpg" width="240" height="20" alt="日ﾅﾚについて" /></div>
+<div style="text-align:left;">
+<table border="0" cellpadding="0" cellspacing="0" style="margin-top:5px;">
+<tr>
+<td valign="top" style="font-size:x-small; text-align:left;"><span style="color:#ff6600;">⇒</span><a href="about/index.php">日ﾅﾚの特色</a>｜<span style="color:#ff6600;">⇒</span><a href="about/step.php">入所までのステップ</a>｜<span style="color:#ff6600;">⇒</span><a href="about/studio.php">ﾚｯｽﾝｽﾀｼﾞｵ</a>｜<span style="color:#ff6600;">⇒</span><a href="about/lecturer.php">講師一覧</a>｜<span style="color:#ff6600;">⇒</span><a href="about/native.php">主な出身者</a></td>
+</tr>
+</table>
+</div>
+
+<div style="background:#6cbd85; text-align:center; margin-top:10px;"><img src="img/top_tit03.jpg" width="240" height="20" alt="ｺｰｽ紹介" /></div>
+<div style="text-align:left;">
+<table border="0" cellpadding="0" cellspacing="0" style="margin-top:5px;">
+<tr>
+<td valign="top" style="font-size:x-small; text-align:left;"><span style="color:#ff6600;">⇒</span><a href="course/index.php">週1ｸﾗｽ</a>｜<span style="color:#ff6600;">⇒</span><a href="course/twodays-threedays.php">週2回・週3回ｸﾗｽ</a>｜<span style="color:#ff6600;">⇒</span><a href="course/jr.php">ｼﾞｭﾆｱ声優ｸﾗｽ</a>｜<span style="color:#ff6600;">⇒</span><a href="course/narrater.php">ﾅﾚｰﾀｰｾﾐﾅｰ</a>｜<span style="color:#ff6600;">⇒</span><a href="course/start-up-course.php">ｽﾀｰﾄｱｯﾌﾟｸﾗｽ</a></td>
+</tr>
+</table>
+</div>
+
+<div style="background:#6cbd85; text-align:center; margin-top:10px;"><img src="img/top_tit04.jpg" width="240" height="20" alt="入所方法/面接日程 " /></div>
+<div style="text-align:left;">
+<table border="0" cellpadding="0" cellspacing="0" style="margin-top:5px;">
+<tr>
+<td valign="top" style="font-size:x-small; text-align:left;"><span style="color:#ff6600;">⇒</span><a href="application/index.php">週1、週2、週3、ﾅﾚｰﾀｰ、ｽﾀｰﾄｱｯﾌﾟ</a>｜<span style="color:#ff6600;">⇒</span><a href="application/apply-jr.php">ｼﾞｭﾆｱ声優ｸﾗｽ</a>｜<span style="color:#ff6600;">⇒</span><a href="application/tuition.php">入所金・受講料等一覧</a></td>
+</tr>
+</table>
+</div>
+
+<div style="text-align:left; margin:5px;"><img src="common/dotted-line.jpg" width="222" height="1" alt="" /></div>
+
+<div style="text-align:left;">
+<table border="0" cellpadding="0" cellspacing="0" style="margin-top:5px;">
+<tr>
+<td valign="top" style="font-size:x-small; width:10px;"><span style="color:#ff6600;">⇒</span></td>
+<td valign="top" style="font-size:x-small; text-align:left;"><a href="https://nichinare.com/m/request/form.cgi">資料請求【無料】</a></td>
+</tr>
+</table>
+</div>
+
+<div style="text-align:left; margin:5px;"><img src="common/dotted-line.jpg" width="222" height="1" alt="" /></div>
+
+<div style="text-align:left;"><a href="https://nichinare.com/m/request/form.cgi"><img src="img/bnr_shiryo.jpg" alt="資料請求【無料】" width="220" height="52" border="0" /></a></div>
+
+<div style="text-align:left; margin:5px;"><img src="common/dotted-line.jpg" width="222" height="1" alt="" /></div>
+
+<div style="text-align:left;"><a href="free/index.php"><img src="img/top_bnr.jpg" alt="無料体験ﾚｯｽﾝ" width="220" height="52" border="0" /></a></div>
+<div style="text-align:left;">
+<table border="0" cellpadding="0" cellspacing="0" style="margin-top:5px;">
+<tr>
+<td valign="top" style="font-size:x-small; width:10px;"><span style="color:#ff6600;">⇒</span></td>
+<td valign="top" style="font-size:x-small; text-align:left;"><a href="lesson/index.php">ﾚｯｽﾝ見学</a></td>
+</tr>
+<tr>
+<td valign="top" style="font-size:x-small;">└</td>
+<td valign="top" style="font-size:x-small; text-align:left;">日ﾅﾚで通常行なっているﾚｯｽﾝを見学いただけます</td>
+</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" style="margin-top:5px;">
+<tr>
+<td valign="top" style="font-size:x-small; width:10px;"><span style="color:#ff6600;">⇒</span></td>
+<td valign="top" style="font-size:x-small; text-align:left;"><a href="faq/index.php">Q&amp;A</a></td>
+</tr>
+<tr>
+<td valign="top" style="font-size:x-small;">└</td>
+<td valign="top" style="font-size:x-small; text-align:left;">よくあるご質問をQ&amp;Aにまとめました。</td>
+</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" style="margin-top:5px;">
+<tr>
+<td valign="top" style="font-size:x-small; width:10px;"><span style="color:#ff6600;">⇒</span></td>
+<td valign="top" style="font-size:x-small; text-align:left;"><a href="contact/index.php">お問い合わせ</a></td>
+</tr>
+<tr>
+<td valign="top" style="font-size:x-small;">└</td>
+<td valign="top" style="font-size:x-small; text-align:left;">お気軽にお問い合わせください。</td>
+</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" style="margin-top:5px;">
+<tr>
+<td valign="top" style="font-size:x-small; width:10px;"><span style="color:#ff6600;">⇒</span></td>
+<td valign="top" style="font-size:x-small; text-align:left;"><a href="group/index.php">ｸﾞﾙｰﾌﾟﾌﾟﾛﾀﾞｸｼｮﾝ</a></td>
+</tr>
+<tr>
+<td valign="top" style="font-size:x-small;">└</td>
+<td valign="top" style="font-size:x-small; text-align:left;">日ﾅﾚのｸﾞﾙｰﾌﾟﾌﾟﾛﾀﾞｸｼｮﾝのご紹介です。</td>
+</tr>
+</table>
+</div>
+
+<div style="text-align:left; margin:5px;"><img alt="" src="common/dotted-line.jpg" /></div>
+<div style="text-align:left;"><a href="https://nichinare.com/oshirase/jukou/index.cgi"><img src="img/bnr_oshirase.gif" alt="受講生専用ｻｲﾄ" width="220" height="26" border="0" /></a></div>
+
+<MTKeitaiBlock class="FooterTop"></MTKeitaiBlock>
+</MTKeitaiBlock>
+</html>
+</MTKeitaiKit>

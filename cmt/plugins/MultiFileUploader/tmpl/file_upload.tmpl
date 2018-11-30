@@ -1,0 +1,475 @@
+<MTIf name="mt_version" like="4.">
+  <mt:setvar name="page_title" value="<__trans phrase="Upload File">">
+<MTElse>
+  <mt:setvar name="page_title" value="<__trans phrase="Upload Asset">">
+</MTIf>
+<mt:setvarblock name="html_head" append="1">
+<MTIf name="mt_version" like="4.">
+  <script type="text/javascript" src="<mt:var name="static_uri">plugins/MultiFileUploader/js/jquery.js"></script> 
+</MTIf>
+<mt:unless disable_swf>
+  <script type="text/javascript" src="<mt:var name="static_uri">plugins/MultiFileUploader/js/swfupload.js"></script>
+  <script type="text/javascript" src="<mt:var name="static_uri">plugins/MultiFileUploader/js/swfupload.cookies.js"></script>
+</mt:unless>
+
+<style>
+ul#files {
+    margin: 0.5em 10px;
+}
+
+ul#files li {
+    margin: 0px;
+    padding-left: 12px;
+    background: url('<mt:var name="static_uri">images/status_icons/up-disabled.gif') no-repeat left center;
+}
+
+ul#files li span.progress {
+	color: #555;
+	font-size: 80%;
+}
+
+.dialog .progress {
+    position: relative;
+    top: 0em;
+}
+</style>
+
+<script type="text/javascript" src="<mt:var name="static_uri">plugins/MultiFileUploader/js/swfupload.js"></script>
+<script type="text/javascript">
+var swfu = null;
+<mt:unless disable_swf>
+function initSWFUploader () {
+	var settings = {
+		flash_url : "<mt:var name="static_uri">plugins/MultiFileUploader/swfupload.swf",
+		upload_url: "<mt:var name="script_url">",
+		file_types : "*.*",
+		file_types_description : "All Files",
+		file_upload_limit : 100,
+		file_queue_limit : 0,
+		debug: false,
+
+		// Button settings
+		button_image_url: "<mt:var name="static_uri">plugins/MultiFileUploader/XPButtonUpload_61x22.png",
+		button_width: "61",
+		button_height: "22",
+		button_placeholder_id: "spanButtonPlaceHolder",
+		
+		// The event handler functions are defined in handlers.js
+		file_queued_handler : fileQueued,
+		upload_progress_handler: uploadProgress,
+		upload_error_handler: uploadError,
+		upload_success_handler : uploadSuccess
+	};
+	swfu = new SWFUpload(settings);
+}
+jQuery(document).ready (initSWFUploader);
+<mt:else>
+jQuery(document).ready (changeNoSwfMode);
+</mt:unless>
+
+function fileQueued (fo) {
+    jQuery('#files').append('<li id="fo' + fo.id + '">' + fo.name + '&nbsp;<span class="progress"></span></li>');
+}
+
+var mode = 0; // use SWF
+function changeNoSwfMode () {
+	mode = 1; // use JavaScript
+	jQuery('#upload_btn').hide();
+	appendFile ();
+}
+
+function onClickUpload () {
+    jQuery ('.actions-bar button.upload').hide();
+    jQuery ('#upload_btn').css('visibility', 'hidden').css('height', 0);
+
+	if (mode == 0) { // SWF
+		var e;
+		var f = jQuery('#setting_form').get(0);
+		swfu.refreshCookies();
+		swfu.addPostParam ('__mode', 'file_save');
+		swfu.addPostParam ('blog_id', '<mt:var name="blog_id">');
+		swfu.addPostParam ('magic_token', '<mt:var name="magic_token">');
+		swfu.addPostParam ('entry_insert', '<mt:var name="entry_insert">');
+		swfu.addPostParam ('asset_select', '<mt:var name="asset_select">');
+		swfu.addPostParam ('edit_field', '<mt:var name="edit_field">');
+		swfu.addPostParam ('require_type', '<mt:var name="require_type">');
+<mt:if name="no_insert">
+		swfu.addPostParam ('no_insert', '<mt:var name="no_insert">');
+</mt:if>
+<mt:if name="user_id">
+		swfu.addPostParam ('user_id', '<mt:var name="user_id">');
+</mt:if>
+<mt:if name="dialog">
+		swfu.addPostParam ('dialog', '<mt:var name="dialog">');
+</mt:if>
+		swfu.addPostParam ('entry_id', '<mt:var name="entry_id">');
+		swfu.addPostParam ('site_path', f.site_path.options[f.site_path.selectedIndex].value);
+		swfu.addPostParam ('middle_path', f.middle_path.value);
+		swfu.addPostParam ('extra_path', f.extra_path.value);
+		e = f.overwrite;
+		swfu.addPostParam ('overwrite', e.options[e.selectedIndex].value);
+		e = f.resize;
+		swfu.addPostParam ('resize', e.options[e.selectedIndex].value);
+		swfu.addPostParam ('size', f.size.value);
+		swfu.addPostParam ('file_tag', f.file_tag.value);
+		startUpload ();
+	} else if (mode == 1) { // JavaScript
+		jQuery('#upload_js form').hide();
+		startUploadJS ();
+	}
+}
+
+//******** SWFUploader
+function uploadProgress (fo, bytes, total_bytes) {
+	jQuery('#fo' + fo.id + ' span.progress').html('(' + bytes + ' / ' + total_bytes + ' bytes)');
+}
+
+function uploadError (fo, code, msg) {
+}
+
+function uploadSuccess (fo, svr_data, rc) {
+//alert(fo.id + ' : ' + svr_data + ' : ' + rc); // DEBUG
+	if (svr_data == 1 || svr_data == '') {
+		jQuery('#fo' + fo.id + ' span.progress').html('(<__trans phrase="Success">)');
+		jQuery('#fo' + fo.id).css('background-image', 'url("<mt:var name="static_uri">images/status_icons/success.gif")');
+	}
+	else {
+		error++;
+		jQuery('#fo' + fo.id + ' span.progress').html('(' + svr_data + ')');
+		jQuery('#fo' + fo.id).css('background-image', 'url("<mt:var name="static_uri">images/status_icons/warning.gif")');
+	}
+	startUpload ();
+}
+
+var index = 0;
+var error = 0;
+function startUpload () {
+    var fo = swfu.getFile (index++);
+	if (fo) {
+		// Start uploading the next item
+        jQuery('#fo'+fo.id).css('background-image', 'url("<mt:var name="static_uri">images/status_icons/up.gif")');
+        swfu.startUpload (fo.id);
+    } else {
+		// Finish uploading all files without error
+		if (!error)
+			location.href = '<mt:var name="script_url">?__mode=file_upload&blog_id=<mt:var name="blog_id">&dialog=<mt:var dialog>&saved=1&entry_id=<mt:var entry_id>';
+	}
+}
+
+//******** JavaScript
+function appendFile () {
+	var html = '';
+	html += '<form method="POST" action="<mt:var script_url>" enctype="multipart/form-data" target="js_upload">';
+	html += '<input type="file" name="file" size="40" onchange="onSelectFile(this);" />';
+	html += '</form>';
+	jQuery('#upload_js').append(html);
+}
+
+var id = 0;
+function onSelectFile (file) {
+	if (file._selected) return; file._selected = true; // IE7
+	jQuery(file.form).hide();
+	fileQueued ({ id: id, name: file.value });
+	appendFile (); // next field
+	id++;
+}
+
+var upload_count = 0;
+function startUploadJS (svr_data) {
+	if (svr_data) {
+		if (svr_data == 1) {
+			jQuery('#fo' + upload_count + ' span.progress').html('(<__trans phrase="Success">)');
+			jQuery('#fo' + upload_count).css('background-image', 'url("<mt:var name="static_uri">images/status_icons/success.gif")');
+		}
+		else {
+			error++;
+			jQuery('#fo' + upload_count + ' span.progress').html('(' + svr_data + ')');
+			jQuery('#fo' + upload_count).css('background-image', 'url("<mt:var name="static_uri">images/status_icons/warning.gif")');
+		}
+		upload_count++;
+	}
+
+	var sendforms = jQuery('#upload_js form');
+	if (1 < sendforms.length) {
+		// Start uploading the next item
+		jQuery('#fo' + upload_count + ' span.progress').html('(<__trans phrase="Uploading ...">)');
+        jQuery('#fo'+upload_count).css('background-image', 'url("<mt:var name="static_uri">images/status_icons/up.gif")');
+		var sendform = sendforms.eq(0);
+		var options = '';
+		jQuery('#setting_form input').each(function () {
+			if (this.name && (this.name != 'file'))
+				options += '<input type="hidden" name="'+this.name+'" value="'+this.value+'" />';
+		});
+		jQuery('#setting_form select').each(function () {
+			if (this.name)
+				options += '<input type="hidden" name="'+this.name+'" value="'+this.options[this.selectedIndex].value+'" />';
+		});
+		sendform.eq(0).append(options);
+		sendform.get(0).submit();
+		sendform.remove();
+	}
+	else {
+		// Finish uploading all files without error
+		if (!error)
+			location.href = '<mt:var name="script_url">?__mode=file_upload&blog_id=<mt:var name="blog_id">&dialog=<mt:var dialog>&saved=1&entry_id=<mt:var entry_id>';
+	} 
+}
+</script>
+</mt:setvarblock>
+
+<mt:if name="dialog">
+	<mt:include name="dialog/header.tmpl">
+<mt:else>
+	<mt:include name="include/header.tmpl">
+</mt:if>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+function setExtraPath (sel) {
+   var opt = sel.options[sel.selectedIndex];
+   var path = opt.getAttribute("middle_path");
+   if (!path) path = '';
+   var middle = sel.form['middle_path'];
+   if (middle) middle.value = path;
+}
+
+function validate (f) {
+<mt:if name="extra_paths">
+    if (!is_valid_path(f.extra_path.value)){
+        alert('<__trans phrase="You must set a valid destination." escape="js">');
+        return false;
+    }
+</mt:if>
+}
+
+function is_valid_path (path_){
+    var str = path_.replace(/[ "%<>\[\\\]\^`{\|}~]/g, "");
+    str = encodeURI(str);
+    if (str.indexOf('%') != -1)
+        return false;
+    if (str.match(/\.\./))
+        return false;
+    return true;
+}
+/* ]]> */
+</script>
+
+
+
+<mt:if name="missing_paths">
+    <mt:if name="have_permissions">
+<p><__trans phrase="Before you can upload a file, you need to publish your [_1]. [_2]Configure your [_1]'s publishing paths[_3] and republish your [_1]." params="<mt:var name="scope_type">%%<a href="javascript:void(0);" onclick="parent.jQuery.fn.mtDialog.close('<mt:var name="script_url">?__mode=cfg_prefs&amp;blog_id=<mt:var name="blog_id">');">%%</a>"></p>
+    <mt:else>
+<p><__trans phrase="Your system or [_1] administrator needs to publish the [_1] before you can upload files. Please contact your system or [_1] administrator." params="<mt:var name="scope_type">"></p>
+    </mt:if>
+<mt:else>
+    <mt:if saved>
+        <mtapp:statusmsg class="success">
+            <__trans phrase="Finish uploading files.">
+            <mt:unless dialog><a href="<mt:var script_url>?__mode=list_asset&amp;blog_id=<mt:var blog_id>"><__trans phrase="Assets manage click here."></a></mt:unless>
+		</mtapp:statusmsg>
+	</mt:if>
+</mt:if>
+
+<iframe name="js_upload" style="display:none;"></iframe>
+
+<form id="setting_form">
+    <input type="hidden" name="__mode" value="file_save" />
+	<input type="hidden" name="__ajax" value="1" />
+    <input type="hidden" name="blog_id" value="<mt:var name="blog_id">" />
+    <input type="hidden" name="entry_id" value="<mt:var name="entry_id">" />
+    <input type="hidden" name="middle_path" value="<mt:var name="middle_path" escape="html">" />
+    <input type="hidden" name="entry_insert" value="<mt:var name="entry_insert" escape="html">" />
+    <input type="hidden" name="asset_select" value="<mt:var name="asset_select" escape="html">" />
+    <input type="hidden" name="edit_field" value="<mt:var name="edit_field" escape="html">" />
+    <input type="hidden" name="require_type" value="<mt:var name="require_type" escape="html">" />
+    <input type="hidden" name="magic_token" value="<mt:var name="magic_token">" />
+<mt:if name="no_insert">
+    <input type="hidden" name="no_insert" value="<mt:var name="no_insert">" />
+</mt:if>
+<mt:if name="user_id">
+    <input type="hidden" name="user_id" value="<mt:var name="user_id" escape="html">" />
+</mt:if>
+<mt:if name="dialog">
+    <input type="hidden" name="dialog" value="<mt:var name="dialog">" />
+</mt:if>
+
+    <mtapp:setting
+        label_class="top-label"
+        id="file"
+        label="<__trans phrase="Please select a file to upload.">">
+<ul id="files"><!-- ここにアップロードされるファイル名の一覧が表示されます --></ul>
+<mt:unless disable_swf>
+<div id="upload_btn">
+    <span id="spanButtonPlaceHolder"></span><br /><br />
+    <small><a href="#" onclick="changeNoSwfMode();return false;"><__trans phrase="Click me if you can't use Shockwave Flash"></a></small>
+</div>
+</mt:unless>
+<div id="upload_js"><!-- ここにファイル選択入力が出現します --></div>
+	</mtapp:setting>
+
+    <mt:if name="enable_destination">
+        <mt:setvarblock name="upload_hint">
+            <__trans phrase="_USAGE_UPLOAD" params="<$mt:var name="blog_name" escape="html"$>">
+        </mt:setvarblock>
+        <mtapp:setting
+            id="site_path"
+            label_class="top-label"
+            label="<__trans phrase="Upload Destination">"
+            hint="<$mt:var name="upload_hint"$>"
+            show_hint="1">
+            <mt:var name="object_type" value="page">
+            <script type="text/javascript" src="<$mt:var name="static_uri"$>js/tc/client.js?v=<mt:var name="mt_version_id" escape="url">"></script>
+            <script type="text/javascript">
+                /* <![CDATA[ */
+                    MT.App.selectedCategoryList = [];
+                    MT.App.objectType = '<mt:var name="object_type" escape="js">';
+
+                    App.singletonConstructor =
+                    MT.App = new Class( MT.App, {
+                        
+                        initComponents: function() {
+                            arguments.callee.applySuper( this, arguments );
+
+                            this.categorySelector = this.addComponent( new this.constructor.CategorySelector( "folder-selector", "categorySelectorList" ) );
+                            var cats = MT.App.categoryList;
+                            if ( cats ) {
+                                /* cache all the categories */
+                                this.catCache = new Cache( cats.length + 50 );
+                                for ( var i = 0; i < cats.length; i++ )
+                                    this.catCache.setItem( 'cat:'+cats[ i ].id, cats[ i ] );
+                            }
+
+                            this.catList = { redraw: this.getIndirectMethod( "redrawFolderList" ) };
+                            /* we don't need the modal mask here */
+                            this.modalMask = { element: DOM.getElement( "folder-selector" ), show: Function.stub, hide: Function.stub };
+                            this.form = DOM.getElement( "upload-form" );
+                        },
+
+
+                        redrawFolderList: function() {
+                            var item = this.catCache.getItem( "cat:" + MT.App.selectedCategoryList );
+                            var path = [];
+                            var cat;
+                            for ( var i = 1, len = item.path.length; i < len; i++ ) {
+                                cat = this.catCache.getItem( "cat:" + item.path[ i ] );
+                                if ( cat ) 
+                                    path.push( cat.basename );
+                            }
+                            path.push( item.basename );
+                            /* no leading slash */
+                            path[ 0 ] = path[ 0 ].replace( /^\//, '' );
+                            DOM.getElement( "extra_path" ).value = path.join( '' );
+                        },
+
+
+                        eventClick: function( event ) {
+                            var command = this.getMouseEventCommand( event );
+                            switch( command ) {
+
+                                case "openFolderSelector":
+                                    this.categorySelector.open( event.commandElement );
+                                    break;
+                                
+                            }
+                            return arguments.callee.applySuper( this, arguments );
+                        }
+                        
+                    } );
+                /* ]]> */
+            </script>
+
+            <select name="site_path" id="site_path" onchange="setExtraPath(this)">
+                <option value="1">&#60;<__trans phrase="Site Root">&#62;</option>
+            <mt:if name="enable_archive_paths">
+                <option value="0"<mt:if name="archive_path"> selected="selected"</mt:if>>&#60;<__trans phrase="Archive Root">&#62;</option>
+            </mt:if>
+            <mt:if name="extra_paths">
+                <mt:loop name="extra_paths">
+                <option value="<mt:if name="enable_archive_paths">0<mt:else>1</mt:if>" middle_path="<mt:var name="path" escape="html">"<mt:if name="selected"> selected="selected"</mt:if>><mt:var name="label" escape="html"></option>
+                </mt:loop>
+            </mt:if>
+            </select>
+            / <input type="text" name="extra_path" id="extra_path" class="extra-path" value="<mt:var name="extra_path" escape="html">" />
+            &nbsp;<a href="javascript:void(0);" mt:command="open-folder-selector"><__trans phrase="Choose Folder"></a>
+        </mtapp:setting>
+    </mt:if>
+
+    <mt:if name="enable_destination">
+        <mt:var name="container_type" value="folder">
+        <mt:include name="include/category_selector.tmpl">
+    </mt:if>
+
+    <mtapp:setting
+        label_class="top-label"
+        id="overwrite"
+        label="<__trans phrase="overwrite">"
+    >
+<select id="overwrite" name="overwrite">
+  <option value="1" selected="selected" ><__trans phrase="overwrite_yes"></option>
+  <option value="0"><__trans phrase="Skip the file"></option>
+</select>
+    </mtapp:setting>
+
+    <mtapp:setting
+        id="size"
+        label_class="top-label"
+        label="<__trans phrase="Please input size">"
+        hint=""
+        show_hint="0">
+<select id="resize" name="resize">
+  <option value="width"><__trans phrase="width"></option>
+  <option value="height"><__trans phrase="height"></option>
+  <!--option value="ratio"><__trans phrase="resize"></option-->
+</select>
+<input type="text" <mt:unless name="mfu_limit_as_fixed_value">name="size" id="size"</mt:unless> style="width:5.5em;" <mt:if name='mfu_use_limit_value'>value="<mt:getvar name='mfu_limitation_size'>"</mt:if> <mt:if name="mfu_limit_as_fixed_value">disabled="disabled" class="disabled" </mt:if>/> <__trans phrase="pixel">
+  
+  <mt:if name="mfu_limit_as_fixed_value">
+  <input type="hidden" name="size" id="size" value="<mt:getvar name='mfu_limitation_size'>" />
+  </mt:if>
+
+
+    </mtapp:setting>
+
+    <mtapp:setting
+        id="file_tag"
+        label_class="top-label"
+        label="<__trans phrase="Please input tag">"
+        hint=""
+        show_hint="0">
+        <input type="text" name="file_tag" id="file_tag">
+    </mtapp:setting>
+
+	<div class="actions-bar">
+        <button
+           accesskey="s"
+           onclick="onClickUpload(); return false;"
+           title="<__trans phrase="Upload (s)">"
+           class="upload action primary-button"
+           ><__trans phrase="Upload"></button>
+    <mt:if name="dialog">
+        <button
+           accesskey="x"
+           class="cancel action my-close"
+           title="<__trans phrase="Close (x)">"
+		><__trans phrase="Close"></button>
+    </mt:if>
+    </div>
+</form>
+</mt:if>
+
+<script type="text/javascript">
+jQuery('button.my-close').click(function () {
+<mt:if saved>
+    var iframe = parent.jQuery('#asset_navi');
+    iframe.length && iframe.attr('src', '<mt:var script_uri>?__mode=asset_navi&blog_id=<mt:var blog_id>&id=<mt:var entry_id>&_type=entry&bid=0');
+</mt:if>
+    parent.jQuery.fn.mtDialog.close();
+});
+</script>
+
+<mt:if name="dialog">
+	<mt:include name="dialog/footer.tmpl">
+<mt:else>
+	<mt:include name="include/footer.tmpl">
+</mt:if>

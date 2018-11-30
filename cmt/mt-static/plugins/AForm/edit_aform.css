@@ -1,0 +1,491 @@
+/*  Copyright (c) 2008 ARK-Web Co.,Ltd. */
+
+
+/* ============== common elements ============== */
+
+input[type=checkbox],
+input[type=radio]{
+	margin-right:5px;
+	vertical-align:middle;
+}
+.notice li{
+	margin-left: 1em;
+	text-indent: -1em;
+}
+
+fieldset{
+	clear:both;
+}
+.clear{
+	clear:both;
+}
+.listing-filter{
+	display:none;
+}
+span.aform-field-value-label{
+	margin-right:1em;
+}
+
+#entry-nav{
+	margin-bottom: 5px;
+	overflow:hidden;
+	zoom:1;
+}
+#entry-nav ul li{
+	float:left;
+	margin-left:1em;
+}
+
+#aform-field-editor-header{
+	margin-bottom:15px;
+	border-bottom:2px solid #fff;
+}
+#aform-field-editor-header ul{
+	margin-bottom:0;
+}
+#aform-field-editor-header .ui-tabs-nav li{
+	font-size:110%;
+}
+#aform-field-editor-header ul li.selected-tab{
+	font-weight:bold;
+}
+
+/* ============== edit_aform_field ============== */
+
+#field-edit-field{
+	margin-top:-17px;
+	min-height:100px;
+	-moz-border-radius-bottomleft:5px;
+	-moz-border-radius-bottomright:5px;
+	-webkit-border-bottom-left-radius:5px;
+	-webkit-border-bottom-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	border-right:1px solid #C8C2BE;
+	border-left:1px solid #C8C2BE;
+	border-bottom:1px solid #C8C2BE;
+}
+
+.aform-field-block-active {
+    clear: both;
+    background: #ecf19d;
+    margin: 0px 0 30px 0;
+    padding: 10px;
+    border:1px solid #fff;
+	zoom:1;
+}
+
+.aform-field-block {
+    clear: both;
+    background: #eeeeee;
+    margin: 0px 0 30px 0;
+    padding: 10px;
+    border:1px solid #e0e0e0;
+	zoom:1;
+}
+
+.aform-field-necessary {
+    margin: 10px;
+}
+
+.aform-field-copy {
+    margin: 10px;
+}
+
+.aform-field-delete {
+    margin: 10px;
+}
+
+.aform-field-move-up {
+    margin: 10px;
+}
+
+.aform-field-move-down {
+    margin: 10px;
+}
+
+.aform-field-edit-value-label {
+    margin: 5px;
+}
+
+.aform-field-delete-value {
+    margin: 5px;
+}
+
+.field-edit-field {
+	padding:35px;
+/*	background-color:#EFF5DB;*/
+	background-color:#fff;
+}
+
+#aform-field-editor{
+	margin-bottom: 15px;
+	overflow:hidden;
+	zoom:1;
+}
+
+#aform-config-form fieldset{
+/*	border:1px solid #C1C790;*/
+}
+
+/* ============== list_aform ============== */
+
+/* create_aform */
+
+#create_aform_body #container,
+#create_aform_body #container #content{
+	height: auto;
+}
+#create_aform_body .actions-bar{
+	height: auto;
+	position: relative;
+}
+#create_aform_body #container fieldset{
+	margin-bottom:0;
+}
+
+/* ============== edit_aform_field ============== */
+
+.aform-field-block{
+/*	background: #eee url(images/24-tool-a.png) 99% 5px no-repeat;
+	background: #eee url(../../images/action-bullet.gif) 99% 5px no-repeat;*/
+	background: #eee;
+}
+.aform-field-block:after,
+.aform-field-block-active:after{
+	clear:both;
+	content:".";
+	display:block;
+	font-size:1px;
+	height:1px;
+	line-height:1px;
+	margin-top:-1px;
+}
+
+#field-edit-field ul li{
+	margin:0 10px 0 0;
+	padding:0;
+	float:left;
+}
+#field-edit-field ul.labelEdit{
+	margin-bottom:0.5em;
+	float: left;
+	width: 55%;
+}
+#field-edit-field ul.labelEdit li.aform-field-label{
+	padding-left: 15px;
+	background: url(images/icons/arrow_vertical.gif) 0 0.3em no-repeat;
+}
+
+#field-edit-field ul.blockEdit{
+	float:right;
+	width: auto;
+}
+#field-edit-field ul.blockInputExample{
+	clear:both;
+	width:100%;
+	overflow:auto;
+}
+#field-edit-field p{
+	margin:0.5em 0;
+	float:none;
+	clear:both;
+}
+#field-edit-field a{
+	background-repeat: no-repeat;
+}
+
+
+/* labelEdit */
+ul.labelEdit li a{
+	display:block;
+	white-space:nowrap;
+	line-break:break-all;
+}
+li.aform-field-label{
+	font-weight: bold;
+	float:none;
+	display:block;
+}
+li.aform-field-edit-label a{
+/*	background-image: url(images/icons/tag.gif);*/
+}
+
+li.aform-field-necessary a{
+	color: #fff !important;
+	padding: 0 2px;
+	background:#900;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+li.aform-field-necessary a:hover{
+	background:#600;
+}
+li.aform-field-not-necessary a{
+	color: #fff !important;
+	padding: 0 2px;
+	background:#999;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+li.aform-field-not-necessary a:hover{
+	background:#666;
+}
+li.aform-field-necessary-fix a{
+	color: #fff !important;
+	padding: 0 14px 0 2px;
+	background:#900 url(images/icons/lock_y.gif) 98% 50%;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+li.aform-field-necessary-fix a:hover{
+	background-color:#600;
+}
+
+span.aform-field-add-value a{
+	padding-left:15px;
+	background: url(images/icons/plus.gif) 0 30%;
+}
+
+.blockMaxLength input.aform-field-edit-max-length-text{
+	width: 5em;
+}
+label.aform-field-email-is-replyed{
+	margin-top:5px;
+	margin-left:2px;
+	display:block;
+}
+
+
+/* blockEdit */
+
+.blockEdit ul li{
+	white-space:nowrap;
+	margin:0 0 0 0.8em;
+}
+#field-edit-field li.aform-field-copy a{
+	padding-left: 12px;
+	background: url(images/icons/copy.gif) no-repeat;
+}
+#field-edit-field li.aform-field-move-up a{
+	padding-left: 12px;
+	background: url(images/icons/arrow_fat_up.gif) no-repeat;
+}
+#field-edit-field li.aform-field-move-down a{
+	padding-left: 12px;
+	background: url(images/icons/arrow_fat_down.gif) no-repeat;
+}
+#field-edit-field li.aform-field-delete a{
+	padding-left: 12px;
+	background: url(images/icons/trash.gif) no-repeat;
+}
+p.aform-field-privacy-link{
+	margin-top: -1.2em;
+	margin-left: 9em;
+}
+span.aform-field-edit-privacy-link img{
+	vertical-align: middle;
+	margin-right: 3px;
+}
+
+span.aform-field-input-example-not-display{
+	color: #fff !important;
+	padding: 0 2px;
+	background:#999;
+}
+
+li.aform-field-type{
+/*	padding-left: 15px;
+	background:url(images/arrow_left.gif) 0 0 no-repeat;*/
+}
+
+li.aform-field-type a{
+	padding-left: 15px;
+	background-position: 0 0.3em;
+	background-repeat: no-repeat;
+}
+li.aform-field-type a:hover{
+	background:url(images/arrow_left.gif) -3px 0 no-repeat !important;
+}
+
+
+
+/* widget common */
+li#aformFieldType-email a{
+	background-image: url(images/icons/mail_back.gif);
+}
+li#aformFieldType-tel a{
+	background-image: url(images/icons/mobile.gif);
+}
+li#aformFieldType-url a{
+	background-image: url(images/icons/field_url.gif);
+}
+li#aformFieldType-zipcode a{
+	background-image: url(images/icons/field_zipcode.gif);
+}
+li#aformFieldType-prefecture a{
+	background-image: url(images/icons/field_pref.gif);
+}
+li#aformFieldType-privacy a{
+	background-image: url(images/icons/person.gif);
+}
+
+/* widget basic */
+
+li#aformFieldType-label a{
+	background-image: url(images/icons/heading2.gif);
+}
+li#aformFieldType-note a{
+	background-image: url(images/icons/note.gif);
+}
+li#aformFieldType-text a{
+	background-image: url(images/icons/field_text.gif);
+}
+li#aformFieldType-textarea a{
+	background-image: url(images/icons/field_textarea.gif);
+}
+li#aformFieldType-select a{
+	background-image: url(images/icons/pulldown.gif);
+}
+li#aformFieldType-checkbox a{
+	background-image: url(images/icons/checkbox.gif);
+}
+li#aformFieldType-radio a{
+	background-image: url(images/icons/radio.gif);
+}
+li#aformFieldType-upload a{
+	background-image: url(images/icons/up_box.gif);
+}
+li#aformFieldType-parameter a{
+	background-image: url(images/icons/var.gif);
+}
+
+
+
+/* list_aform window */
+
+.dialog-screen #content-header{
+	float:left; /*temporary*/
+}
+.dialog-screen #content{
+	margin: 10px 15px;
+}
+
+.aform-date-picker {
+  height: 15px;
+  margin: 0 10px 0 5px;
+  width: 15px;
+}
+
+.dialog #container {
+  height: auto;
+}
+
+.dialog #content {
+  height: auto;
+}
+
+.dialog .actions-bar {
+  position: static;
+}
+
+.system .calendar-month a{
+	color:#fff;
+}
+
+html>/**/body#edit-aform textarea.full-width{
+	width /*\**/: 760px\9;	/* for IE8 */
+}
+
+input.aform-field-edit-input-example-text, 
+input.aform-field-edit-label-text,
+input.aform-field-edit-dropdown-option-label-text,
+input.aform-field-edit-value-label-text,
+input.aform-field-edit-upload-type-text,
+input.aform-field-edit-upload-size-text,
+input.aform-field-edit-parameter-name-text {
+  width: 200px;
+}
+
+/* ============== manage_aform_data ============== */
+
+#aform_data-listing .actions-bar {
+	padding:8px 0;
+}
+#aform_data-listing .actions-bar-bottom {
+	margin-top:0;
+}
+
+/* display-window */
+
+#dialog #disp_aform_data_body #content{
+	padding-bottom:0;
+}
+#dialog #disp_aform_data_body .listing{
+	margin-bottom:0;
+}
+#dialog #disp_aform_data_body .actions-bar{
+	margin:0 auto;
+	width:95%;
+	height:1.5em;
+	padding:8px 0;
+	position:relative;
+	}
+#disp_aform_data_body .actions-bar span{
+	font-weight:bold;
+	}
+#disp_aform_data_body .actions-bar em{
+	display:block;
+	visibility:hidden;
+	width:12px;
+	height:12px;
+	overflow:hidden;
+	}
+#dialog #disp_aform_data_body .settings-actions-bar{
+	margin-top:35px;
+	margin-bottom:0.75em;
+}
+
+
+/* ============== list_aform_input_error ============== */
+
+#aform_input_error-listing .actions-bar {
+	padding:13px 0;
+}
+#aform_input_error-listing .actions-bar-bottom {
+	margin-top:0;
+}
+table.access-summary{
+	float: left;
+	width:30%;
+	border-top:1px solid #ccc;
+	margin: 3px 30px 15px 3px;
+}
+table.access-summary td,table.access-summary th{
+	padding: 7px 10px;
+}
+table.access-summary th{
+	font-size:100%;
+	font-weight:normal;
+	width:50%;
+	background: none;
+}
+html*table.access-summary{/* for IE */
+	border-collapse:collapse;
+}
+html*table.access-summary tr.odd th{/* for IE */
+	background: #F8FBF8;
+}
+table.access-summary td{
+	text-align:right;
+}
+table.access-summary tr.last-child th{
+	border-bottom:none;
+}
+
+table.aform_input_error-listing-table{
+	width: 100%;
+}
+table.aform_input_error-listing-table th#bt-date{
+	width: 9em;
+}

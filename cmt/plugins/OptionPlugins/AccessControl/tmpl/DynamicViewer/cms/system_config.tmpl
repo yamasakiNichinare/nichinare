@@ -1,0 +1,17 @@
+<mtapp:setting
+  id="platform"
+  label="<__trans phrase="Web Server">">
+    <input name="platform" id="platform" value="1" <mt:if name="platform">checked="checked"</mt:if> type="checkbox" />&nbsp;<__trans phrase="IIS">
+    <p class="hint">
+		<__trans phrase='"URL Rewrite Module 1.1 for IIS" switch to using the rewrite capability.'>
+    </p>
+</mtapp:setting>
+
+<mtapp:setting
+  id="fastcgi_mode"
+  label="<__trans phrase="FastCGI">">
+    <input name="fastcgi_mode" id="fastcgi_mode" value="1" <mt:if name="fastcgi_mode">checked="checked"</mt:if> type="checkbox" />&nbsp;<__trans phrase="On">
+    <p class="hint">
+        <__trans phrase="CGI extension fcgi output change. IIS FastCGI is not compatible with the environment.">
+    </p>
+</mtapp:setting>

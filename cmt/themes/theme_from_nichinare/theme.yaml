@@ -1,0 +1,108 @@
+--- 
+author_link: ''
+class: website
+description: ''
+elements: 
+  blog_static_files: 
+    component: ~
+    data: 
+      - about
+      - application
+      - common
+      - company
+      - contact
+      - course
+      - css
+      - faq
+      - fla-img
+      - free
+      - images
+      - lesson
+      - link
+      - media
+      - news
+      - privacy
+      - request
+      - sitemap
+    importer: blog_static_files
+  custom_fields: 
+    component: commercial
+    data: 
+      titleimg: 
+        default: ''
+        description: ページタイトル画像の指定
+        name: ページタイトル画像
+        obj_type: page
+        options: ~
+        required: 1
+        tag: TitleImg
+        type: image
+    importer: custom_fields
+  default_folders: 
+    component: ~
+    data: 
+      company: 
+        label: company
+      contact: 
+        label: contact
+      faq: 
+        label: faq
+      link: 
+        label: link
+      media: 
+        label: media
+      privacy: 
+        label: privacy
+      sitemap: 
+        label: sitemap
+    importer: default_folders
+  template_set: 
+    component: ~
+    data: 
+      base_path: templates
+      label: exported_template set
+      templates: 
+        index: 
+          feed_recent: 
+            label: 最新記事のフィード
+            outfile: atom.xml
+            rebuild_me: 1
+          javascript: 
+            label: JavaScript
+            outfile: mt.js
+            rebuild_me: 1
+          main_index: 
+            label: メインページ
+            outfile: index.html
+            rebuild_me: 1
+        module: 
+          template_305: 
+            label: 外部ファイル読み込み
+          template_618: 
+            label: 下層ページ　外部読み込み
+        page: 
+          template_619: 
+            label: ウェブページ
+            mappings: 
+              page: 
+                archive_type: Page
+                file_template: "%c/%f"
+                preferred: 1
+        system: 
+          comment_listing: 
+            label: コメント一覧
+          comment_preview: 
+            label: コメントプレビュー
+          comment_response: 
+            label: コメント完了
+          dynamic_error: 
+            label: ダイナミックパブリッシングエラー
+          popup_image: 
+            label: ポップアップ画像
+          search_results: 
+            label: 検索結果
+    importer: template_set
+id: theme_from_nichinare
+label: 日ナレのテーマ
+name: 日ナレのテーマ
+version: 1.0

@@ -1,0 +1,20 @@
+#!/usr/bin/perl
+
+## DynamicViewer for MovableType5 (C) 2010 Skyarc System, Ltd. All Rights Reserved.
+##  
+use strict;
+use lib '%%MT_PATH%%/lib';
+use lib '%%MT_PATH%%/extlib';
+use lib '%%PLUGIN_PATH%%/lib';
+
+BEGIN {
+ $ENV{MT_HOME} ||= '%%MT_PATH%%/';
+ require DynamicViewer::Bootstrap; 
+ DynamicViewer::Bootstrap->import( 
+     App => 'DynamicViewer::App',
+%%SITE_INFO%%
+%%GROUP_BLOGS%%
+%%MIME_TYPES%%
+%%DIRECTORY_INDEXES%%
+ );
+}

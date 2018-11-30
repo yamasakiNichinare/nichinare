@@ -1,0 +1,89 @@
+<?php
+  // UA
+  $UA_ACCOUNT = "MO-26631444-2";
+$UA_PIXEL = "/ua.php";
+
+  function googleAnalyticsImageUrl() {
+    global $UA_ACCOUNT, $UA_PIXEL;
+    $url = "";
+    $url .= $UA_PIXEL . "?";
+    $url .= "utmac=" . $UA_ACCOUNT;
+    $url .= "&utmn=" . rand(0, 0x7fffffff);
+
+    $referer = $_SERVER["HTTP_REFERER"];
+    $query = $_SERVER["QUERY_STRING"];
+    $path = $_SERVER["REQUEST_URI"];
+
+    if (empty($referer)) {
+      $referer = "-";
+    }
+    $url .= "&utmr=" . urlencode($referer);
+
+    if (!empty($path)) {
+      $url .= "&utmp=" . urlencode($path);
+    }
+
+    $url .= "&guid=ON";
+
+    return $url;
+  }
+
+  // リクエストクエリー文字列取得
+  function setQueryString($redirectURL) {
+    $queryArray = array();
+    $queryStringArray = array();
+    if($_SERVER['REQUEST_METHOD'] == 'POST') {
+      $queryArray = $_POST;
+    } else {
+      $queryArray = $_GET;
+    }
+    foreach($queryArray as $key => $value) {
+      $keyChecked = stripslashes(htmlspecialchars($key, ENT_QUOTES));
+      $valueChecked = stripslashes(htmlspecialchars($value, ENT_QUOTES));
+      $queryStringArray[] = $keyChecked.'='.$valueChecked;
+    }
+    $queryString = implode('&', $queryStringArray);
+    if(strlen($queryString) > 0) {
+      $linkTag = '<a href="'.$redirectURL.'?'.$queryString.'">';
+    } else {
+      $linkTag = '<a href="'.$redirectURL.'">';
+    }
+    return $linkTag;
+  }
+?>
+
+<MTKeitaiKit ixhtml="1" xml_declaration="1" doctype="1">
+<html>
+<head>
+<title>声優・ﾅﾚーﾀーなら 日本ﾅﾚーｼｮﾝ演技研究所</title>
+<MTKeitaiBlock class="meta"></MTKeitaiBlock>
+</head>
+
+<MTKeitaiBlock class="Body">
+<MTKeitaiBlock class="TitleMain"></MTKeitaiBlock>
+<div style="background:#6cbd85; text-align:center;"><img src="/m/news/img/news_tit.jpg" width="240" height="20" alt="最新情報" /></div>
+
+<div style="text-align:left;">
+<table border="0" cellpadding="0" cellspacing="0" style="margin-top:5px;">
+<mt:Entries>
+<tr>
+<td valign="top" style="font-size:x-small; width:10px;"><span style="color:#98d1a9;">■</span></td>
+<td valign="top" style="font-size:x-small; text-align:left;">
+<mtifnonempty tag="urldata">
+<?php print setQueryString('<mt:urldata>'); ?><$mt:EntryTitle$></a>
+<mtelse>
+<?php print setQueryString('<mt:EntryPermalink>'); ?><$mt:EntryTitle$></a>
+</mtelse>  
+</mtifnonempty>
+</td>
+</tr>
+</mt:Entries>
+</table>
+
+<$mt:widgetset name="月別メニュー"$>
+</div>
+
+<MTKeitaiBlock class="FooterArchive"></MTKeitaiBlock>
+</MTKeitaiBlock>
+</html>
+</MTKeitaiKit>

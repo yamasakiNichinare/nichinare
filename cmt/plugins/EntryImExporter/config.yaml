@@ -1,0 +1,44 @@
+name: EntryImExporter
+id: EntryImExporter
+key: EntryImExporter
+author_link: http://www.skyarc.co.jp/
+author_name: SKYARC System Co., Ltd.
+doc_link: http://www.skyarc.co.jp/engineerblog/entry/entryimexporter.html
+description: <MT_TRANS phrase="Export all entries of blog(s) to CSV file format. And import entries from exported CSV data.">
+version: 1.41
+l10n_class: EntryImExporter::L10N
+
+settings:
+    entry_im_exporter_use_sjis_export:
+        Default: 1
+    entry_im_exporter_use_sjis_import:
+        Default: 1
+
+applications:
+    cms:
+        methods:
+            disp_entry_importer: $EntryImExporter::EntryImExporter::CMS::disp_entry
+            disp_page_importer: $EntryImExporter::EntryImExporter::CMS::disp_page
+            run_entry_exporter: $EntryImExporter::EntryImExporter::CMS::csv_export
+            run_entry_importer: $EntryImExporter::EntryImExporter::CMS::csv_import
+
+        menus:
+            entry:entry_im_exporter_entry:
+                label: Entry management
+                order: 720
+                mode: disp_entry_importer
+                condition: $EntryImExporter::EntryImExporter::CMS::_permission_check
+                view:
+                  - system
+                  - blog
+                  - website
+
+            page:entry_im_exporter_page:
+                label: Page management
+                order: 720
+                mode: disp_page_importer
+                condition: $EntryImExporter::EntryImExporter::CMS::_permission_check
+                view:
+                  - system
+                  - blog
+                  - website

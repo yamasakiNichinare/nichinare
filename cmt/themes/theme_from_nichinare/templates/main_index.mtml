@@ -1,0 +1,74 @@
+<$mt:Include module="DOCTYPE"$>
+<title>声優・ナレーターなら　日本ナレーション演技研究所</title>
+<link rel="stylesheet" type="text/css" href="common/css/lightbox.css" media="screen" />
+<$mt:Include module="外部ファイル読み込み"$>
+
+<body>
+<a name="pagetop" id="pagetop"></a>
+<div id="wrapper">
+<$mt:Include module="ヘッダー"$>
+<!-- Flash -->
+<div class="flash_area">
+<div id="ad_spac">
+<p><img src="images/flash_img.jpg" width="937" height="340" alt="" /></p>
+<script type="text/javascript"> var so = new SWFObject("index.swf", "ad_space", "937", "340", "9", "#ffffff"); so.addParam("wmode", "transparent"); so.write("ad_spac"); </script></div>
+</div>
+<!-- Flash End -->
+<!-- Top Main -->
+<div class="top_main">
+<div class="left_contents">
+<div class="column">
+<ul class="menu01 roll">
+<li><a href="course/index.html"><img src="images/top_menu01.jpg" width="182" height="60" alt="週1回クラス" /></a></li>
+<li><a href="course/threedays.html"><img src="images/top_menu02.jpg" width="182" height="60" alt="週3回クラス" /></a></li>
+<li><a href="course/jr.html"><img src="images/top_menu03.jpg" width="182" height="60" alt="ジュニア声優クラス" /></a></li>
+</ul>
+<ul class="menu02 roll">
+<li><a href="course/narrater.html"><img src="images/top_menu04.gif" width="182" height="29" alt="ナレーターセミナー" /></a></li>
+<li><a href="course/starting.html"><img src="images/top_menu05.gif" width="182" height="29" alt="声優スターティングセミナー" /></a></li>
+</ul>
+</div>
+<div class="column">
+<p class="bt_news"><a href="news/index.html"><img src="images/bt_news.gif" width="73" height="19" alt="一覧はこちら" /></a></p>
+<mt:SetVarBlock name="today"><$mt:Date format="%Y%j"%></mt:SetVarBlock>
+<dl class="normal">
+<dt>最新情報</dt>
+<mt:Entries lastn="5" blog_ids="3">
+<dd>
+<dl>
+<dt><$mt:EntryDate format="%x"$></dt>
+<dd><a href="<mt:EntryPermalink archive_type="Individual">"><$mt:EntryTitle$></a><mt:SetVarBlock name="passed"><$mt:EntryDate format="%Y%j"%></mt:SetVarBlock>
+<mt:SetVar name="passed" value="$today" op="sub"><mt:If name="passed" ge="-1"><img src="common/images/icon_new.gif" width="39" height="14" alt="NEW!" />
+</mt:If><mt:If name="passed" ge="-640"><mt:If name="passed" le="-635"><img src="common/images/icon_new.gif" width="39" height="14" alt="NEW!" />
+</mt:If></mt:If></dd>
+</dl>
+</dd>
+</mt:Entries>
+</dl>
+<ul class="bnr_list roll">
+<li><a href="request/index.html"><img src="images/top_bnr01.jpg" width="182" height="60" alt="資料請求" /></a></li>
+<li><a href="free/index.html"><img src="images/top_bnr02.jpg" width="182" height="45" alt="無料体験レッスン" /></a></li>
+<li><a href="about/lecturer.html"><img src="images/top_bnr03.jpg" width="182" height="45" alt="講師一覧" /></a></li>
+<li><a href="common/images/hpqr_l.jpg" rel="lightbox"><img src="images/top_bnr04.gif" width="183" height="57" alt="モバイルサイトのご案内" /></a></li>
+</ul>
+</div>
+</div>
+<div class="right_contents">
+<div class="column">
+<p class="roll"><a href="about/native.html"><img src="images/top_bnr05.jpg" width="170" height="60" alt="主な出身者" /></a></p>
+<dl class="roll">
+<dt>グループプロダクション</dt>
+<dd><a href="http://www.artsvision.co.jp/" target="_blank"><img src="images/top_group01.gif" width="157" height="31" alt="株式会社アーツビジョン" /></a></dd>
+<dd><a href="http://www.imenterprise.jp/" target="_blank"><img src="images/top_group02.gif" width="157" height="31" alt="株式会社アイムエンタープライズ" /></a></dd>
+<dd><a href="http://www.crazy-box.co.jp/" target="_blank"><img src="images/top_group03.gif" width="157" height="31" alt="株式会社クレイジーボックス" /></a></dd>
+<dd><a href="http://www.vims.co.jp/" target="_blank"><img src="images/top_group04.gif" width="157" height="31" alt="株式会社ヴィムス" /></a></dd>
+<dd><a href="http://www1a.biglobe.ne.jp/mio/" target="_blank"><img src="images/top_group05.gif" width="157" height="31" alt="澪クリエーション" /></a></dd>
+</dl>
+</div>
+</div>
+</div>
+<!-- Top Main End -->
+<$mt:Include module="フッター"$>
+</div>
+</body>
+</html>

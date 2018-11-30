@@ -1,0 +1,35 @@
+<mtapp:widget id="recent_submissions" class="recent-submissions-widget" label="<__trans phrase="Recent Submissions">" can_close="1">
+    <mt:if var="has_submitted_entries">
+        <MTEntries>
+            <div id="submitted-entry-<$MTEntryID$>" class="entry entry-<mt:if name="__odd__">odd<mt:else>even</mt:if> entry-status-<MTEntryStatus lower_case="1">">
+                <div class="entry-inner">
+                    <div class="entry-title">
+                        <h4><a href="<$mt:var name="script_url"$>?__mode=view&amp;_type=entry&amp;id=<$MTEntryID$>&amp;blog_id=<$MTBlogID$>"><MTIfNonEmpty tag="MTEntryTitle"><$MTEntryTitle escape="html"$><MTElse><__trans phrase="..."></MTIfNonEmpty></a></h4>
+                    </div>
+                    <div class="entry-content">
+                        <p><$MTEntryExcerpt$></p>
+                    </div>
+                    <div class="entry-meta">
+                    <MTIfNonEmpty tag="MTEntryAuthorDisplayName">
+                        <mt:setvarblock name="entry_author"><$MTEntryAuthorLink show_email="0"$></mt:setvarblock>
+                    <MTElse>
+                        <mt:setvarblock name="entry_author"><$MTEntryAuthorUsername escape="html"$></mt:setvarblock>
+                    </MTIfNonEmpty>
+                    <MTIfNonEmpty tag="EntryCategory">
+                        <__trans phrase="Posted by [_1] [_2] in [_3]" params="<$mt:var name="entry_author"$>%%<$MTEntryDate relative="1"$>%%<MTEntryCategories glue=", "><a href="<mt:var name="script_url">?__mode=list_entry&amp;blog_id=<$MTBlogID$>&amp;filter=category_id&amp;filter_val=<$MTCategoryID$>"><$MTCategoryLabel escape="html"$></a></MTEntryCategories>">
+                    <MTElse>
+                        <__trans phrase="Posted by [_1] [_2]" params="<$mt:var name="entry_author"$>%%<$MTEntryDate relative="1"$>">
+                    </MTIfNonEmpty>
+                    <MTEntryIfTagged>
+                        <__trans phrase="Tagged: [_1]" params="<MTEntryTags glue=", "><a href="<mt:var name="script_url">?__mode=list_entries<MTIfNonEmpty tag="MTBlogID">&amp;blog_id=<$MTBlogID$></MTIfNonEmpty>&amp;filter=exacttag&amp;filter_val=<$MTTagName escape="url"$>" rel="tag"><$MTTagName escape="html"$></a></MTEntryTags>">
+                    </MTEntryIfTagged>
+                    </div>
+                </div>
+            </div>
+        <MTElse>
+            <p class="zero-state"><__trans phrase="No entries available."></p>
+        </MTEntries>
+    <mt:else>
+        <p class="zero-state"><__trans phrase="No entries available."></p>
+    </mt:if>
+</mtapp:widget>

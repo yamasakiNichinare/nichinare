@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <system.webServer>
+        %%HANDLERS_START%%
+        <handlers accessPolicy="Read, Script">
+            <add name="CGI-perl" path="*.cgi" verb="*" modules="CgiModule" scriptProcessor="C:\usr\bin\perl.exe &quot;%s&quot; %s" resourceType="Unspecified" />
+        </handlers>
+%%HANDLERS_END%%
+        <rewrite>
+            <rules>
+                %%REMOVE_RULE%%
+                <rule name="AccessControl-DynamicViewer-BLOG%%BLOGID%%" stopProcessing="true">
+                    <match url="^(.*)(\?.*)?$" ignoreCase="false" />
+                    <conditions logicalGrouping="MatchAll">
+                        %%EXCLUDE_JS%%
+                        %%EXCLUDE_CSS%%
+                        %%EXCLUDE_PATH_LIST%%
+                        <add input="{REQUEST_FILENAME}" negate="true" pattern="^%%SITE_PATH%%\\%%PLUGIN_NAME%%(\?.*)?$" ignoreCase="false" />
+                    </conditions>
+                    <action type="Rewrite" url="%%RELATIVE_SITE_URL%%%%PLUGIN_NAME%%" appendQueryString="true" />
+                </rule>
+            </rules>
+        </rewrite>
+    </system.webServer>
+</configuration>

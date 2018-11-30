@@ -1,0 +1,93 @@
+<mt:Ignore>Copyright (c) 2008 ARK-Web Co.,Ltd.</mt:Ignore>
+
+<div>
+  <h3><__trans phrase="Alert Report Setting"></h3>
+
+	<div class="field field-left-label">
+	  <div class="field-header first-child">
+	    <label><__trans phrase="Report by access to some form Title"></label>
+	  </div>
+	  <div class="field-content last-child">
+	    <p><__trans phrase="Report by access to some form">
+	    <input type="checkbox" value="1" name="check_when_first_access" id="check_when_first_access" class="rb" <mt:if name="check_when_first_access" eq="1">checked="checked"</mt:if>/></p>
+	    <p>
+	    <__trans phrase="Interval of check(ex: 30min, 24h, 3day)">
+	    <input type="text" name="check_interval" value="<mt:var name="check_interval">" id="check_interval" class="rb" />
+	    </p>
+	    <p><__trans phrase="Report by access to some form Description"></p>
+	  </div>
+	</div>
+
+	<div class="field field-left-label">
+	  <div class="field-header first-child">
+	    <label><__trans phrase="Alert mail address Title"></label>
+	  </div>
+	  <div class="field-content last-child">
+	  <input type="text" size="40" value="<mt:var name="alert_mail">" name="alert_mail" id="alert_mail" class="rb" />
+	  <p><__trans phrase="Alert mail address Description"></p>
+	  </div>
+	</div>
+
+	<div class="field field-left-label">
+	  <div class="field-header first-child">
+	    <label><__trans phrase="Alert confirm pv Title"></label>
+	  </div>
+	  <div class="field-content last-child">
+	    <input type="text" size="2" value="<mt:var name="alert_min_confirm_pv">" name="alert_min_confirm_pv" id="alert_min_confirm_pv" class="rb" />
+	    <p><__trans phrase="Alert confirm pv Description"></p>
+	  </div>
+	</div>
+
+	<div class="field field-left-label">
+	  <div class="field-header first-child">
+	    <label><__trans phrase="Alert Data count Title"></label>
+	  </div>
+	  <div class="field-content last-child">
+	    <input type="text" size="2" value="<mt:var name="alert_min_complete_pv">" name="alert_min_complete_pv" id="alert_min_complete_pv" class="rb" />
+	    <p><__trans phrase="Alert Data count Description"></p>
+	  </div>
+	</div>
+
+
+  <h3><__trans phrase="Script URL Setting"></h3>
+	<div class="field field-left-label">
+	  <div class="field-header first-child">
+	    <label><__trans phrase="Script URL Directory Title"></label>
+	  </div>
+	  <div class="field-content last-child">
+	    <input type="text" size="60" value="<mt:var name="script_url_dir">" name="script_url_dir" id="script_url_dir" class="rb" />
+	    <p><__trans phrase="Script URL Directory Description"></p>
+	  </div>
+	</div>
+
+
+  <h3><__trans phrase="SerialNumber Setting"></h3>
+	<div class="field field-left-label">
+	  <div class="field-header first-child">
+	    <label>
+<mt:if name="for_business">
+      <__trans phrase="SerialNumber Title for Business">
+<mt:else>
+      <__trans phrase="SerialNumber Title for Personal">
+</mt:if>
+</label>
+	  </div>
+	  <div class="field-content last-child">
+    <input type="text" size="40" value="<mt:var name="serialnumber">" name="serialnumber" id="serialnumber" class="rb" /><br />
+    <mt:if name="serialnumber">
+      <mt:if name="checked_sn">
+      <mt:else>
+        <p style="color:#c00;"><__trans phrase="Invalid SerialNumber"></p>
+      </mt:if>
+    </mt:if>
+
+<mt:if name="for_business">
+    <__trans phrase="SerialNumber Description for Business">
+<mt:else>
+    <__trans phrase="SerialNumber Description for Personal">
+</mt:if>
+<br />
+	  </div>
+	</div>
+
+</div>
