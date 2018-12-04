@@ -124,15 +124,6 @@ a:focus{color:;}
 <td valign="top" style="font-size:x-small; width:10px;"><span style="color:#98d1a9;">■</span></td>
 <td valign="top" style="font-size:x-small; text-align:left;">
 
-<?php print setQueryString('https://nichinare.com/m/news/2018/11/1126-340.php'); ?>NEW 12月3日(月)ｻｰﾊﾞｰﾒﾝﾃﾅﾝｽ実施のお知らせ</a>
-
-</td>
-</tr>
-
-<tr>
-<td valign="top" style="font-size:x-small; width:10px;"><span style="color:#98d1a9;">■</span></td>
-<td valign="top" style="font-size:x-small; text-align:left;">
-
 <?php print setQueryString('https://nichinare.com/m/application/index.php'); ?>NEW ■入所面接 申し込み受付中</a>
   
 
@@ -193,6 +184,16 @@ a:focus{color:;}
 <td valign="top" style="font-size:x-small; text-align:left;">
 
 <?php print setQueryString('https://nichinare.com/m/application/index.php'); ?>■【更新】入所面接　臨時開催のお知らせ</a>
+  
+
+</td>
+</tr>
+
+<tr>
+<td valign="top" style="font-size:x-small; width:10px;"><span style="color:#98d1a9;">■</span></td>
+<td valign="top" style="font-size:x-small; text-align:left;">
+
+<?php print setQueryString('https://nichinare.com/m/application/index.php'); ?>■【追加】入所面接　臨時開催のお知らせ</a>
   
 
 </td>

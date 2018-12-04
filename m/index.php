@@ -103,15 +103,6 @@ a:focus{color:;}
 <td valign="top" style="font-size:x-small; width:10px;"><span style="color:#98d1a9;">■</span></td>
 <td valign="top" style="font-size:x-small; text-align:left;">
 
-<a href="https://nichinare.com/m/news/2018/11/1126-340.php">NEW 12月3日(月)ｻｰﾊﾞｰﾒﾝﾃﾅﾝｽ実施のお知らせ</a>
-
-</td>
-</tr>
-
-<tr>
-<td valign="top" style="font-size:x-small; width:10px;"><span style="color:#98d1a9;">■</span></td>
-<td valign="top" style="font-size:x-small; text-align:left;">
-
 <a href="https://nichinare.com/m/application/index.php">NEW ■入所面接 申し込み受付中</a>
   
 
@@ -143,6 +134,16 @@ a:focus{color:;}
 <td valign="top" style="font-size:x-small; text-align:left;">
 
 <a href="https://nichinare.com/m/news/2018/07/0704-336.php">■１０月生 限定募集のお知らせ</a>
+
+</td>
+</tr>
+
+<tr>
+<td valign="top" style="font-size:x-small; width:10px;"><span style="color:#98d1a9;">■</span></td>
+<td valign="top" style="font-size:x-small; text-align:left;">
+
+<a href="https://nichinare.com/m/application/index.php">■【追加】入所面接　臨時開催のお知らせ【7月生最終募集】</a>
+  
 
 </td>
 </tr>

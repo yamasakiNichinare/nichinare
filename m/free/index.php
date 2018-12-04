@@ -336,20 +336,6 @@ a:focus{color:;}
 			</tr>
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">
-					12月1日（土）</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					<p>
-						<span style="font-size: 80%">&nbsp;&nbsp;締切：11月27日（火）</span></p>
-				</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					&nbsp;</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
 					12月15日（土）</td>
 			</tr>
 			<tr>

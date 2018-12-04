@@ -88,8 +88,8 @@ $mtkk_php_encoding = 'UTF-8';
 $mtkk_version = '1.62';
 $mtkk_no_cache = '';
 $mtkk_start_session = false;
-$mtkk_php_graphic = 'gd';
 $mtkk_content_type = 'application/xhtml+xml';
+$mtkk_php_graphic = 'gd';
 $mtkk_temp_dir = '/usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp';
 $mtkk_iemoji_dir = '/usr/home/z304150/html/cmt/plugins/KeitaiKit/iemoji';
 $mtkk_cache_cleaning_prob = '0';
@@ -149,7 +149,7 @@ a:focus{color:;}
 <table border="0" cellpadding="0" cellspacing="0" style="margin-top:10px;">
 
 <tr>
-<td valign="top" style="font-size:x-small; text-align:left;"><?php print setQueryString('https://nichinare.com/m/news/2018/10/'); ?>⇒2018年10月</a></td>
+<td valign="top" style="font-size:x-small; text-align:left;"><?php print setQueryString('https://nichinare.com/m/news/2018/11/'); ?>⇒2018年11月</a></td>
 </tr>
 
 

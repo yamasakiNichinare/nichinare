@@ -179,7 +179,7 @@ a:focus{color:;}
 <table border="0" cellpadding="0" cellspacing="0" style="margin-top:10px;">
 
 <tr>
-<td valign="top" style="font-size:x-small; text-align:left;"><?php print setQueryString('https://nichinare.com/m/news/2018/10/'); ?>⇒2018年10月</a></td>
+<td valign="top" style="font-size:x-small; text-align:left;"><?php print setQueryString('https://nichinare.com/m/news/2018/11/'); ?>⇒2018年11月</a></td>
 </tr>
 
 

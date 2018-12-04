@@ -457,20 +457,6 @@ a:focus{color:;}
 			</tr>
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">
-					12月2日（日）</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					<p>
-						<span style="font-size: 80%">&nbsp;&nbsp;締切：11月27日（火）</span></p>
-				</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					&nbsp;</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
 					12月11日（火）<br />
 					<span style="font-size:80%;">※20時頃までの実施を予定しております｡</span></td>
 			</tr>
@@ -689,20 +675,6 @@ a:focus{color:;}
 			</tr>
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">
-					12月1日（土）</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					<p>
-						<span style="font-size: 80%">&nbsp;&nbsp;締切：11月27日（火）</span></p>
-				</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					&nbsp;</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
 					1月12日（土）</td>
 			</tr>
 			<tr>
@@ -800,20 +772,6 @@ a:focus{color:;}
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">
 					<span style="color: #98d1a9">■</span>大宮会場</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					&nbsp;</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					12月2日（日）</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					<p>
-						<span style="font-size: 80%">&nbsp;&nbsp;締切：11月27日（火）</span></p>
-				</td>
 			</tr>
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">
