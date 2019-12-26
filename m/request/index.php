@@ -100,19 +100,61 @@ a:focus{color:;}
 				<td style="font-size: x-small" valign="top">
 					&nbsp;</td>
 				<td style="text-align: left; font-size: x-small" valign="top">
-					<span style="color: #ff6600">&gt;&gt;</span><a href="#01">ﾊｶﾞｷでのお申し込み方法</a></td>
+					<span style="color: #ff6600">&gt;&gt;</span><a href="#01">電話でのお申し込み方法</a></td>
 			</tr>
 			<tr>
 				<td style="font-size: x-small" valign="top">
 					&nbsp;</td>
 				<td style="text-align: left; font-size: x-small" valign="top">
-					<span style="color: #ff6600">&gt;&gt;</span><a href="#02">電話でのお申し込み方法</a></td>
+					<span style="color: #ff6600">&gt;&gt;</span><a href="#02">ﾊｶﾞｷでのお申し込み方法</a></td>
 			</tr>
 		</tbody>
 	</table>
 </div>
 <p>
 	<a id="01" name="01"></a></p>
+<div style="text-align: left">
+	<table border="0" cellpadding="0" cellspacing="0" style="margin-top: 5px">
+		<tbody>
+			<tr>
+				<td style="width: 10px; font-size: x-small" valign="top">
+					<span style="color: #98d1a9">■</span></td>
+				<td style="text-align: left; color: #4ca778; font-size: x-small" valign="top">
+					<strong>電話でのお申し込み方法</strong></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div style="text-align: left">
+	<table border="0" cellpadding="0" cellspacing="0" style="margin-top: 5px">
+		<tbody>
+			<tr>
+				<td style="text-align: left; font-size: x-small" valign="top">
+					<a href="tel:03-3372-5671">TEL:03-3372-5671</a>にてお申し込みをお受けしております｡<br />
+					弊所ｽﾀｯﾌにﾓﾊﾞｲﾙ版公式ｻｲﾄを見た旨をお伝えください｡<br />
+					続いて､以下の内容をお伺いしますので､差し支えのない範囲でお答えください｡<br />
+					<br />
+					1.氏名<br />
+					2.〒番号､住所<br />
+					3.生年月日（年齢）<br />
+					4.電話番号<br />
+					5.職業(学年)<br />
+					6.弊所を知ったきっかけ<br />
+					<br />
+					□受付時間<br />
+					月～日曜 /&nbsp;10:00～19:00<br />
+					<br />
+					お電話をいただいてから､10日以内にお届けできるよう郵送させていただきます｡<br />
+					<br />
+					[個人情報保護について]<br />
+					<span style="font-size: xx-small">資料請求にあたってご提供いただく皆様の個人情報につきましては､入所案内や入所関連情報の送付またはお電話でのご確認のみに使用し､ご本人様の承諾なしに第三者への提供は一切行いません｡なお､お申し込みいただきました書類は返却できませんので､あらかじめご了承ください｡</span><br />
+					&rArr;<!--?php print setQueryString('../privacy/index.php'); ?--><a href="http://nichinare.com/m/privacy/index.php">詳しくはこちら</a></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<p>
+	<a id="02" name="02"></a></p>
 <div style="text-align: left">
 	<table border="0" cellpadding="0" cellspacing="0" style="margin-top: 5px">
 		<tbody>
@@ -138,7 +180,7 @@ a:focus{color:;}
 					4.生年月日(西暦表記)<br />
 					5.電話番号<br />
 					6.職業(学年)<br />
-					7.当所を知ったきっかけ<br />
+					7.弊所を知ったきっかけ<br />
 					<br />
 					□あて先□<br />
 					〒151-0053<br />
@@ -154,49 +196,6 @@ a:focus{color:;}
 		</tbody>
 	</table>
 </div>
-<p>
-	<a id="02" name="02"></a></p>
-<div style="text-align: left">
-	<table border="0" cellpadding="0" cellspacing="0" style="margin-top: 5px">
-		<tbody>
-			<tr>
-				<td style="width: 10px; font-size: x-small" valign="top">
-					<span style="color: #98d1a9">■</span></td>
-				<td style="text-align: left; color: #4ca778; font-size: x-small" valign="top">
-					<strong>電話でのお申し込み方法</strong></td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-<div style="text-align: left">
-	<table border="0" cellpadding="0" cellspacing="0" style="margin-top: 5px">
-		<tbody>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					<a href="tel:03-3372-5671">TEL:03-3372-5671</a>にてお申し込みをお受けしております｡<br />
-					当所ｽﾀｯﾌにﾓﾊﾞｲﾙ版公式ｻｲﾄを見た旨をお伝えください｡<br />
-					続いて､以下の内容をお伺いしますので､差し支えのない範囲でお答えください｡<br />
-					<br />
-					1.氏名<br />
-					2.〒番号､住所<br />
-					3.生年月日（年齢）<br />
-					4.電話番号<br />
-					5.職業(学年)<br />
-					6.当所を知ったきっかけ<br />
-					<br />
-					□受付時間<br />
-					月～日曜 /&nbsp;10:00～19:00<br />
-					<br />
-					お電話をいただいてから､10日以内にお届けできるよう郵送させていただきます｡<br />
-					<br />
-					[個人情報保護について]<br />
-					<span style="font-size: xx-small">資料請求にあたってご提供いただく皆様の個人情報につきましては､入所案内や入所関連情報の送付またはお電話でのご確認のみに使用し､ご本人様の承諾なしに第三者への提供は一切行いません｡なお､お申し込みいただきました書類は返却できませんので､あらかじめご了承ください｡</span><br />
-					&rArr;<!--?php print setQueryString('../privacy/index.php'); ?--><a href="http://nichinare.com/m/privacy/index.php">詳しくはこちら</a></td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
 
 <div style="font-size:x-small; text-align:right; margin-top:5px;"><a href="#pagetop">↑ﾍﾟｰｼﾞﾄｯﾌﾟへ</a></div>
 <div style="font-size:x-small; text-align:left; margin-top:5px;"><a href="/m/index.php">←ﾄｯﾌﾟへ戻る</a></div>

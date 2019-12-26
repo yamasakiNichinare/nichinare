@@ -64,8 +64,8 @@ $mtkk_php_encoding = 'UTF-8';
 $mtkk_version = '1.62';
 $mtkk_no_cache = '';
 $mtkk_start_session = false;
-$mtkk_content_type = 'application/xhtml+xml';
 $mtkk_php_graphic = 'gd';
+$mtkk_content_type = 'application/xhtml+xml';
 $mtkk_temp_dir = '/usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp';
 $mtkk_iemoji_dir = '/usr/home/z304150/html/cmt/plugins/KeitaiKit/iemoji';
 $mtkk_cache_cleaning_prob = '0';
@@ -150,6 +150,7 @@ a:focus{color:;}
 					･難波校<br />
 					･天王寺校<br />
 					･神戸校<br />
+					･所沢校（2020年4月開校予定）<br />
 					<br />
 					<span style="color: #98d1a9">★</span><strong>受講対象年齢</strong><br />
 					･小学4年生 から 中学3年生 まで<br />
@@ -165,14 +166,15 @@ a:focus{color:;}
 					<br />
 					※上記金額には消費税が含まれています｡<br />
 					※年度や開設校により､ﾚｯｽﾝ曜日が異なる場合があります｡<br />
-					※当所を一度退所し､平成30年度より再度入所される方につきましては､入所後の所定の手続きにより､再入所時の入所金の半額を返金（または受講料に充当）させていただきます｡<br />
+					※弊所を一度退所し､令和元年度より再度入所される方につきましては､入所後の所定の手続きにより､再入所時の入所金の半額を返金（または受講料に充当）させていただきます｡<br />
 					<br />
-					※当ｸﾗｽについてご不明な点等がございましたら､お気軽に当所までお問い合わせください｡<br />
+					※当ｸﾗｽについてご不明な点等がございましたら､お気軽に弊所までお問い合わせください｡<br />
 					日ﾅﾚ入所ｾﾝﾀｰ<a href="tel:03-3372-5671">TEL:03-3372-5671</a></td>
 			</tr>
 		</tbody>
 	</table>
 </div>
+
 
 <div style="font-size:x-small; text-align:right; margin-top:5px;"><a href="#pagetop">↑ﾍﾟｰｼﾞﾄｯﾌﾟへ</a></div>
 <div style="font-size:x-small; text-align:left; margin-top:5px;"><a href="/m/index.php">←ﾄｯﾌﾟへ戻る</a></div>

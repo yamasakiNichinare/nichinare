@@ -1,0 +1,40 @@
+<div class="msg msg-info">
+<__trans phrase="Changing UI labels may cause unexpected appearance. Please be careful.">
+</div>
+
+<mtapp:setting
+    id="replaces_entry"
+    label="<mt:org_trans phrase="Replace Entry">"
+>
+<input type="text" class="full-width" name="replaces_entry" value="<TMPL_VAR NAME=REPLACES_ENTRY ESCAPE=HTML>" />
+</mtapp:setting>
+
+<mtapp:setting
+    id="replaces_page"
+    label="<mt:org_trans phrase="Replace Page">"
+>
+<input type="text" class="full-width" name="replaces_page" value="<TMPL_VAR NAME=REPLACES_PAGE ESCAPE=HTML>" />
+</mtapp:setting>
+
+<mtapp:setting
+    id="replaces_asset"
+    label="<mt:org_trans phrase="Replace Asset">"
+>
+<input type="text" class="full-width" name="replaces_asset" value="<TMPL_VAR NAME=REPLACES_ASSET ESCAPE=HTML>" />
+</mtapp:setting>
+
+<mtapp:setting
+    id="replaces_comment"
+    label="<mt:org_trans phrase="Replace Comment">"
+>
+<input type="text" class="full-width" name="replaces_comment" value="<TMPL_VAR NAME=REPLACES_COMMENT ESCAPE=HTML>" />
+</mtapp:setting>
+
+<mtapp:setting
+    id="replaces"
+    label="<mt:org_trans phrase="Others">"
+    hint="<mt:org_trans phrase="OriginalStrigs|ReplacedStrings">"
+	show_hint="1">
+<textarea name="replaces"><TMPL_VAR NAME=REPLACES ESCAPE=HTML></textarea>
+</mtapp:setting>
+

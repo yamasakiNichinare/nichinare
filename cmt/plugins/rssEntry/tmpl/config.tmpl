@@ -1,0 +1,13 @@
+    <mtapp:setting
+        id="rss_urls"
+        label="<__trans phrase="RSS List">">
+<textarea class="full-width" name="rss_urls" rows="5"><TMPL_VAR NAME=RSS_URLS ESCAPE=HTML></textarea>
+    </mtapp:setting>
+
+    <mtapp:setting
+        id="post_user"
+        label="<__trans phrase="Post User">">
+<select name="post_user" id="post_user"><TMPL_LOOP NAME=POST_USERS>
+  <option value="<TMPL_VAR NAME=ID>"><TMPL_VAR NAME=NAME ESCAPE=HTML></option>
+</TMPL_LOOP></select>
+    </mtapp:setting>

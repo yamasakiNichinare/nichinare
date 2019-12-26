@@ -1,0 +1,43 @@
+<mt:if name="scope" eq="website">
+  <mt:setvarblock name="html_title"><__trans phrase="Rebuild website"></mt:setvarblock>
+  <mt:setvarblock name="page_title"><__trans phrase="Rebuild website"></mt:setvarblock>
+<mt:elseif name="scope" eq="blog">
+  <mt:setvarblock name="html_title"><__trans phrase="Rebuild blogs"></mt:setvarblock>
+  <mt:setvarblock name="page_title"><__trans phrase="Rebuild blogs"></mt:setvarblock>
+<mt:else>
+  <mt:setvarblock name="html_title"><__trans phrase="Rebuild sites"></mt:setvarblock>
+  <mt:setvarblock name="page_title"><__trans phrase="Rebuild sites"></mt:setvarblock>
+</mt:if>
+<mt:include name="include/header.tmpl" id="header_include">
+
+<p><MT_TRANS phrase="Rebuild Error"><mt:if name="blog_name"> - <$mt:var name="blog_name" encode_html="1"$></mt:if></p>
+
+<h2><__trans phrase="An error occurred"></h2>
+
+<div id="generic-error" class="msg msg-error">
+   <p class="first-child"><mt:var name="error"></p>
+</div>
+
+<div class="actions-bar">
+    <form action="<$MTAdminScript$>" method="get">
+        <input type="hidden" name="__mode" value="" />
+        <input type="hidden" name="blog_id" value="<$mt:var return_blog_id$>" />
+        <button
+             type="submit"
+             mt:mode="dashboard"
+             accesskey="x"
+             title="<MT_TRANS phrase="return dashboard"> (x)"
+             class="action primary-button"
+             ><MT_TRANS phrase="return dashboard"></button>
+
+        <button
+            type="submit"
+            mt:mode="rebuild_blogs_setting"
+            accesskey="b"
+            title="<$mt:var page_title$> (b)"
+            class="action"
+             ><$mt:var page_title$></button>
+
+    </form>
+</div>
+<mt:include name="include/footer.tmpl" id="footer_include">

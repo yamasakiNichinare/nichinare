@@ -118,7 +118,7 @@ a:focus{color:;}
 					<p>
 						<br />
 						<span style="color: #98d1a9">■</span>お申し込み方法<br />
-						入所案内に同封されている当所所定の申込書に必要事項をご記入いただき､写真を貼付のうえ､お申し込みください｡追って､ﾚｯｽﾝ会場などの詳細をお送りいたします｡<br />
+						入所案内に同封されている弊所所定の申込書に必要事項をご記入いただき､写真を貼付のうえ､お申し込みください｡追って､ﾚｯｽﾝ会場などの詳細をお送りいたします｡<br />
 						<a href="https://nichinare.com/m/request/form.cgi">&rArr;入所案内のお申し込みはこちら（無料）</a></p>
 					<p>
 						<span style="font-size: xx-small">※受付は先着順となっております｡定員になり次第締め切らせていただく場合がございますので､参加ご希望の方はお早めにお申し込みください｡<br />
@@ -138,7 +138,10 @@ a:focus{color:;}
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">
 					<br />
-					<span style="color: #98d1a9">■</span>対象年齢<br />
+					<span style="color: #98d1a9">■</span>内容<br />
+					基礎科で行う全身を使った演技ﾚｯｽﾝなど<br />
+					<br />
+					<span style="color: #98d1a9">■</span>受付対象年齢<br />
 					中学3年生以上､40歳まで<br />
 					<br />
 					<span style="color: #98d1a9">■</span>参加条件<br />
@@ -151,6 +154,7 @@ a:focus{color:;}
 					<span style="color: #ff6600">&gt;&gt;</span><a href="#tachikawa">立川会場</a><br />
 					<span style="color: #ff6600">&gt;&gt;</span><a href="#machida">町田会場</a><br />
 					<span style="color: #ff6600">&gt;&gt;</span><a href="#omiya">大宮会場</a><br />
+					<span style="color: #ff6600">&gt;&gt;</span><a href="#tokorozawa">所沢会場</a><br />
 					<span style="color: #ff6600">&gt;&gt;</span><a href="#chiba">千葉会場</a><br />
 					<span style="color: #ff6600">&gt;&gt;</span><a href="#kashiwa">柏会場</a><br />
 					<span style="color: #ff6600">&gt;&gt;</span><a href="#yokohama">横浜会場</a><br />
@@ -214,12 +218,12 @@ a:focus{color:;}
 			</tr>
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">
-					12月9日（日）</td>
+					11月17日（日）</td>
 			</tr>
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">
 					<p>
-						<span style="font-size: 80%">&nbsp;&nbsp;締切：12月4日（火）</span></p>
+						<span style="font-size: 80%">&nbsp;&nbsp;締切：上記日程での参加をご希望の方は､弊所までお問い合わせください｡</span></p>
 				</td>
 			</tr>
 			<tr>
@@ -228,12 +232,12 @@ a:focus{color:;}
 			</tr>
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">
-					12月24日（月･祝）</td>
+					12月8日（日）</td>
 			</tr>
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">
 					<p>
-						<span style="font-size: 80%">&nbsp;&nbsp;締切：12月18日（火）</span></p>
+						<span style="font-size: 80%">&nbsp;&nbsp;締切：11月28日（木）</span></p>
 				</td>
 			</tr>
 			<tr>
@@ -242,68 +246,12 @@ a:focus{color:;}
 			</tr>
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">
-					1月6日（日）</td>
+					12月22日（日）</td>
 			</tr>
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">
 					<p>
-						<span style="font-size: 80%">&nbsp;&nbsp;締切：12月20日（木）</span></p>
-				</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					&nbsp;</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					1月20日（日）</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					<p>
-						<span style="font-size: 80%">&nbsp;&nbsp;締切：1月15日（火）</span></p>
-				</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					&nbsp;</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					2月2日（土）</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					<p>
-						<span style="font-size: 80%">&nbsp;&nbsp;締切：1月29日（火）</span></p>
-				</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					&nbsp;</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					2月9日（土）</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					<p>
-						<span style="font-size: 80%">&nbsp;&nbsp;締切：2月5日（火）</span></p>
-				</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					&nbsp;</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					2月17日（日）</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					<p>
-						<span style="font-size: 80%">&nbsp;&nbsp;締切：2月12日（火）</span></p>
+						<span style="font-size: 80%">&nbsp;&nbsp;締切：12月12日（木）</span></p>
 				</td>
 			</tr>
 			<tr>
@@ -336,12 +284,12 @@ a:focus{color:;}
 			</tr>
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">
-					12月15日（土）</td>
+					11月23日（土･祝）</td>
 			</tr>
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">
 					<p>
-						<span style="font-size: 80%">&nbsp;&nbsp;締切：12月11日（火）</span></p>
+						<span style="font-size: 80%">&nbsp;&nbsp;締切：11月13日（水）</span></p>
 				</td>
 			</tr>
 			<tr>
@@ -350,26 +298,12 @@ a:focus{color:;}
 			</tr>
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">
-					1月26日（土）</td>
+					12月14日（土）</td>
 			</tr>
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">
 					<p>
-						<span style="font-size: 80%">&nbsp;&nbsp;締切：1月22日（火）</span></p>
-				</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					&nbsp;</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					2月23日（土）≪最終≫</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					<p>
-						<span style="font-size: 80%">&nbsp;&nbsp;締切：2月19日（火）</span></p>
+						<span style="font-size: 80%">&nbsp;&nbsp;締切：12月4日（水）</span></p>
 				</td>
 			</tr>
 			<tr>
@@ -479,6 +413,44 @@ a:focus{color:;}
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">
 					現在予定しておりません｡その他の会場をご利用ください｡</td>
+			</tr>
+			<tr>
+				<td style="text-align: left; font-size: x-small" valign="top">
+					<p>
+						<span style="font-size: 80%">&nbsp;&nbsp;締切：---</span></p>
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align: left; font-size: x-small" valign="top">
+					&nbsp;</td>
+			</tr>
+			<tr>
+				<td style="text-align: left; font-size: x-small" valign="top">
+					<p>
+						<span style="font-size: 80%">※各締切日 必着</span></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<p>
+	&nbsp;</p>
+<p>
+	<a id="tokorozawa" name="tokorozawa"></a></p>
+<div style="text-align: left">
+	<table border="0" cellpadding="0" cellspacing="0" style="margin-top: 5px">
+		<tbody>
+			<tr>
+				<td style="text-align: left; font-size: x-small" valign="top">
+					<span style="color: #98d1a9">■</span>所沢会場</td>
+			</tr>
+			<tr>
+				<td style="text-align: left; font-size: x-small" valign="top">
+					&nbsp;</td>
+			</tr>
+			<tr>
+				<td style="text-align: left; font-size: x-small" valign="top">
+					現在､予定しておりません｡その他の会場をご利用ください｡</td>
 			</tr>
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">
@@ -630,26 +602,12 @@ a:focus{color:;}
 			</tr>
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">
-					12月15日（土）</td>
+					12月7日（土）</td>
 			</tr>
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">
 					<p>
-						<span style="font-size: 80%">&nbsp;&nbsp;締切：12月11日（火）</span></p>
-				</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					&nbsp;</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					2月23日（土）≪最終≫</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					<p>
-						<span style="font-size: 80%">&nbsp;&nbsp;締切：2月19日（火）</span></p>
+						<span style="font-size: 80%">&nbsp;&nbsp;締切：11月27日（水）</span></p>
 				</td>
 			</tr>
 			<tr>
@@ -682,12 +640,12 @@ a:focus{color:;}
 			</tr>
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">
-					12月15日（土）</td>
+					11月16日（土）</td>
 			</tr>
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">
 					<p>
-						<span style="font-size: 80%">&nbsp;&nbsp;締切：12月11日（火）</span></p>
+						<span style="font-size: 80%">&nbsp;&nbsp;締切：上記日程での参加をご希望の方は､弊所までお問い合わせください｡</span></p>
 				</td>
 			</tr>
 			<tr>
@@ -696,12 +654,12 @@ a:focus{color:;}
 			</tr>
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">
-					2月2日（土）</td>
+					12月7日（土）</td>
 			</tr>
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">
 					<p>
-						<span style="font-size: 80%">&nbsp;&nbsp;締切：1月29日（火）</span></p>
+						<span style="font-size: 80%">&nbsp;&nbsp;締切：11月27日（水）</span></p>
 				</td>
 			</tr>
 			<tr>
@@ -810,40 +768,12 @@ a:focus{color:;}
 			</tr>
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">
-					12月8日（土）</td>
+					12月21日（土）</td>
 			</tr>
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">
 					<p>
-						<span style="font-size: 80%">&nbsp;&nbsp;締切：12月4日（火）</span></p>
-				</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					&nbsp;</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					1月19日（土）</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					<p>
-						<span style="font-size: 80%">&nbsp;&nbsp;締切：1月15日（火）</span></p>
-				</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					&nbsp;</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					2月9日（土）≪最終≫</td>
-			</tr>
-			<tr>
-				<td style="text-align: left; font-size: x-small" valign="top">
-					<p>
-						<span style="font-size: 80%">&nbsp;&nbsp;締切：2月5日（火）</span></p>
+						<span style="font-size: 80%">&nbsp;&nbsp;締切：12月11日（水）</span></p>
 				</td>
 			</tr>
 			<tr>
@@ -876,12 +806,12 @@ a:focus{color:;}
 			</tr>
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">
-					12月22日（土）</td>
+					11月23日（土･祝）</td>
 			</tr>
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">
 					<p>
-						<span style="font-size: 80%">&nbsp;&nbsp;締切：12月18日（火）</span></p>
+						<span style="font-size: 80%">&nbsp;&nbsp;締切：11月13日（水）</span></p>
 				</td>
 			</tr>
 			<tr>
@@ -890,12 +820,12 @@ a:focus{color:;}
 			</tr>
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">
-					2月2日（土）</td>
+					12月7日（土）</td>
 			</tr>
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">
 					<p>
-						<span style="font-size: 80%">&nbsp;&nbsp;締切：1月29日（火）</span></p>
+						<span style="font-size: 80%">&nbsp;&nbsp;締切：11月27日（水）</span></p>
 				</td>
 			</tr>
 			<tr>

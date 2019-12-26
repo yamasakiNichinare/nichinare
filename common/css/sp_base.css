@@ -96,3 +96,26 @@ visibility:hidden;
 .s-large {font-size:0.875em;}
 .large {font-size:1em;}
 
+
+/** -------------------------------- **
+	PCとSPの切り分け
+*** ----------------------------------------------------------------- ***/
+.PC {
+	display: none !important;
+}
+
+
+/** -------------------------------- **
+	声マガバナー(トップページ用)
+*** ----------------------------------------------------------------- ***/
+.seimagaBtn_top {
+	text-align: center;
+	margin: 20px 0 10px;
+}
+.seimagaBtn_top a {
+	display: block;
+}
+
+.seimagaBtn_top img {
+	width: 220px;
+}

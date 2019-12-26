@@ -1,0 +1,39 @@
+/*目次---------------------
+
+
+-------------------------*/
+//横並び
+.h_item {
+    display: flex;
+}
+
+.text {
+    &_center {
+        text-align: center;
+    }
+
+    &_bold {
+        font-weight: bold;
+    }
+
+    &_red {
+        color: $red;
+    }
+}
+
+.link {
+    a {
+        text-decoration: underline;
+        color: $blue1;
+
+        @include pc {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.border {
+    border-bottom: 1px solid $black1;
+}

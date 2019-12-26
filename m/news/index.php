@@ -144,8 +144,7 @@ a:focus{color:;}
 <td valign="top" style="font-size:x-small; width:10px;"><span style="color:#98d1a9;">■</span></td>
 <td valign="top" style="font-size:x-small; text-align:left;">
 
-<?php print setQueryString('https://nichinare.com/m/application/index.php'); ?>■【追加】入所面接　臨時開催のお知らせ【10月生最終募集】</a>
-  
+<?php print setQueryString('https://nichinare.com/m/news/2019/11/1101-362.php'); ?>NEW ■所沢校（埼玉）開校のお知らせ</a>
 
 </td>
 </tr>
@@ -154,7 +153,7 @@ a:focus{color:;}
 <td valign="top" style="font-size:x-small; width:10px;"><span style="color:#98d1a9;">■</span></td>
 <td valign="top" style="font-size:x-small; text-align:left;">
 
-<?php print setQueryString('https://nichinare.com/m/news/2018/07/0704-336.php'); ?>■１０月生 限定募集のお知らせ</a>
+<?php print setQueryString('https://nichinare.com/m/news/2019/10/1029-361.php'); ?>【ｼｽﾃﾑ障害発生のお詫びと復旧のお知らせ】</a>
 
 </td>
 </tr>
@@ -163,8 +162,7 @@ a:focus{color:;}
 <td valign="top" style="font-size:x-small; width:10px;"><span style="color:#98d1a9;">■</span></td>
 <td valign="top" style="font-size:x-small; text-align:left;">
 
-<?php print setQueryString('https://nichinare.com/m/application/index.php'); ?>■【追加】入所面接　臨時開催のお知らせ【7月生最終募集】</a>
-  
+<?php print setQueryString('https://nichinare.com/m/news/2019/10/1011-358.php'); ?>台風19号接近に伴う､【入所面接】【無料体験ﾚｯｽﾝ】【ﾚｯｽﾝ見学】中止のお知らせ</a>
 
 </td>
 </tr>
@@ -173,8 +171,7 @@ a:focus{color:;}
 <td valign="top" style="font-size:x-small; width:10px;"><span style="color:#98d1a9;">■</span></td>
 <td valign="top" style="font-size:x-small; text-align:left;">
 
-<?php print setQueryString('https://nichinare.com/m/application/index.php'); ?>■【追加】入所面接　臨時開催のお知らせ【7月生最終募集】</a>
-  
+<?php print setQueryString('https://nichinare.com/m/news/2019/10/1001-356.php'); ?>■消費税増税に伴う受講料･入所金のお知らせ【変更はございません】</a>
 
 </td>
 </tr>
@@ -183,8 +180,7 @@ a:focus{color:;}
 <td valign="top" style="font-size:x-small; width:10px;"><span style="color:#98d1a9;">■</span></td>
 <td valign="top" style="font-size:x-small; text-align:left;">
 
-<?php print setQueryString('https://nichinare.com/m/application/index.php'); ?>■【更新】入所面接　臨時開催のお知らせ</a>
-  
+<?php print setQueryString('https://nichinare.com/m/news/2019/07/0704-350.php'); ?>■１０月生 限定募集のお知らせ</a>
 
 </td>
 </tr>
@@ -193,7 +189,7 @@ a:focus{color:;}
 <td valign="top" style="font-size:x-small; width:10px;"><span style="color:#98d1a9;">■</span></td>
 <td valign="top" style="font-size:x-small; text-align:left;">
 
-<?php print setQueryString('https://nichinare.com/m/application/index.php'); ?>■【追加】入所面接　臨時開催のお知らせ</a>
+<?php print setQueryString('https://nichinare.com/m/application/index.php'); ?>■2019年度7月生､および2020年度4月生募集中</a>
   
 
 </td>
@@ -222,6 +218,42 @@ a:focus{color:;}
 </table>
 
 <table border="0" cellpadding="0" cellspacing="0" style="margin-top:10px;">
+
+<tr>
+<td valign="top" style="font-size:x-small; text-align:left;"><?php print setQueryString('https://nichinare.com/m/news/2019/11/'); ?>⇒2019年11月</a></td>
+</tr>
+
+
+
+<tr>
+<td valign="top" style="font-size:x-small; text-align:left;"><?php print setQueryString('https://nichinare.com/m/news/2019/10/'); ?>⇒2019年10月</a></td>
+</tr>
+
+
+
+<tr>
+<td valign="top" style="font-size:x-small; text-align:left;"><?php print setQueryString('https://nichinare.com/m/news/2019/07/'); ?>⇒2019年7月</a></td>
+</tr>
+
+
+
+<tr>
+<td valign="top" style="font-size:x-small; text-align:left;"><?php print setQueryString('https://nichinare.com/m/news/2019/06/'); ?>⇒2019年6月</a></td>
+</tr>
+
+
+
+<tr>
+<td valign="top" style="font-size:x-small; text-align:left;"><?php print setQueryString('https://nichinare.com/m/news/2019/03/'); ?>⇒2019年3月</a></td>
+</tr>
+
+
+
+<tr>
+<td valign="top" style="font-size:x-small; text-align:left;"><?php print setQueryString('https://nichinare.com/m/news/2019/02/'); ?>⇒2019年2月</a></td>
+</tr>
+
+
 
 <tr>
 <td valign="top" style="font-size:x-small; text-align:left;"><?php print setQueryString('https://nichinare.com/m/news/2018/11/'); ?>⇒2018年11月</a></td>

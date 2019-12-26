@@ -1,0 +1,69 @@
+<mt:if name="obj_type" eq="category">
+<mt:setvar name="obj_type_label" value="<__trans phrase="Category">">
+<mt:setvar name="page_title" value="<__trans phrase="Delete Category">">
+<mt:else>
+<mt:setvar name="obj_type_label" value="<__trans phrase="Folder">">
+<mt:setvar name="page_title" value="<__trans phrase="Delete Folder">">
+</mt:if>
+
+<mt:include name="dialog/header.tmpl">
+
+<div id="category-details-content">
+
+<p class="supple" style="color:#7b7c7d;"><__trans phrase="Delete the [_1]." params="<mt:var obj_type_label>"><br />
+<__trans phrase="Are you sure to remove this [_1] ?" params="<mt:var obj_type_label>"></p>
+
+<p style="font-size:1.2em;font-weight:bold;"><__trans phrase="[_1] information to be deleted" params="<mt:var obj_type_label>"></p>
+
+<form method="post" action="<mt:var name="script_url">" target="_top">
+    <input type="hidden" name="__mode" value="delete" />
+	<input type="hidden" name="_type" value="<mt:var name="obj_type" escape="html">" />
+    <input type="hidden" name="blog_id" value="<mt:var name="blog_id" escape="html">" />
+    <input type="hidden" name="id" value="<mt:var name="id">" />
+	<input type="hidden" name="magic_token" value="<mt:var name="magic_token">" />
+	<input type="hidden" name="return_args" value="<mt:var name="return_args">" />
+
+    <fieldset>
+	<mtapp:setting
+	    id="label"
+	    label="<__trans phrase="Label">">
+<mt:var name="label" escape="html">
+	</mtapp:setting>
+
+	<mtapp:setting
+	    id="basename"
+	    label="<__trans phrase="_CATEGORY_BASENAME">"
+	    hint="<__trans phrase="This is the basename assigned to your category.">"
+	    help_page="categories"
+	    help_section="category_basename">
+<mt:var name="basename" escape="html">
+	</mtapp:setting>
+
+	<mtapp:setting
+	    id="description"
+	    label="<__trans phrase="Description">">
+<mt:var name="description" escape="html">
+	</mtapp:setting>
+    </fieldset>
+
+<mt:setvarblock name="action_buttons">
+        <button
+        type="submit"
+        accesskey="x"
+        title="<__trans phrase="Cancel">"
+        class="cancel action mt-close-dialog"
+        ><__trans phrase="Cancel"></button>
+
+       <button
+        type="submit"
+        accesskey="s"
+        title="<__trans phrase="Addition">"
+        class="close action primary-button"
+        ><__trans phrase="Delete"></button>
+</mt:setvarblock>
+<mt:include name="include/actions_bar.tmpl" bar_position="bottom" hide_pager="1" settings_bar="1">
+
+</form>
+</div>
+
+<mt:include name="dialog/footer.tmpl">

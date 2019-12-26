@@ -1,0 +1,29 @@
+name: AuthorRegistration
+id: AuthorRegistration
+key: AuthorRegistration
+author_link: http://www.skyarc.co.jp/
+author_name: SKYARC System Co., Ltd.
+doc_link: https://www.skyarc.co.jp/products/support/plugins/2009/10/authorregistration.php
+description: <MT_TRANS phrase="Export all authors to CSV file format. And import authors from exported file format.">
+version: 1.27
+l10n_class: AuthorRegistration::L10N
+
+applications:
+    cms:
+        methods:
+            disp_author_registration: $AuthorRegistration::AuthorRegistration::CMS::disp
+            run_author_registration: $AuthorRegistration::AuthorRegistration::CMS::run
+            export_author_registration: $AuthorRegistration::AuthorRegistration::CMS::export
+        menus:
+            user:AuthorRegistration:
+                label: AuthorRegistration
+                order: 777
+                mode: disp_author_registration
+                view: system
+                permission: administer
+                system_permission: administer
+
+callbacks:
+    source_list_role: MT::App::CMS::template_source.list_role
+    source_table_role_view: MT::App::CMS::template_source.table_role_view
+

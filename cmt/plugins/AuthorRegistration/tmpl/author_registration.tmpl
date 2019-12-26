@@ -1,0 +1,105 @@
+<mt:include name="include/header.tmpl">
+
+<div class="system" style="margin-bottom:30px;padding-bottom:30px;border-bottom:1px solid #cccccc;">
+<div class="field-header">
+    <h3><MT_TRANS phrase="Import Authors"></h3>
+</div>
+<p><MT_TRANS phrase="author data csv import"></p>
+
+<form enctype='multipart/form-data' name="profile" id="profile" method="post" action="<TMPL_VAR NAME=MT_URI>" >
+<input type="hidden" name="__mode" value="run_author_registration" />
+
+<TMPL_IF NAME=SKR_ERROR_MSG>
+<MTIf name="mt_version" like="5.">
+<div id="generic-error" class="msg msg-error last-child">
+<p class="first-child">
+<TMPL_VAR NAME=SKR_ERROR_MSG>
+</p>
+<img class="mt-close-msg last-child" src="/mt5/mt/mt-static/images/icon_close.png" alt="閉じる"/>
+</div>
+<MTElseIf name="mt_version" like="4.">
+<div id="generic-error" class="msg msg-error">
+<a href="javascript:void(0)" onclick="javascript:hide('generic-error');return false;" class="close-me"><span>close</span></a>
+<TMPL_VAR NAME=SKR_ERROR_MSG>
+</div>
+</MTIf>
+
+</TMPL_IF>
+
+<TMPL_IF NAME=SKR_MSG>
+<MTIf name="mt_version" like="5.">
+<div id="saved" class="msg msg-success last-child">
+<p class="first-child">
+<TMPL_VAR NAME=SKR_MSG>
+</p>
+<img class="mt-close-msg last-child" src="/mt5/mt/mt-static/images/icon_close.png" alt="閉じる"/>
+</div>
+
+<MTElseIf name="mt_version" like="4.">
+<div id="reset" class="msg msg-success"><a href="javascript:void(0)" onclick="javascript:hide('reset');return false;" class="close-me"><span>close</span></a>
+<TMPL_VAR NAME=SKR_MSG>
+</div>
+</MTIf>
+</TMPL_IF>
+
+
+
+<div id="csvfile_field" class="field field-left-label ">
+				<div class="field-header first-child">
+								<label id="csvfile_field-label" class="first-child last-child" for="upload_file"><MT_TRANS phrase="csv file"></label>
+				</div>
+				<div class="field-content last-child">
+								<input type="file" name="upload_file" size="60" class="first-child last-child file" />
+								<div class="hint last-child"><MT_TRANS phrase="select import user csv file."></div>
+				</div>
+</div>
+
+
+<div id="author_check" class="field field-left-label ">
+				<div class="field-header first-child">
+								<label id="author_check-label" class="first-child last-child" for="upload_file"><MT_TRANS phrase="Overwrite authors"></label>
+				</div>
+				<div class="field-content last-child">
+				<input type="checkbox" name="update_flg" value="1" checked="checked" />
+								<div class="hint last-child"><MT_TRANS phrase="same author_id updated."></div>
+				</div>
+</div>
+
+
+
+<div class="actions-bar settings-actions-bar">
+    <div class="actions-bar-inner pkg actions">
+        <button type="submit" class="action primary-button"><MT_TRANS phrase="all save"></button>
+    </div>
+</div>
+</form>
+
+</div>
+
+
+
+
+<div class="system">
+
+
+<div class="first-child">
+<h3 class="first-child last-child"><MT_TRANS phrase="Export Authors"></h3>
+</div>
+
+<p><MT_TRANS phrase="author data csv export"></p>
+
+<form name="frm_export" id="frm_export" method="post" action="<TMPL_VAR NAME=MT_URI>" >
+<input type="hidden" name="__mode" value="export_author_registration" />
+<div class="actions-bar settings-actions-bar">
+    <div class="actions-bar-inner pkg actions">
+        <button type="submit" class="action primary-button first-child"><MT_TRANS phrase="export csv"></button>
+    </div>
+</div>
+
+</form>
+</div>
+
+
+
+
+<mt:include name="include/footer.tmpl">

@@ -1,0 +1,49 @@
+@charset "shift_jis";
+
+/** -------------------------------- **
+	カテゴリーメニュー
+*** ----------------------------------------------------------------- ***/
+
+#contents .left_contents h4 {
+width:200px;
+height:36px;
+margin:0;
+padding:0;
+text-align:left;
+text-indent:-9999px;
+background:url(../images/menu-tit.gif) no-repeat;
+}
+
+
+/*** 左エリア　バナー ***/
+
+#contents .left_contents ul.left-bnr {
+width:191px;
+margin:0 auto;
+padding:0 0 0;
+text-align:right;
+list-style:none;
+font-size:1%;
+line-height:1%;
+}
+
+
+.right_contents .sec_main dl {
+width:694px;
+padding:0 0 15px;
+text-align:left;
+}
+
+.right_contents .sec_main dl dt {
+float:left;
+width:100px;
+padding:0;
+text-align:left;
+}
+
+.right_contents .sec_main dl dd {
+float:right;
+width:584px;
+padding:0;
+text-align:left;
+}

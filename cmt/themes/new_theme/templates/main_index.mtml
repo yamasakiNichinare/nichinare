@@ -1,0 +1,163 @@
+<$mt:Include module="DOCTYPE"$>
+<title>声優・ナレーターの養成所【日本ナレーション演技研究所】</title>
+<link rel="stylesheet" type="text/css" href="common/css/lightbox.css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+<link rel="canonical" href="http://nichinare.com/" />
+<$mt:Include module="外部ファイル読み込み"$>
+
+<body id="index" onload="addLinkURL('code');return false;">
+<a name="pagetop" id="pagetop"></a>
+<div id="wrapper">
+<$mt:Include module="ヘッダー"$>
+
+<!-- Slider.js bxSlider -->
+<div id="sliderBox">
+<!--#include virtual="/common/slider/pc_top_slider.inc" -->
+<!--#include virtual="/common/slider/pc_top_slider_thumbs.inc" -->
+</div>
+<!-- Slider.js bxSlider -->
+
+<mt:Entries lastn="1" blog_ids="8">
+<div class="emergency normal"><$MTEntryBody$></div>
+</mt:Entries>
+<!-- Top Main -->
+<div class="top_main">
+<div class="left_contents">
+<div class="column">
+<ul class="menu01 roll">
+<li><a href="course/index.html"><img src="images/top_menu01.jpg" width="182" height="60" alt="週1回クラス" /></a></li>
+<li><a href="course/twodays_threedays.html"><img src="images/top_menu02.jpg" width="182" height="60" alt="週2回・週3回クラス" /></a></li>
+<li><a href="course/jr.html"><img src="images/top_menu03.jpg" width="182" height="60" alt="ジュニア声優クラス" /></a></li>
+<li><a href="course/narrater.html"><img src="images/top_menu04.jpg" width="182" height="60" alt="ナレーターセミナー" /></a></li>
+</ul>
+
+</div>
+
+<div class="column_area">
+
+<div class="column_left">
+
+<div class="column_list">
+
+<p class="bt_news"><a href="news/index.html"><img src="images/bt_news.gif" width="73" height="19" alt="一覧はこちら" /></a></p>
+<p class="bt_rss"><a href="rss.xml"><img src="images/bt_rss.gif" width="49" height="19" alt="RSS" /></a></p>
+<mt:SetVarBlock name="today"><$mt:Date format="%Y%j"%></mt:SetVarBlock>
+<dl class="normal">
+<dt>最新情報</dt>
+<mt:Entries lastn="5" blog_ids="3">
+<dd>
+<dl>
+<dt><$mt:EntryDate format="%x"$></dt>
+<dd>
+<mtifnonempty tag="urldata">
+<a href="<mt:urldata>"><$MTEntryTitle$></a><mt:SetVarBlock name="passed"><$mt:EntryDate format="%Y%j"%></mt:SetVarBlock>
+<mt:SetVar name="passed" value="$today" op="sub"><mt:If name="passed" ge="-5"><img src="common/images/icon_new.gif" width="39" height="14" alt="NEW!" />
+</mt:If><mt:If name="passed" ge="-640"><mt:If name="passed" le="-635"><img src="common/images/icon_new.gif" width="39" height="14" alt="NEW!" />
+</mt:If></mt:If>
+<mtelse>
+<a href="<mt:EntryPermalink archive_type="Individual">"><$mt:EntryTitle$></a><mt:SetVarBlock name="passed"><$mt:EntryDate format="%Y%j"%></mt:SetVarBlock>
+<mt:SetVar name="passed" value="$today" op="sub"><mt:If name="passed" ge="-5"><img src="common/images/icon_new.gif" width="39" height="14" alt="NEW!" />
+</mt:If><mt:If name="passed" ge="-640"><mt:If name="passed" le="-635"><img src="common/images/icon_new.gif" width="39" height="14" alt="NEW!" />
+</mt:If></mt:If>
+</mtelse>
+</mtifnonempty>
+</dd>
+</dl>
+</dd>
+</mt:Entries>
+</dl>
+</div>
+
+<div class="column_text">
+<dl class="normal">
+<dt>声優をめざすあなたへ</dt>
+<dd>
+<mt:SetVarBlock name="today"><$mt:Date format="%Y%j"%></mt:SetVarBlock>
+<mt:Entries lastn="1" blog_ids="11">
+<p><$MTEntryBody$></p>
+</mt:Entries>
+</dd>
+</dl>
+</div>
+
+</div>
+
+<ul class="bnr_list roll">
+<li><a href="https://nichinare.com/request/form.cgi"><img src="images/top_bnr01.jpg" width="182" height="109" alt="資料請求" /></a></li>
+<li><a href="about/lecturer.html"><img src="images/top_bnr03.jpg" width="182" height="45" alt="講師一覧" /></a></li>
+<li>
+<div class="boader_column">
+<div class="column">
+<p class="roll"><a href="about/native.html"><img src="images/top_bnr05.jpg" width="170" height="60" alt="主な出身者" /></a></p>
+<dl class="roll">
+<dt>グループプロダクション</dt>
+<dd><a href="http://www.artsvision.co.jp/" target="_blank" rel="nofollow" onclick="ga('send', 'event', 'link', 'click', 'pc_gp_arts', 1);"><img src="images/top_group01.gif" width="157" height="31" alt="株式会社アーツビジョン" /></a></dd>
+<dd><a href="http://www.imenterprise.jp/" target="_blank" rel="nofollow" onclick="ga('send', 'event', 'link', 'click', 'pc_gp_ime', 1);"><img src="images/top_group02.gif" width="157" height="31" alt="株式会社アイムエンタープライズ" /></a></dd>
+<dd><a href="http://www.crazy-box.co.jp/" target="_blank" rel="nofollow" onclick="ga('send', 'event', 'link', 'click', 'pc_gp_craz', 1);"><img src="images/top_group03.gif" width="157" height="31" alt="株式会社クレイジーボックス" /></a></dd>
+<dd><a href="http://www.vims.co.jp/" target="_blank" rel="nofollow" onclick="ga('send', 'event', 'link', 'click', 'pc_gp_vims', 1);"><img src="images/top_group04.gif" width="157" height="31" alt="株式会社ヴィムス" /></a></dd>
+<dd><a href="http://arise-pj.co.jp/" target="_blank" rel="nofollow" onclick="ga('send', 'event', 'link', 'click', 'pc_gp_arise', 1);"><img src="images/top_group06.gif" width="157" height="31" alt="アライズプロジェクト" /></a></dd>
+<dd><a href="http://www1a.biglobe.ne.jp/mio/" target="_blank" rel="nofollow" onclick="ga('send', 'event', 'link', 'click', 'pc_gp_mio', 1);"><img src="images/top_group05.gif" width="157" height="31" alt="澪クリエーション" /></a></dd>
+</dl>
+</div>
+</div>
+</li>
+
+<li class="roll"><a href="common/images/hpqr_l.jpg" rel="lightbox"><img src="images/top_bnr04.gif" width="182" height="57" alt="スマートフォン・ モバイルサイト のご案内" /></a></li>
+</ul>
+
+</div>
+
+</div>
+<div class="right_contents">
+
+<ul class="menu02 roll">
+<li><a href="course/start_up_course.html"><img src="images/top_menu05.jpg" width="182" height="60" alt="スタートアップクラス" /></a></li>
+</ul>
+
+<div class="twiBox">
+<a class="twitter-timeline" width="182" height="492" href="https://twitter.com/nichinare" data-widget-id="496507136675827712" data-chrome="nofooter" data-border-color="#A9A9A9" lang="ja">@nichinare からのツイート</a>
+<script type="text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+
+<p class="sp_bnr roll"><a href="common/images/line_qr.png" rel="lightbox"><img src="images/top_bnrline.gif" width="182" height="57" alt="日ナレ公式LINE@nichinare" /></a></p>
+
+</div>
+
+</div>
+<!-- Top Main End -->
+
+<!--#include virtual="/common/bnr/pc_top_banner.inc" -->
+<p id="bnr_oshirase"><a href="https://nichinare.com/oshirase/jukou/index.cgi"><img src="images/bnr_oshirase.gif" width="182" height="29" alt="受講生専用サイト"></a></p>
+<$mt:Include module="フッター"$>
+</div>
+
+<!--2013.05.23挿入 -->
+<!-- Google Code for &#12522;&#12510;&#12540;&#12465;&#12486;&#12451;&#12531;&#12464; &#12479;&#12464; -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1010123678;
+var google_conversion_label = "w-ViCPL7tgQQnofV4QM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1010123678/?value=0&amp;label=w-ViCPL7tgQQnofV4QM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<!--2015.10.14挿入 -->
+<script type="text/javascript" language="javascript">
+/* <![CDATA[ */
+var yahoo_retargeting_id = 'W0G9YHSD43';
+var yahoo_retargeting_label = '';
+/* ]]> */
+</script>
+<script type="text/javascript" language="javascript" src="//b92.yahoo.co.jp/js/s_retargeting.js"></script>
+
+</body>
+</html>

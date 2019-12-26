@@ -1,7 +1,7 @@
 @charset "shift_jis";
 
 /** -------------------------------- **
-	Ú×ƒy[ƒW
+	ï¿½Ú×ƒyï¿½[ï¿½W
 *** ----------------------------------------------------------------- ***/
 
 .accentuation {	color:#ff6600;}
@@ -80,4 +80,10 @@
 	text-indent:-9999px;
 	background:url(/course/images/sp_system_graph08.gif) no-repeat;
 	-webkit-background-size: 300px 110px;
+}
+
+
+.workshop_ttl {
+    background: url(/course/images/sp_h2_tit09.jpg) no-repeat;
+    background-size: 315px 64px;
 }

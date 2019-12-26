@@ -1,0 +1,43 @@
+/*目次---------------------
+
+
+-------------------------*/
+//テキスト
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN",メイリオ,Meiryo,sans-serif;
+    -webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+    line-height: 1.6;
+
+    @include pc {
+        @include fz(16);
+    }
+
+    @include sp {
+        @include fz(14);
+    }
+}
+//リンク
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include sp {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.wrapper {
+    @include pc {
+        width: 800px;
+        margin: 0 auto;
+    }
+}

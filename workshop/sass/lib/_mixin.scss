@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* table of content -----------------
+1.縦横中央配置
+2.vwフォントサイズ自動計算
+3.position absolute（縦・横の中央配置）
+4.before,after用
+5.media query
+-----------------------------------*/
+//1.縦横中央配置
+@mixin flexacenter {
+    align-items: center;
+    justify-content: center;
+}
+
+//2.vwフォントサイズ自動計算
+@mixin fz($size: 24, $base: 16){
+    font-size: $size + px;
+    font-size: ($size / ($base * 0.625)) + rem;
+}
+
+//3.position absolute（縦・横の中央配置）
+@mixin positionabsolute50 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+@mixin positionabsolutex {
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+@mixin positionabsolutey {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+//4.before,after用
+@mixin beforeaftercontent {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+}
+
+//5.media query
+$breakpoint_sp: 767px;
+$breakpoint_pc: 768px;
+@mixin sp {
+    @media screen and (max-width: $breakpoint_sp) {
+        @content;
+    }
+}
+@mixin pc {
+    @media screen and (min-width: $breakpoint_pc) {
+        @content;
+    }
+}

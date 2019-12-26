@@ -64,8 +64,8 @@ $mtkk_php_encoding = 'UTF-8';
 $mtkk_version = '1.62';
 $mtkk_no_cache = '';
 $mtkk_start_session = false;
-$mtkk_content_type = 'application/xhtml+xml';
 $mtkk_php_graphic = 'gd';
+$mtkk_content_type = 'application/xhtml+xml';
 $mtkk_temp_dir = '/usr/home/z304150/html/cmt/plugins/KeitaiKit/tmp';
 $mtkk_iemoji_dir = '/usr/home/z304150/html/cmt/plugins/KeitaiKit/iemoji';
 $mtkk_cache_cleaning_prob = '0';
@@ -124,7 +124,7 @@ a:focus{color:;}
 		<tbody>
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">
-					入所案内に同封されている当所所定の入所申込書に必要事項をご記入いただき､写真を貼付のうえ､お申し込みください｡<br />
+					入所案内に同封されている弊所所定の入所申込書に必要事項をご記入いただき､写真を貼付のうえ､お申し込みください｡<br />
 					追って､面接会場などの詳細をお送りいたします｡<br />
 					<br />
 					&rArr;<a href="https://nichinare.com/m/request/form.cgi">入所案内のお申し込みはこちら（無料）</a><br />
@@ -133,7 +133,7 @@ a:focus{color:;}
 					※受付対象年齢 / 小学4年生以上､中学3年生まで<br />
 					注：中学3年生の方については､11月中旬までの受付となります｡<br />
 					※審査内容 / 実技(ｾﾘﾌ) ･ 面接<br />
-					※ﾚｯｽﾝ会場 / 代々木校 ･ 池袋校 ･ お茶の水校 ･ 立川校 ･ 町田校 ･ 大宮校 ･ 千葉校 ･ 柏校 ･ 横浜校 ･ 仙台校 ･ 名古屋校 ･ 京都校 ･ 大阪校 ･ 難波校 ･ 天王寺校 ･ 神戸校<br />
+					※ﾚｯｽﾝ会場 / 代々木校 ･ 池袋校 ･ お茶の水校 ･ 立川校 ･ 町田校 ･ 大宮校 ･ 千葉校 ･ 柏校 ･ 横浜校 ･ 仙台校 ･ 名古屋校 ･ 京都校 ･ 大阪校 ･ 難波校 ･ 天王寺校 ･ 神戸校 ･ 所沢校（2020年4月開校予定）<br />
 					<br />
 					入所申込書の返却はできませんので､あらかじめご了承ください｡<br />
 					入所後の受講料をあらかじめご確認ください｡<br />
@@ -162,6 +162,7 @@ a:focus{color:;}
 		</tbody>
 	</table>
 </div>
+
 
 <div style="font-size:x-small; text-align:right; margin-top:5px;"><a href="#pagetop">↑ﾍﾟｰｼﾞﾄｯﾌﾟへ</a></div>
 <div style="font-size:x-small; text-align:left; margin-top:5px;"><a href="/m/index.php">←ﾄｯﾌﾟへ戻る</a></div>

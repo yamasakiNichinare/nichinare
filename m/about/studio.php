@@ -142,6 +142,12 @@ a:focus{color:;}
 				<td style="font-size: x-small" valign="top">
 					&nbsp;</td>
 				<td style="text-align: left; font-size: x-small" valign="top">
+					<span style="color: #ff6600">&gt;&gt;</span><a href="#tokorozawa">所沢校</a></td>
+			</tr>
+			<tr>
+				<td style="font-size: x-small" valign="top">
+					&nbsp;</td>
+				<td style="text-align: left; font-size: x-small" valign="top">
 					<span style="color: #ff6600">&gt;&gt;</span><a href="#chiba">千葉校</a></td>
 			</tr>
 			<tr>
@@ -446,13 +452,33 @@ a:focus{color:;}
 <div style="text-align: right; margin-top: 5px; font-size: x-small">
 	<a href="#pagetop">&uarr;ﾍﾟｰｼﾞﾄｯﾌﾟへ</a></div>
 <p>
+	<a id="tokorozawa" name="tokorozawa"></a></p>
+<div style="text-align: left">
+	<table border="0" cellpadding="0" cellspacing="0" style="margin-top: 5px">
+		<tbody>
+			<tr>
+				<td style="text-align: left; color: #4ca778; font-size: x-small; text-decoration: underline" valign="top">
+					所沢校<span style="color: #ff6600; text-decoration: none">&nbsp;NEW</span></td>
+			</tr>
+			<tr>
+				<td style="text-align: left; font-size: x-small" valign="top">
+					令和2年4月開校予定｡<br />
+					ﾚｯｽﾝｽﾀｼﾞｵは｢西武新宿線/池袋線 所沢駅｣から､徒歩約5分の場所に開校予定です｡<br />
+					※画像はただいま準備中です｡</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div style="text-align: right; margin-top: 5px; font-size: x-small">
+	<a href="#pagetop">&uarr;ﾍﾟｰｼﾞﾄｯﾌﾟへ</a></div>
+<p>
 	<a id="chiba" name="chiba"></a></p>
 <div style="text-align: left">
 	<table border="0" cellpadding="0" cellspacing="0" style="margin-top: 5px">
 		<tbody>
 			<tr>
 				<td style="text-align: left; color: #4ca778; font-size: x-small; text-decoration: underline" valign="top">
-					千葉校<span style="color: #ff6600; text-decoration: none">&nbsp;NEW</span></td>
+					千葉校</td>
 			</tr>
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">
@@ -698,7 +724,7 @@ a:focus{color:;}
 		<tbody>
 			<tr>
 				<td style="text-align: left; color: #4ca778; font-size: x-small; text-decoration: underline" valign="top">
-					難波校<span style="color: #ff6600; text-decoration: none">&nbsp;NEW</span></td>
+					難波校</td>
 			</tr>
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">
@@ -733,7 +759,7 @@ a:focus{color:;}
 		<tbody>
 			<tr>
 				<td style="text-align: left; color: #4ca778; font-size: x-small; text-decoration: underline" valign="top">
-					天王寺校<span style="color: #ff6600; text-decoration: none">&nbsp;NEW</span></td>
+					天王寺校</td>
 			</tr>
 			<tr>
 				<td style="text-align: left; font-size: x-small" valign="top">

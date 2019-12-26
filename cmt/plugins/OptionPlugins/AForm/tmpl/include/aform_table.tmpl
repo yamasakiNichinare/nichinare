@@ -1,0 +1,60 @@
+<mt:Ignore>Copyright (c) 2008 ARK-Web Co.,Ltd.</mt:Ignore>
+<mt:setvarblock name="action_buttons">
+<!--
+            <mt:if name="can_rebuild">
+                <a href="javascript:void(0)"
+                    onclick="doForMarkedInThisWindow(getByID('<$mt:var name="object_type"$>-listing-form'), '<mt:var name="object_label" lower_case="1" escape="js">', '<mt:var name="object_label_plural" lower_case="1" escape="js">', null, 'rebuild_new_phase', {<mt:if name="blog_id">'blog_id': '<mt:var name="blog_id">'</mt:if>}, '<__trans phrase="to republish" escape="js">'); return false;"
+                    accesskey="r"
+                    title="<__trans phrase="Republish selected [_1] (r)" params="<mt:var name="object_label_plural" lower_case="1">">"
+                    ><__trans phrase="Republish"></a>
+            </mt:if>
+-->
+<mt:if name="can_delete_aform" eq="1">
+                <button
+                    onclick="doRemoveItems(getByID('<$mt:var name="object_type"$>-listing-form'), '<mt:var name="object_label" lower_case="1" escape="js">', 'A-Form', null, null, 
+{ 'singular_prompt' : '<__trans phrase='Are you sure you want to Delete the selected A-Form?'>', 
+  'plural_prompt' : '<__trans phrase='Are you sure you want to Delete the selected A-Form?'>' } ); return false;"
+                    accesskey="x"
+                    title="<__trans phrase="Delete selected [_1] (x)" params="<mt:var name="object_label_plural">">"
+                    ><__trans phrase="Delete"></button>
+</mt:if>
+<mt:if name="can_copy_aform" eq="1">
+                <button
+                    onclick="
+			itemset_options['copy_aform'] = {'continue_prompt' : '<__trans phrase='Are you sure you want to Copy the selected A-Form?'>'}; 
+			doForMarkedInThisWindow(getByID('<$mt:var name="object_type"$>-listing-form'), '<mt:var name="object_label" lower_case="1" escape="js">', 'A-Form', null, 'copy_aform', { 'singular_prompt' : '<__trans phrase='Are you sure you want to Copy the selected A-Form?'>', 'plural_prompt' : '<__trans phrase='Are you sure you want to Copy the selected A-Form?'>', 'action_name' : 'copy_aform' }, '<__trans phrase="copy">' ); 
+			return false;"
+                    accesskey="c"
+                    title="<__trans phrase="Copy selected [_1] (c)" params="<mt:var name="object_label_plural">">"
+                    ><__trans phrase="copy"></button>
+</mt:if>
+</mt:setvarblock>
+
+<mtapp:listing empty_message="<__trans phrase="No A-Form could be found.">">
+    <mt:if name="__first__">
+    <thead>
+        <tr>
+            <th class="cb"><input type="checkbox" name="id-head" value="all" class="select" /></th>
+            <th id="bt-id"><__trans phrase="Id"></th>
+            <th id="bt-title" class="primary-col"><__trans phrase="Title"></th>
+            <th id="bt-status"><__trans phrase="Form Status"></th>
+            <th id="bt-conversion-rate"><__trans phrase="Conversion Rate"></th>
+            <th id="bt-preview" class="view"><__trans phrase="Preview"></th>
+        </tr>
+    </thead>
+    <tbody>
+    </mt:if>
+        <tr class="<mt:if name="__odd__">odd<mt:else>even</mt:if>">
+            <td class="cb"><input type="checkbox" name="id" value="<mt:var name="id">" class="select" /></td>
+            <td><mt:var name="disp_id" escape="html"></td>
+            <td><a href="<mt:var name="script_url">?__mode=edit_aform_field&amp;id=<mt:var name="id">"><mt:var name="title" escape="html"></a></td>
+            <td><mt:if name="can_publish_aform" eq="1"><a href="<mt:var name="script_url">?__mode=change_aform_status&amp;id=<mt:var name="id">&amp;blog_id=<mt:var name="blog_id">" title="<mt:if name="status" eq="2"><__trans phrase="Unpublish this form."><mt:else><__trans phrase="Publish this form."></mt:if>"></mt:if><mt:var name="status_label" escape="html"><mt:if name="can_publish_aform" eq="1"></a></mt:if></td>
+            <td><a href="<mt:var name="script_url">?__mode=list_aform_input_error&amp;id=<mt:var name="id">" title="<__trans phrase="conversion rate description">"><mt:var name="conversion_rate"></a></td>
+            <td class="view si status-view"><a href="<mt:var name="script_url">?__mode=disp_aform&id=<mt:var name="id">&blog_id=<mt:var name="blog_id">" class="mt-open-dialog" title="<__trans phrase="preview this form">"><img src="<$mt:var name="static_uri"$>images/spacer.gif" alt="<__trans phrase="preview this form">" width="13" height="9" /></a></td>
+        </tr>
+    <mt:if name="__last__">
+    </tbody>
+    </mt:if>
+<!--<mt:var name="id"><br/>-->
+<!--<mt:var name="title">-->
+</mtapp:listing>

@@ -1,7 +1,7 @@
 @charset "shift_jis";
 
 /** -------------------------------- **
-	ƒJƒeƒSƒŠ[ƒƒjƒ…[
+	ï¿½Jï¿½eï¿½Sï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½jï¿½ï¿½ï¿½[
 *** ----------------------------------------------------------------- ***/
 
 #contents .left_contents h4 {
@@ -16,7 +16,7 @@ background:url(../images/menu-tit.gif) no-repeat;
 
 
 /**********************
-@ƒ[ƒJƒ‹ƒƒjƒ…[
+ï¿½@ï¿½ï¿½ï¿½[ï¿½Jï¿½ï¿½ï¿½ï¿½ï¿½jï¿½ï¿½ï¿½[
 **********************/
 
 #contents .left_contents ul.local_menu {
@@ -102,6 +102,13 @@ background:url(../images/local_menu07_on.jpg) no-repeat;
 background:url(../images/local_menu07.jpg) no-repeat;
 }
 
+#contents .left_contents ul.local_menu li.menu08 {
+background:url(../images/local_menu08_on.jpg) no-repeat;
+}
+#contents .left_contents ul.local_menu li.menu08 a {
+background:url(../images/local_menu08.jpg) no-repeat;
+}
+
 
 #contents #index ul.local_menu li.menu01 a,
 /*#contents #threedays ul.local_menu li.menu02 a,*/
@@ -111,18 +118,20 @@ background:url(../images/local_menu07.jpg) no-repeat;
 #contents #twodays_threedays ul.local_menu li.menu06 a,
 #contents #jr ul.local_menu li.menu03 a,
 #contents #start_up_course ul.local_menu li.menu07 a,
+#contents #workshop ul.local_menu li.menu08 a,
 #contents .left_contents ul.local_menu li.menu01 a:hover,
 #contents .left_contents ul.local_menu li.menu02 a:hover,
 #contents .left_contents ul.local_menu li.menu03 a:hover,
 #contents .left_contents ul.local_menu li.menu04 a:hover,
 #contents .left_contents ul.local_menu li.menu05 a:hover,
 #contents .left_contents ul.local_menu li.menu06 a:hover,
-#contents .left_contents ul.local_menu li.menu07 a:hover{background:none;}
+#contents .left_contents ul.local_menu li.menu07 a:hover,
+#contents .left_contents ul.local_menu li.menu08 a:hover{background:none;}
 
 
 
 /** -------------------------------- **
-	Ú×ƒy[ƒW
+	ï¿½Ú×ƒyï¿½[ï¿½W
 *** ----------------------------------------------------------------- ***/
 
 .accentuation {	color:#ff6600;}

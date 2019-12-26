@@ -1,0 +1,27 @@
+.btn {
+    a {
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        color: black;
+        background-color: #C5E1A5;
+    }
+
+    @include pc {
+        width: 460px;
+        margin: 0 auto;
+        a {
+            line-height: 50px;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+    }
+
+    @include sp {
+        a {
+            line-height: 44px;
+            font-size: 18px;
+            border-radius: 8px;
+        }
+    }
+}

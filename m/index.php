@@ -123,8 +123,7 @@ a:focus{color:;}
 <td valign="top" style="font-size:x-small; width:10px;"><span style="color:#98d1a9;">■</span></td>
 <td valign="top" style="font-size:x-small; text-align:left;">
 
-<a href="https://nichinare.com/m/application/index.php">■【追加】入所面接　臨時開催のお知らせ【10月生最終募集】</a>
-  
+<a href="https://nichinare.com/m/news/2019/11/1101-362.php">NEW ■所沢校（埼玉）開校のお知らせ</a>
 
 </td>
 </tr>
@@ -133,7 +132,7 @@ a:focus{color:;}
 <td valign="top" style="font-size:x-small; width:10px;"><span style="color:#98d1a9;">■</span></td>
 <td valign="top" style="font-size:x-small; text-align:left;">
 
-<a href="https://nichinare.com/m/news/2018/07/0704-336.php">■１０月生 限定募集のお知らせ</a>
+<a href="https://nichinare.com/m/news/2019/10/1029-361.php">【ｼｽﾃﾑ障害発生のお詫びと復旧のお知らせ】</a>
 
 </td>
 </tr>
@@ -142,8 +141,7 @@ a:focus{color:;}
 <td valign="top" style="font-size:x-small; width:10px;"><span style="color:#98d1a9;">■</span></td>
 <td valign="top" style="font-size:x-small; text-align:left;">
 
-<a href="https://nichinare.com/m/application/index.php">■【追加】入所面接　臨時開催のお知らせ【7月生最終募集】</a>
-  
+<a href="https://nichinare.com/m/news/2019/10/1011-358.php">台風19号接近に伴う､【入所面接】【無料体験ﾚｯｽﾝ】【ﾚｯｽﾝ見学】中止のお知らせ</a>
 
 </td>
 </tr>

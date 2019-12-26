@@ -17,13 +17,13 @@ padding:0px;
 text-align:center;
 color: #444444;
 background-color:#ebf4eb;
-font-size: 81.25%; /*13px‚Éİ’è*/
-font-family:"‚l‚r ‚oƒSƒVƒbƒN", "MS PGothic", Osaka, sans-serif;
+font-size: 81.25%; /*13pxï¿½Éİ’ï¿½*/
+font-family:"ï¿½lï¿½r ï¿½oï¿½Sï¿½Vï¿½bï¿½N", "MS PGothic", Osaka, sans-serif;
 }
 
 
 /** -------------------------------- **
-	Reset & ‰Šúİ’è
+	Reset & ï¿½ï¿½ï¿½ï¿½ï¿½İ’ï¿½
 *** ----------------------------------------------------------------- ***/
 
 h1, h2, h3, h4, h5, h6, p, span, ul, ol, li, dl, dt, dd, table, th, td, input, legend, div, form, hr, address {
@@ -48,7 +48,7 @@ overflow: hidden;
 
 
 /** -------------------------------- **
-	Float • Float Clearw’è
+	Float ï¿½ï¿½ Float Clearï¿½wï¿½ï¿½
 *** ----------------------------------------------------------------- ***/
 
 .clear{clear:both;}
@@ -61,12 +61,12 @@ display:block;
 visibility:hidden;
 }
 
-/* IE7—p*/
+/* IE7ï¿½p*/
 div {zoom:100%;}
 
 
 /** -------------------------------- **
-	Linkw’è
+	Linkï¿½wï¿½ï¿½
 *** ----------------------------------------------------------------- ***/
 
 a:link {text-decoration:underline; color:#005cb8;}
@@ -77,7 +77,7 @@ a img {border:none;}
 
 
 /** -------------------------------- **
-	Šî–{ƒtƒHƒ“ƒgƒTƒCƒYw’è
+	ï¿½ï¿½ï¿½{ï¿½tï¿½Hï¿½ï¿½ï¿½gï¿½Tï¿½Cï¿½Yï¿½wï¿½ï¿½
 *** ----------------------------------------------------------------- ***/
 
 .small {
@@ -100,3 +100,39 @@ font-size: 138.47%;
 line-height: 110%;
 }
 
+/** -------------------------------- **
+	PCã¨SPã®åˆ‡ã‚Šåˆ†ã‘
+*** ----------------------------------------------------------------- ***/
+@media screen and (min-width: 768px) {
+	.PC {
+		display: block !important;
+	}
+	.SP {
+		display: none !important;
+	}
+}
+
+@media screen and (max-width: 766px) {
+	.PC {
+		display: none !important;
+	}
+	.SP {
+		display: block !important;
+	}
+}
+
+/** -------------------------------- **
+	å£°ãƒã‚¬ãƒãƒŠãƒ¼(ä¸‹å±¤ãƒšãƒ¼ã‚¸ç”¨)
+*** ----------------------------------------------------------------- ***/
+@media screen and (min-width: 768px) {
+	.seimagaBtn_side {
+		margin: 5px auto 0;
+	}
+    .seimagaBtn_side img {
+        display: block;
+        margin: 0 auto;
+    }
+	.seimagaBtn_side img:hover {
+		opacity: 0.7;
+	}
+}
