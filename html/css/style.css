@@ -1,0 +1,402 @@
+@charset "shift_jis";
+
+/** -------------------------------- **
+	Flash
+*** ----------------------------------------------------------------- ***/
+
+.flash_area {
+width:937px;
+height:340px;
+margin:0 auto;
+padding:10px 0 0;
+}
+
+/** -------------------------------- **
+	声マガバナー(トップページ用)
+*** ----------------------------------------------------------------- ***/
+@media screen and (min-width: 768px) {
+	.left_contents .column_area {
+		position: relative;
+	}
+
+	.seimagaBtn_top {
+		position: absolute;
+		bottom: -57px;
+		right: 0;
+	}
+
+	.seimagaBtn_top img:hover {
+		opacity: 0.7;
+	}
+}
+
+/** -------------------------------- **
+	�ً}���m
+*** ----------------------------------------------------------------- ***/
+
+.emergency {
+width:912px;
+margin:12px auto 5px;
+padding:10px;
+border:1px solid #000000;
+text-align:left;
+}
+
+
+/** -------------------------------- **
+	�R���e���c�g
+*** ----------------------------------------------------------------- ***/
+
+.top_main {
+width:934px;
+margin:0 auto;
+padding:10px 0 0;
+}
+
+.top_main .left_contents {
+float:left;
+width:746px;
+margin:0;
+padding:0 0 0;
+}
+
+.top_main .right_contents {
+float:right;
+width:182px;
+}
+
+
+
+/** -------------------------------- **
+	���R���e���c
+*** ----------------------------------------------------------------- ***/
+
+.left_contents .column {
+width:746px;
+margin:0;
+padding:0 0 15px;
+position:relative;
+}
+
+/**********************
+�@���j���[
+**********************/
+
+.left_contents .column ul.menu01 {
+float:left;
+width:752px;
+margin:0;
+padding:0 0 0;
+text-align:left;
+list-style:none;
+font-size:1%;
+line-height:1%;
+}
+
+.left_contents .column ul.menu01 li {
+float:left;
+width:182px;
+margin:0;
+padding:0 6px 0 0;
+}
+
+.right_contents ul.menu02 {
+/*float:right;*/
+width:182px;
+margin:0;
+padding:0 0 13px;
+text-align:left;
+list-style:none;
+font-size:1%;
+line-height:1%;
+}
+
+.right_contents ul.menu02 li {
+width:182px;
+margin:0;
+padding:0 0 2px 0;
+}
+
+
+
+
+.btnWorkshop {
+	margin-top: 13px !important;
+}
+
+
+
+.left_contents .column ul li img {
+	vertical-align: top;
+}
+
+/********************************************
+�@�v���̐��D���߂������Ȃ��� �ŐV���� �͂�
+********************************************/
+
+.left_contents .column_area {
+	width:746px;
+}
+
+.left_contents .column_area .column_left {
+	float:left;
+	width:557px;
+}
+
+
+/**********************
+�@�v���̐��D���߂������Ȃ���
+**********************/
+
+.left_contents .column_text {
+	width:557px;
+}
+
+.left_contents .column_text dl {
+	width:549px;
+	margin:0;
+	padding:0 0 0 8px;
+	text-align:left;
+}
+
+.left_contents .column_text dl dt {
+	width:549px;
+	height:27px;
+	margin:0;
+	padding:0;
+	text-align:left;
+	text-indent:-9999px;
+	background:url(../images/top_h203.gif) top no-repeat;
+}
+
+.left_contents .column_text dl dd {
+	margin:0;
+	padding:8px 8px 0;
+	text-align:left;
+}
+
+/**********************
+�@�ŐV����
+**********************/
+
+/*** �ꗗ�͂����� �{�^�� ***/
+
+.left_contents .column_list {
+	width:557px;
+	margin:0 0 5px;
+	padding:0 0 15px;
+	position:relative;
+}
+
+.left_contents .column_list p.bt_news {
+	width:73px;
+	height:19px;
+	margin:0;
+	padding:0;
+	text-align:left;
+	position:absolute;
+	top:3px;
+	left:427px;
+	z-index:10;
+}
+
+.left_contents .column_list p.bt_rss {
+	width:49px;
+	height:19px;
+	margin:0;
+	padding:0;
+	text-align:left;
+	position:absolute;
+	top:3px;
+	left:503px;
+	z-index:10;
+}
+
+.left_contents .column_list dl {
+	width:549px;
+	margin:0;
+	padding:0 0 0 8px;
+	text-align:left;
+	z-index:1;
+}
+
+.left_contents .column_list dl dt {
+	width:549px;
+	height:27px;
+	margin:0;
+	padding:0;
+	text-align:left;
+	text-indent:-9999px;
+	background:url(../images/top_h201.gif) top no-repeat;
+}
+
+.left_contents .column_list dl dd {
+	width:549px;
+	margin:0;
+	padding:8px 0 0;
+	text-align:left;
+}
+
+.left_contents .column_list dl dd dl {
+	float:none;
+	width:541px;
+	margin:0;
+	padding:0 0 8px 8px;
+	text-align:left;
+	background:url(../common/images/dotted_line01.gif) left bottom repeat-x;
+}
+
+.left_contents .column_list dl dd dl dt {
+	float:left;
+	width:100px;
+	height:auto;
+	margin:0;
+	padding:0 0 0 16px;
+	text-indent:0;
+	text-align:left;
+	background:url(../common/images/icon_arr01.gif) left no-repeat;
+}
+
+.left_contents .column_list dl dd dl dd {
+	float:right;
+	width:417px;
+	margin:0;
+	padding:0 0 0;
+	text-align:left;
+}
+
+.left_contents .column_list dl dd dl dd img {
+	margin-left:10px;
+	vertical-align:text-bottom;
+}
+
+/**********************
+�@�o�i�[
+**********************/
+
+.left_contents .column_area ul.bnr_list {
+float:right;
+width:182px;
+margin:0;
+padding:0 0 0;
+text-align:left;
+list-style:none;
+font-size:1%;
+line-height:1%;
+}
+
+.left_contents .column_area ul.bnr_list li {
+width:182px;
+margin:0;
+padding:0 0 4px 0;
+}
+
+.left_contents .column_area ul.bnr_list li img {
+	vertical-align: top;
+}
+
+
+/**------------------
+�@���o�i�[ �A�j��
+***--------------------***/
+.bnr_anime_box{
+	background:url(../common/images/dotted_line01.gif) repeat-x left bottom #eaf4eb;
+	padding: 5px 0 0;
+}
+
+.bnr_anime_box ul{
+	width: 934px;
+	margin: 0 auto;
+}
+
+.bnr_anime_box ul li{
+	float: left;
+	padding-bottom:2.3px;
+	padding-right: 6px;}
+
+.bnr_anime_box ul li.bnr_right{
+	padding: 0;
+}
+
+
+
+/** -------------------------------- **
+	�E�R���e���c
+*** ----------------------------------------------------------------- ***/
+
+.top_main .boader_column {
+width:182px;
+margin:0;
+padding:0 0 7px;
+background:url(../images/bg_top-rightarea_btm.gif) bottom no-repeat;
+}
+
+
+.top_main .boader_column .column {
+width:182px;
+margin:0;
+padding:7px 0 0;
+background:url(../images/bg_top-rightarea.gif) top no-repeat;
+}
+
+.top_main .boader_column .column p {
+width:170px;
+margin:0 auto;
+padding:0;
+}
+
+
+/**********************
+�@�O���[�v�v���_�N�V����
+**********************/
+
+.top_main .boader_column .column dl {
+width:170px;
+margin:10px auto 0;
+padding:0 0 8px;
+font-size:1%;
+line-height:1%;
+background:url(../images/bg_top-group_btm.gif) bottom no-repeat;
+}
+
+.top_main .boader_column .column dl dt {
+width:170px;
+height:34px;
+margin:0;
+padding:0;
+text-align:left;
+text-indent:-9999px;
+background:url(../images/top_h202.gif) no-repeat;
+}
+
+.top_main .boader_column .column dl dd {
+margin:0;
+padding:3px 0 0;
+text-align:center;
+}
+
+/**********************
+�@SP�o�i�[
+**********************/
+
+.top_main .right_contents p.sp_bnr {
+width:182px;
+margin:38px auto 0;
+padding:0;
+}
+
+.top_main .right_contents .twiBox {
+	width: 182px;
+	height: 383px;
+}
+
+/** -------------------------------- **
+	���u�����p�T�C�g bnr 2015
+*** ----------------------------------------------------------------- ***/
+
+#bnr_oshirase {
+	margin: 0 auto;
+    padding: 10px 0;
+	width: 934px;
+    text-align: right;
+}

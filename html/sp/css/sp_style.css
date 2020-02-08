@@ -1,0 +1,404 @@
+@charset "utf-8";
+/*------------------------------------------------------------
+レイアウト
+------------------------------------------------------------*/
+body {
+text-align: center;
+line-height: 1.5;
+}
+/*------------------------------------------------------------
+ヘッダー
+------------------------------------------------------------*/
+#gHeader {padding:10px;}
+#gHeader h1 {float:left; width:226px; height:33px; text-align:left; text-indent:-9999px; background:url(../images/logo.png) no-repeat; -webkit-background-size: 226px 33px;}
+#gHeader h1 a {display:block; width:226px; height:33px;}
+#gHeader p {float:right; width:68px; height:38px; text-align:left; text-indent:-9999px; background:url(../images/hd_button.png) no-repeat; -webkit-background-size: 68px 38px;}
+#gHeader p a {display:block; width:68px; height:38px;}
+/*------------------------------------------------------------
+グローバルメニュー
+------------------------------------------------------------*/
+ul#gl-menu {
+width:100%;
+margin:0;
+padding:0;
+border-top:1px solid #999999;
+border-bottom:1px solid #999999;
+background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d7d7d7));
+}
+ul#gl-menu li {
+float:left;
+width:19.8%;
+}
+ul#gl-menu li:first-child {border-left:none;}
+ul#gl-menu li.gl-menu05 {float:left;}
+ul#gl-menu li a {
+display:block;
+width:100%;
+min-height:30px;
+padding:15px 0;
+text-align:left;
+text-indent:-9999px;
+border-left:1px solid #999999;
+}
+ul#gl-menu li.gl-menu01 a {background:url(/sp/images/gl_menu01.png) center center no-repeat;-webkit-background-size: 46px 30px; border-left:none;}
+ul#gl-menu li.gl-menu02 a {background:url(/sp/images/gl_menu02.png) center center no-repeat;-webkit-background-size: 34px 30px;}
+ul#gl-menu li.gl-menu03 a {background:url(/sp/images/gl_menu03.png) center center no-repeat;-webkit-background-size: 52px 30px;}
+ul#gl-menu li.gl-menu04 a {background:url(/sp/images/gl_menu04.png) center center no-repeat;-webkit-background-size: 44px 30px;}
+ul#gl-menu li.gl-menu05 a {background:url(/sp/images/gl_menu05.png) center center no-repeat;-webkit-background-size: 52px 30px;}
+/*** Active **/
+ul#gl-menu li a.on,
+#about ul#gl-menu li.gl-menu01,
+#course ul#gl-menu li.gl-menu02,
+#application ul#gl-menu li.gl-menu03,
+#lesson ul#gl-menu li.gl-menu04,
+#free ul#gl-menu li.gl-menu05 {background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#6cce68));}
+/*** PCのみ掲載の情報を非表示 **/
+ul#gl-menu li.gl-menu06 {display:none;}
+/*------------------------------------------------------------
+コンテンツ
+------------------------------------------------------------*/
+#conts {width:100%; padding-top:5px; overflow:hidden;}
+/*------------------------------------------------------------
+TOP
+------------------------------------------------------------*/
+#conts .topic {color:#008e61; font-size: 0.75em;}
+#conts .top_bnr {padding-top:10px;}
+/*------------------------------------------------------------
+SNS バナー
+------------------------------------------------------------*/
+#conts .snsBnr {
+margin: 0 auto;
+width: 304px;
+}
+#conts .snsBnr .bnr_left {float: left;}
+#conts .snsBnr .bnr_right {float: right;}
+/** ------------------------ ***
+ギャラリー
+*** ------------------------ ***/
+#slides {
+width:305px;
+height:171px;
+margin:0 auto;
+position:relative;
+z-index:100;
+}
+.slides_container {
+width:305px;
+height:171px;
+overflow:hidden;
+position:relative;
+display:none;
+}
+.slides_container a, .slides_container p, .slides_container a img{
+width: 305px;
+height:171px;
+}
+.slides_container ul li img {
+display:block;
+}
+#conts #slides .bt_prev {
+position:absolute;
+top:69px;
+left:5px;
+z-index:101;
+}
+#conts #slides .bt_next {
+position:absolute;
+top:69px;
+right:5px;
+z-index:101;
+}
+/** ------------------------ ***
+緊急時のお知らせ
+*** ------------------------ ***/
+#conts .emergency {
+margin-top:10px;
+padding:10px;
+text-align:left;
+background:#eeeeee;
+font-size: 0.75em;
+}
+/** ------------------------ ***
+最新情報
+*** ------------------------ ***/
+#conts .news {
+margin-top:10px;
+text-align:left;
+}
+#conts .news .tit {
+min-height:20px;
+padding:5px 10px 5px 24px;
+color:#ffffff;
+background:url(../images/icon_tit.png) 10px 6px no-repeat #65b07a;
+-webkit-background-size: 8px 20px;
+}
+#conts .news li {border-bottom:1px solid #bbbbbb; font-size: 0.875em;}
+#conts .news li a {
+display:block;
+padding:14px 35px 14px 10px;
+background:url(../images/list_arr.png) right center no-repeat;
+-webkit-background-size: 25px 12px;
+text-decoration:none;
+}
+#conts .news li span {
+margin-left:10px;
+padding:4px 5px;
+background:#f48fb9;
+color:#ffffff;
+text-align:center;
+font-size:0.75em;
+font-weight:bold;
+-webkit-border-radius: 6px;
+}
+/** ------------------------ ***
+ナビ
+*** ------------------------ ***/
+/*** コース ------ ***/
+#conts .course_nav {
+padding:10px;
+background:#fffbca;
+text-align:center;
+}
+#conts .course_nav ul {
+width:304px;
+margin:0 auto;
+}
+#conts .course_nav ul li {
+/*float:left;*/
+width:303px;
+/*margin-left:5px;*/
+/*padding-bottom:8px;*/
+}
+#conts .course_nav ul li:first-child {margin-left:0px;}
+#conts .course_nav ul li.bt_left {
+clear:left;
+float:left;
+width:149px;
+margin-left:0;
+padding-bottom:0;
+}
+#conts .course_nav ul li.bt_right {
+float:right;
+width:149px;
+margin-left:0;
+padding-bottom:0;
+}
+/*** 下層 ------ ***/
+#conts .sec_nav {margin-top:10px;}
+#conts .sec_nav ul {border-bottom:1px solid #999999; text-align:left;}
+#conts .sec_nav ul li {
+border-top:1px solid #999999;
+background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d7d7d7));
+}
+#conts .sec_nav ul li a {
+display:block;
+padding:6px 10px;
+color:#333333;
+text-decoration:none;
+font-weight:bold;
+background:url(../images/list_arr.png) right center no-repeat;
+-webkit-background-size: 25px 12px;
+}
+#conts .sec_nav ul li img {float:left; margin-right:10px;}
+#conts .sec_nav ul li span {display:table-cell; height:47px; vertical-align:middle;}
+/*** サブ ------ ***/
+#conts .sub_nav {padding:15px 10px;}
+#conts .sub_nav.first {padding:15px 10px 0;}
+#conts .sub_nav li {
+float:right;
+width:48%;
+font-weight:bold;
+text-align:left;
+-webkit-border-radius: 6px;
+border:1px solid #999999;
+background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d7d7d7));
+}
+#conts .sub_nav li:first-child {float:left;}
+#conts .sub_nav li a {
+display:block;
+padding:12px 10px;
+color:#333333;
+text-decoration:none;
+font-weight:bold;
+font-size:0.875em;
+background:url(../images/list_arr.png) right center no-repeat;
+-webkit-background-size: 25px 12px;
+}
+/*** グループ ------ ***/
+#conts .group_nav {
+padding:10px;
+background:#abdab9;
+text-align:center;
+}
+#conts .group_nav h1 {
+padding-bottom:5px;
+background:url(../images/production_tit.png) top center no-repeat;
+-webkit-background-size: 180px 20px;
+text-align:left;
+text-indent:-9999px;
+}
+#conts .group_nav ul {
+width:300px;
+margin:0 auto;
+}
+#conts .group_nav ul li {
+padding-bottom:5px;
+/*text-align:left;
+text-indent:-9999px;
+-webkit-background-size: 300px 37px;*/
+}
+/*#conts .group_nav ul li a {
+display:block;
+width:300px;
+height:37px;
+}
+#conts .group_nav ul li.group01 {background:url(../images/production_nav01.png) top center no-repeat; background-size: 300px 37px;}
+#conts .group_nav ul li.group02 {background:url(../images/production_nav02.png) top center no-repeat; background-size: 300px 37px;}
+#conts .group_nav ul li.group03 {background:url(../images/production_nav03.png) top center no-repeat; background-size: 300px 37px;}
+#conts .group_nav ul li.group04 {background:url(../images/production_nav04.png) top center no-repeat; background-size: 300px 37px;}
+#conts .group_nav ul li.group05 {background:url(../images/production_nav05.png) top center no-repeat; background-size: 300px 37px;}*/
+/*** アニメバナー ------ ***/
+#conts .anime_bnr {
+padding:10px 0 5px 10px;
+background:#ffffff;
+}
+#conts .anime_bnr ul {
+width:305px;
+overflow:hidden;
+margin: 0 auto;
+}
+#conts .anime_bnr ul li {
+float:left;
+margin:0 5px 5px 0;;
+}
+#conts .anime_bnr ul li img {
+vertical-align:top;
+}
+/*------------------------------------------------------------
+Form
+------------------------------------------------------------*/
+#form .tit {
+width:315px;
+height:64px;
+margin:0 auto;
+text-align:left;
+text-indent:-9999px;
+background:url(/request/images/sp_h2_tit01.jpg) no-repeat;
+-webkit-background-size: 315px 64px;
+}
+#form .form_txt {padding:10px 10px 0; font-size:0.75em; text-align:left;}
+/*** form_column ***/
+#form .form_column {
+margin:0 auto;
+padding:10px 0;
+margin-top:20px;
+text-align:left;
+border-top:2px solid #6CBD85;
+}
+#form .form_column .subtit {color:#6CBD85; padding:0 10px;}
+#form .form_column .subtit strong {padding-left:10px; color:#FF0000;}
+#form .form_column p {padding:10px 10px 0; font-size:0.875em;}
+#form .form_column .example {color:#999999; font-size:0.75em;}
+#form .form_column .example strong {color:#000000;}
+#form .form_column .line {margin-top:10px; border-top:1px solid #CCCCCC;}
+#form .form_column .radio {float:left; padding-right:10px;}
+#form .form_column .w1,
+#form .form_column .w2,
+#form .form_column .w3 {width:95%;}
+#form .bt_confirm {width:264px; height:60px;}
+#form .bt_send {width:80px; height:60px;}
+#form .button_mgn {margin-right:10px;}
+#form p.text_red{color: #FF0000;}
+/*** 戻る ***/
+#form .sp_btback {
+width:45%;
+font-weight:bold;
+text-align:left;
+margin:20px 10px 0;
+-webkit-border-radius: 6px;
+border:1px solid #999999;
+background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d7d7d7));
+}
+#form .sp_btback a {
+display:block;
+padding:12px 5px 12px 30px;
+color:#333333;
+text-decoration:none;
+font-weight:bold;
+font-size:0.875em;
+background:url(/sp/images/icon_back.png) 10px center no-repeat;
+-webkit-background-size: 12px 12px;
+}
+#form .form_column p #zipSuggest{font-size:12px; color:#FFF; background-color:#ff9e07; line-height:27px; vertical-align:top; text-decoration:none; display:inline-block; padding:0 10px; border-bottom: 1px solid #e08b06; border-right: 1px solid #e08b06;}
+
+
+/*------------------------------------------------------------
+フッター
+------------------------------------------------------------*/
+#gFooter {
+padding:10px 0;
+text-align:center;
+background:#f2f2f2;
+border-top:2px solid #ffffff;
+}
+#gFooter nav {
+padding:10px 10px 0;
+font-size:0.75em;
+}
+#gFooter .authors {
+padding:10px;
+font-size:0.75em;
+text-align:left;
+}
+#gFooter .copyright {
+font-size:0.625em;
+padding:10px 10px 0;
+border-top:1px solid #aaaaaa;
+}
+#gFooter .fontL {
+font-size: 1.6em;
+display: block;
+padding-bottom: 15px;
+}
+/* javascript 玉城追加 */
+#maining {
+width: 100%;
+position: relative;
+overflow: auto;
+}
+#maining ul {
+display: block;
+width: 500%;
+margin: 0;
+padding: 0;
+}
+#maining ul li {
+float: left;
+list-style-type: none;
+width: 20%;
+}
+/*------------------------------------------------------------
+受講生専用サイト bnr 2015
+------------------------------------------------------------*/
+#bnr_oshirase {
+background: #abdab9;
+padding: 13px 0;
+text-align: center;
+line-height:1;
+}
+/*------------------------------------------------------------
+twitterウィジェット2019.03.07
+------------------------------------------------------------*/
+.sp_tw_widget {
+    margin-top: 20px;
+}
+.sp_tw_widget iframe {
+    border: 1px solid #abdab9 !important;
+    box-sizing: border-box;
+}
+
+
+
+.btnWorkshop {
+    margin-bottom: -8px;
+}

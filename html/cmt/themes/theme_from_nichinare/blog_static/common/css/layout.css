@@ -1,0 +1,506 @@
+@charset "shift_jis";
+
+/** -------------------------------- **
+	Wrapper指定
+*** ----------------------------------------------------------------- ***/
+
+#wrapper{
+width:960px;
+margin:0 auto;
+padding:0 4px;
+text-align:left;
+background:url(../images/bg_wrapper.jpg) left top repeat-y;
+}
+
+
+/** -------------------------------- **
+	Header指定
+*** ----------------------------------------------------------------- ***/
+
+#header {
+width:928px;
+min-height:73px;
+_height:73px;
+margin:0;
+padding:0 15px 0 17px;
+text-align:left;
+border-top:4px solid #6cbd85;
+background:url(../images/bg_header.jpg) right top no-repeat;
+}
+
+#header h1 {
+float:left;
+width:280px;
+height:42px;
+margin:0;
+padding:15px 0 0;
+text-align:left;
+}
+
+#header ul {
+float:right;
+width:282px;
+margin:0;
+padding:58px 0 0;
+text-align:left;
+list-style:none;
+font-size:1%;
+line-height:1%;
+}
+
+#header ul li {
+float:left;
+height:12px;
+margin:0;
+padding:0 0 0 9px;
+text-align:left;
+text-indent:-9999px;
+}
+
+#header ul li.hd_menu01 {
+width:90px;
+background:url(../images/hd_menu01_on.gif) right no-repeat;
+}
+
+#header ul li.hd_menu01 a {
+display:block;
+width:90px;
+height:12px;
+background:url(../images/hd_menu01.gif) right no-repeat;
+}
+
+#header ul li.hd_menu02 {
+width:85px;
+background:url(../images/hd_menu02_on.gif) right no-repeat;
+}
+
+#header ul li.hd_menu02 a {
+display:block;
+width:85px;
+height:12px;
+background:url(../images/hd_menu02.gif) right no-repeat;
+}
+
+#header ul li.hd_menu03 {
+width:79px;
+background:url(../images/hd_menu03_on.gif) right no-repeat;
+}
+
+#header ul li.hd_menu03 a {
+display:block;
+width:79px;
+height:12px;
+background:url(../images/hd_menu03.gif) right no-repeat;
+}
+
+#header ul li.hd_menu01 a:hover,
+#header ul li.hd_menu02 a:hover,
+#header ul li.hd_menu03 a:hover {background:none;}
+
+
+
+/** -------------------------------- **
+	Gl menu指定
+*** ----------------------------------------------------------------- ***/
+
+ul#gl-menu {
+width:960px;
+margin:0;
+padding:0;
+text-align:left;
+list-style:none;
+font-size:1%;
+line-height:1%;
+}
+
+ul#gl-menu li {
+float:left;
+width:160px;
+height:52px;
+margin:0;
+padding:0;
+text-align:left;
+text-indent:-9999px;
+}
+
+ul#gl-menu li a {
+display:block;
+width:160px;
+height:52px;
+}
+
+ul#gl-menu li.gl-menu01 {background:url(../images/gl_menu01_on.jpg) no-repeat;}
+ul#gl-menu li.gl-menu01 a {background:url(../images/gl_menu01.jpg) no-repeat;}
+
+ul#gl-menu li.gl-menu02 {background:url(../images/gl_menu02_on.jpg) no-repeat;}
+ul#gl-menu li.gl-menu02 a {background:url(../images/gl_menu02.jpg) no-repeat;}
+
+ul#gl-menu li.gl-menu03 {background:url(../images/gl_menu03_on.jpg) no-repeat;}
+ul#gl-menu li.gl-menu03 a {background:url(../images/gl_menu03.jpg) no-repeat;}
+
+ul#gl-menu li.gl-menu04 {background:url(../images/gl_menu04_on.jpg) no-repeat;}
+ul#gl-menu li.gl-menu04 a {background:url(../images/gl_menu04.jpg) no-repeat;}
+
+ul#gl-menu li.gl-menu05 {background:url(../images/gl_menu05_on.jpg) no-repeat;}
+ul#gl-menu li.gl-menu05 a {background:url(../images/gl_menu05.jpg) no-repeat;}
+
+ul#gl-menu li.gl-menu06 {background:url(../images/gl_menu06_on.jpg) no-repeat;}
+ul#gl-menu li.gl-menu06 a {background:url(../images/gl_menu06.jpg) no-repeat;}
+
+
+#about ul#gl-menu li.gl-menu01 a,
+#course ul#gl-menu li.gl-menu02 a,
+#application ul#gl-menu li.gl-menu03 a,
+#lesson ul#gl-menu li.gl-menu04 a,
+#free ul#gl-menu li.gl-menu05 a,
+#request ul#gl-menu li.gl-menu06 a,
+ul#gl-menu li.gl-menu01 a:hover,
+ul#gl-menu li.gl-menu02 a:hover,
+ul#gl-menu li.gl-menu03 a:hover,
+ul#gl-menu li.gl-menu04 a:hover,
+ul#gl-menu li.gl-menu05 a:hover,
+ul#gl-menu li.gl-menu06 a:hover {background:none;}
+
+
+/** -------------------------------- **
+	Footer指定
+*** ----------------------------------------------------------------- ***/
+
+#footer {
+width:915px;
+min-height:87px;
+_height:87px;
+margin:18px 0 0;
+padding:0 20px 0 25px;
+text-align:left;
+color:#222222;
+background:url(../images/bg_footer.jpg) left top no-repeat #98d1a9;
+}
+
+#footer p.footer_link {
+float:left;
+width:458px;
+margin:0;
+padding:54px 0 0;
+text-align:left;
+}
+
+#footer p.copyright {
+float:right;
+width:457px;
+margin:0;
+padding:54px 0 0;
+text-align:right;
+}
+
+#footer a:link {text-decoration:underline; color:#222222;}
+#footer a:visited {text-decoration:underline; color:#222222;}
+#footer a:hover, #footer a:active {text-decoration:underline; color:#005cb8;}
+
+
+/** -------------------------------- **
+  コンテンツ指定
+*** ----------------------------------------------------------------- ***/
+
+#container {
+width:930px;
+margin:15px auto 0;
+padding:0;
+background:url(../images/bg_contents.gif) left top repeat-y;
+}
+
+#container #contents {
+width:930px;
+margin:0;
+padding:0;
+background:url(../images/bg_contents-left_btm.gif) left bottom no-repeat;
+}
+
+#contents .left_contents {
+float:left;
+width:200px;
+margin:0;
+padding:0 0 14px;
+background:url(../../common/images/bg_contents-left_top.gif) left 36px no-repeat;
+}
+
+#contents .right_contents {
+float:right;
+width:707px;
+margin:0;
+padding:0;
+}
+
+
+/** -------------------------------- **
+  パンくず指定
+*** ----------------------------------------------------------------- ***/
+
+.pankuzu {
+width:930px;
+margin:15px auto 0;
+padding:0;
+text-align:left;
+}
+
+
+/** -------------------------------- **
+  Sec left_contents指定
+*** ----------------------------------------------------------------- ***/
+
+/**********************
+　左バナー
+**********************/
+
+#contents .left_contents ul.left-bnr {
+width:191px;
+margin:0 auto;
+padding:15px 0 0;
+text-align:right;
+list-style:none;
+font-size:1%;
+line-height:1%;
+}
+
+#contents .left_contents ul.left-bnr li {
+margin:0;
+padding:5px 0 0;
+}
+
+
+/**********************
+　左グループ
+**********************/
+
+#contents .left_contents dl {
+width:189px;
+margin:5px auto 0;
+padding:0 0 8px;
+font-size:1%;
+line-height:1%;
+background:url(../images/bg_sec-group_btm.gif) bottom no-repeat;
+}
+
+#contents .left_contents dl dt {
+width:189px;
+height:26px;
+margin:0;
+padding:0;
+text-align:left;
+text-indent:-9999px;
+background:url(../images/sec_group-tit.gif) no-repeat;
+}
+
+#contents .left_contents dl dd {
+margin:0;
+padding:5px 0 0;
+text-align:center;
+}
+
+
+/** -------------------------------- **
+  Sec right_contents指定
+*** ----------------------------------------------------------------- ***/
+
+#contents .right_contents .sec_main {
+width:694px;
+margin:0;
+padding:0 0 0 13px;
+text-align:left;
+}
+
+
+/**********************
+　見出し
+**********************/
+
+#contents .right_contents .sec_main h3 {
+width:694px;
+margin:0;
+padding:0 0 14px;
+color:#4ca778;
+text-align:left;
+}
+
+
+/**********************
+　カラム
+**********************/
+
+#contents .right_contents .sec_main .line_column {
+width:694px;
+margin:0;
+padding:20px 0 16px;
+text-align:left;
+background:url(../images/dotted_line01.gif) left bottom repeat-x;
+}
+
+#contents .right_contents .sec_main .line-none_column {
+width:694px;
+margin:0;
+padding:20px 0 16px;
+text-align:left;
+background:none;
+}
+
+
+/**********************
+　ページTOP
+**********************/
+
+#contents .right_contents .sec_main .pagetop {
+width:694px;
+margin:0;
+padding:30px 0 0;
+text-align:right;
+}
+
+#contents .right_contents .sec_main .pagetop a {
+padding-left:16px;
+background:url(../images/icon_arr02.gif) left no-repeat;
+}
+
+
+/**********************
+　ページ内リンク
+**********************/
+
+#contents .right_contents .sec_main ul.anchor_link {
+	width:652px;
+	padding:10px 20px;
+	list-style:none;
+	border:1px solid #aaaaaa;
+	background:#ffffcc;
+}
+
+#contents .right_contents .sec_main ul.anchor_link li {
+	float:left;
+	padding:0 20px 0 16px;
+	background:url(../../common/images/icon_arr03.gif) left no-repeat;
+}
+
+
+/**********************
+　リンクアイコン
+**********************/
+
+#contents .right_contents .sec_main .arr {
+	padding-left:16px;
+	background:url(../../common/images/icon_arr01.gif) left no-repeat;
+}
+
+
+/**********************
+　ページ共通クラス
+**********************/
+
+/*** テキスト＆画像回りこみ ***/
+
+#contents .right_contents .sec_main .pad-t {padding-top:10px;}
+
+
+#contents .right_contents .sec_main .photo_l {
+	float:left;
+	width:236px;
+	padding:0 10px 10px 0;
+}
+
+#contents .right_contents .sec_main .photo_r {
+	float:right;
+	width:236px;
+	padding:0 0 10px 10px;
+}
+
+#contents .right_contents .sec_main .photo_c {
+	width:694px;
+	padding:10px 0 0;
+}
+
+#contents .right_contents .sec_main .photo_ss {
+	padding:15px 0 0;
+}
+
+#contents .right_contents .sec_main .photo_c img.mgn-r {
+	margin-right:8px;
+}
+
+
+/*** 赤文字 ***/
+
+#contents .right_contents .sec_main .red_txt {
+	padding:10px 0 0;
+	text-align:left;
+	color:#ff0000;
+}
+
+
+/*** リスト　1字下げインデントあり ***/
+
+#contents .right_contents .sec_main ul.attention {
+	padding-top:10px;
+	text-align:left;
+	list-style:none;
+}
+
+#contents .right_contents .sec_main ul.attention li {
+	padding-left:1em;
+	text-indent:-1em;
+}
+
+#contents .right_contents .sec_main ul.attention .red {
+	color:#ff0000;
+}
+
+
+/*** table 料金 ***/
+
+#contents .right_contents table.tbl_tuition {
+	width:692px;
+	border-collapse:collapse;
+}
+
+#contents .right_contents table.tbl_tuition th {
+	width:150px;
+	padding:20px 10px;
+	text-align:center;
+	border:1px solid #aaaaaa;
+	background:#daf6e2;
+}
+
+#contents .right_contents table.tbl_tuition td {
+	width:500px;
+	padding:20px 10px;
+	text-align:left;
+	border:1px solid #aaaaaa;
+	background:#ffffcc;
+}
+
+
+/*** table スケジュール ***/
+
+#contents .right_contents table.tbl_schedule {
+	width:692px;
+	border-collapse:collapse;
+}
+
+#contents .right_contents table.tbl_schedule th {
+	width:327px;
+	padding:10px;
+	text-align:center;
+	border:1px solid #aaaaaa;
+	background:#daf6e2;
+}
+
+#contents .right_contents table.tbl_schedule td {
+	width:327px;
+	padding:20px 10px;
+	text-align:center;
+	border:1px solid #aaaaaa;
+	background:#ffffcc;
+}
+
+
+
+
+
+

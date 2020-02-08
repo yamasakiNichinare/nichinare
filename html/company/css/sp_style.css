@@ -1,0 +1,19 @@
+@charset "shift_jis";
+
+.right_contents .sec_main dl {
+padding:0 0 15px;
+text-align:left;
+}
+
+.right_contents .sec_main dl dt {
+padding:0;
+text-align:left;
+}
+
+.right_contents .sec_main dl dd {
+padding:5px 0 0;
+text-align:left;
+}
+
+.right_contents .sec_main dl dd .map_img {text-align:center;}
+.right_contents .sec_main dl dd .map_img img {width:300px; height:225px;}

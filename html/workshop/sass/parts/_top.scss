@@ -1,0 +1,623 @@
+/*目次---------------------
+
+
+-------------------------*/
+//ナビゲーション
+nav {
+    position: fixed;
+    width: 100vw;
+    border-bottom: 1px solid $gray1;
+    top: 0;
+    left: 0;
+    z-index: 20;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            width: 50%;
+            &:not(:last-of-type) {
+                border-right: 1px solid $gray1;
+            }
+            a {
+                display: block;
+                background: linear-gradient(left,$nav1 50%,$nav2);
+                color: $white1;
+                line-height: 44px;
+
+                .fa-chevron-down {
+                    margin-left: 10px;
+                }
+
+                @include pc {
+                    @include fz(18);
+                }
+
+                @include sp {
+                    @include fz(16);
+                }
+            }
+        }
+    }
+}
+//大箱
+.box {
+    &:not(:last-of-type) {
+        @include pc {
+            margin-bottom: 50px
+        }
+
+        @include sp {
+            margin-bottom: 30px;
+        }
+    }
+
+    &_title {
+        background-color: $green1;
+        @include pc {
+            @include fz(26);
+            margin-bottom: 20px;
+            padding: 0 10px;
+            line-height: 50px;
+        }
+
+        @include sp {
+            @include fz(22);
+            margin-bottom: 10px;
+            padding: 0 8px;
+        }
+    }
+}
+
+//小箱
+.boxa {
+    @include pc {
+        margin-bottom: 24px;
+        padding-bottom: 24px;
+    }
+    @include sp {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+    &:not(:last-of-type) {
+        border-bottom: 1px solid $gray1;
+    }
+
+    &_title {
+        @include pc {
+            @include fz(20);
+            margin-bottom: 10px;
+        }
+
+        @include sp {
+            @include fz(18);
+            margin-bottom: 14px;
+        }
+    }
+
+    li {
+        &:not(:last-of-type) {
+            @include pc {
+                margin-bottom: 6px;
+            }
+            @include sp {
+                margin-bottom: 4px;
+            }
+        }
+    }
+
+    p {
+        margin: 0;
+    }
+
+    //黒枠
+    .boxd {
+        border: 2px solid $black1;
+
+        @include pc {
+            padding: 20px;
+            width: 540px;
+            margin: 0 auto;
+        }
+
+        @include sp {
+            padding: 10px;
+        }
+    }
+
+    //締切日
+    .text_red {
+        @include pc {
+            @include fz(40);
+        }
+
+        @include sp {
+            font-size: 6.4vw;
+        }
+    }
+}
+
+h3 {
+    border-left: 4px solid $green1;
+    padding-left: 4px;
+    letter-spacing: -1px;
+
+    @include sp {
+        .dt,.dd {
+            display: block;
+        }
+        .dt {
+            float: left;
+        }
+        .dd {
+            margin-left: 64px;
+        }
+    }
+}
+
+//お知らせ
+.box_info {
+    border: 2px solid $orange1;
+
+    @include pc {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    @include sp {
+        padding: 10px;
+        border-radius: 6px;
+    }
+
+    &_title {
+        @include pc {
+            font-size: 2.6rem !important;
+            margin: 0 0 30px !important;
+        }
+
+        @include sp {
+            font-size: 2rem !important;
+            margin: 0 0 20px !important;
+        }
+    }
+
+    p {
+        strong {
+            color:$red;
+            text-decoration: underline;
+
+            @include pc {
+                font-size: 4rem;
+            }
+
+            @include sp {
+                font-size: 3.4rem;
+                display: block;
+            }
+        }
+
+        @include pc {
+            margin: 0 0 30px;
+        }
+
+        @include sp {
+            margin: 0 0 20px;
+            font-size: 2rem;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        margin:0;
+        padding:0;
+
+        strong {
+            text-decoration: underline;
+        }
+
+        li {
+            &:not(:last-of-type) {
+                @include pc {
+                    margin: 0 0 6px;
+                }
+                @include sp {
+                    margin: 0 0 4px;
+                }
+            }
+        }
+    }
+}
+
+//スケジュール
+.shcitem {
+    background-color: $green2;
+    position: relative;
+
+    &:not(:last-of-type) {
+        @include pc {
+            margin-bottom: 60px;
+        }
+        @include sp {
+            margin-bottom: 30px;
+        }
+    }
+
+    &:after {
+        @include beforeaftercontent;
+        @include positionabsolutey;
+    }
+
+    @include pc {
+        width: 560px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        padding: 20px;
+
+        &:after {
+            border: 20px solid transparent;
+            border-top: 20px solid $orange1;
+            bottom: -60px;
+        }
+    }
+
+    @include sp {
+        border-radius: 6px;
+        padding: 10px;
+
+        &:after {
+            border: 16px solid transparent;
+            border-top: 16px solid $orange1;
+            bottom: -40px;
+        }
+    }
+
+    &:last-of-type {
+        &:after {
+            display: none;
+        }
+    }
+}
+
+dl {
+    @include pc {
+        width: 560px;
+        margin: 0 auto;
+    }
+    dd {
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                @include pc {
+                    padding: 10px;
+                }
+
+                @include sp {
+                    padding-left: 6px;
+                }
+
+                &:not(:last-of-type) {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+//テーブル
+table {
+    border: 1px solid $gray1;
+    border-collapse: collapse;
+
+    th,.date {
+        background-color: $th;
+    }
+
+    th {
+        @include pc {
+            line-height: 40px;
+        }
+    }
+
+    td {
+        vertical-align: top;
+        @include pc {
+            width: 250px;
+        }
+        @include sp {
+            width: 31.2%;
+        }
+    }
+
+    .date {
+        @include pc {
+            width: 40px;
+        }
+
+        @include sp {
+            width: 22px;
+        }
+    }
+
+    .none {
+        background: none;
+    }
+
+    td,th {
+        border: 1px solid $gray1;
+    }
+}
+
+//コース
+.all {
+    background-color: $all;
+    a {
+        background-color: $all;
+    }
+}
+.advanced {
+    background-color: $advanced;
+    a {
+        background-color: $advanced;
+    }
+}
+
+//各コースリンク
+.ws {
+    p {
+        margin: 0;
+    }
+    @include pc {
+        border-radius: 6px;
+        margin: 10px;
+
+        a {
+            border-radius: 6px;
+            padding: 10px 22px 10px 10px;
+            position: relative;
+
+            .fa-chevron-right {
+                right: 10px;
+            }
+
+            &:hover {
+                opacity: 0.7;
+            }
+
+            @include fz(14);
+
+            span {
+                display: block;
+                @include fz(12);
+            }
+        }
+    }
+
+    @include sp {
+        border-radius: 4px;
+        margin: 6px;
+
+        a {
+            border-radius: 4px;
+            padding: 8px 16px 8px 8px;
+            position: relative;
+            font-size: 3vw;
+
+            @include fz(14);
+
+            .fa-chevron-right {
+                right: 6px;
+            }
+
+            span {
+                display: block;
+                @include fz(12);
+            }
+        }
+    }
+    a {
+        display: block;
+        color: $black1;
+
+        .fa-chevron-right {
+            @include positionabsolutex;
+        }
+
+        &:visited {
+            color: #311B92;
+        }
+    }
+}
+.out {
+    a {
+        background-color: $gray1;
+        color: $gray3;
+    }
+}
+.line_out:before, .line_out:after {
+    background-color: red;
+    display: block;
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 2px;
+    @include pc {
+        width: 210px;
+    }
+    @include sp {
+        width: 188px;
+    }
+}
+.line_out1 {
+    display: inline-block;
+    &:before,&:after {
+        @include pc {
+            width: 100px;
+        }
+        @include sp {
+            width: 100%;
+        }
+    }
+}
+.line_out2 {
+    &:before,&:after {
+        @include pc {
+            width: 328px;
+        }
+    }
+}
+.line_out {
+    position: relative;
+    &:before {
+        @include pc {
+            top: 8px;
+        }
+        @include sp {
+            top: 8px;
+        }
+    }
+    &:after {
+        @include pc {
+            top: 14px;
+        }
+        @include sp {
+            top: 12px;
+        }
+    }
+}
+
+//モーダル
+.modal {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 30;
+
+    p {
+        &:first-of-type {
+            margin-top: 0;
+        }
+    }
+
+    &_bg {
+        background: rgba(0,0,0,0.8);
+        height: 100vh;
+        position: absolute;
+        width: 100vw;
+        z-index: 40;
+    }
+
+    .inner {
+        @include positionabsolute50;
+        z-index: 50;
+
+        @include pc {
+            width: 60%;
+            padding: 40px;
+            border-radius: 4px;
+        }
+
+        @include sp {
+            width: 80%;
+            padding: 20px;
+            border-radius: 4px;
+        }
+    }
+
+    &_title {
+        @include pc {
+            strong {
+                @include fz(24);
+            }
+        }
+
+        @include sp {
+            strong {
+                @include fz(20);
+            }
+        }
+    }
+    .times {
+        @include pc {
+            width: calc(100% - 140px);
+            strong {
+                width: 80px;
+                display: inline-block;
+            }
+        }
+
+        @include sp {
+            strong {
+                width: 70px;
+                display: inline-block;
+            }
+        }
+    }
+    &_title,
+    &_name,
+    &_content {
+        @include pc {
+            margin-bottom: 30px;
+        }
+
+        @include sp {
+            margin-bottom: 20px;
+        }
+    }
+
+    &_list {
+        list-style: none;
+        padding: 0;
+        li {
+            &:not(:last-of-type) {
+                @include pc {
+                    margin-bottom: 6px;
+                }
+                @include sp {
+                    margin-bottom: 4px;
+                }
+            }
+        }
+    }
+
+    &_btn {
+        position: absolute;
+
+        @include pc {
+            top: 1%;
+            right: 4%;
+        }
+
+        @include sp {
+            top: 0;
+            right: 4%;
+        }
+
+        a {
+            color: $white1;
+
+            @include pc {
+                @include fz(30);
+            }
+
+            @include sp {
+                @include fz(24);
+            }
+        }
+    }
+}
+
+//講座一覧
+.theClassList {
+    list-style: none;
+    flex-wrap: wrap;
+
+    @include sp {
+        padding: 0;
+    }
+}

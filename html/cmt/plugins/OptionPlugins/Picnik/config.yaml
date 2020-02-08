@@ -1,0 +1,27 @@
+id: Picnik
+key: Picnik
+name: Picnik API
+author_name: SKYARC System Co.,Ltd.
+author_link: http://www.skyarc.co.jp/
+version: 0.10
+l10n_class: Picnik::L10N
+description: <MT_TRANS phrase="Provides some functions to edit image assets with Picnik">
+
+settings:
+    api_key:
+        default: ~
+
+config_template: tmpl/config.tmpl
+
+applications:
+    cms:
+        methods:
+            picnik_save_asset: $Picnik::Picnik::CMS::save_asset
+        page_actions:
+            asset:
+                picnik_edit_asset:
+                    label: Edit with Picnik
+                    handler: $Picnik::Picnik::CMS::edit_asset
+                    permission: edit_assets
+                    condition: >
+                        sub { @_ ? $_[0] && $_[0]->isa('MT::Asset::Image') : 1; }

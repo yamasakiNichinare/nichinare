@@ -1,0 +1,473 @@
+@charset "utf-8";
+
+/*------------------------------------------------------------
+	レイアウト
+------------------------------------------------------------*/
+body {
+	text-align: center;
+	line-height: 1.5;
+}
+
+
+/*------------------------------------------------------------
+	ヘッダー
+------------------------------------------------------------*/
+
+#header {padding:10px;}
+
+#header {padding:10px;}
+#header h1 {float:left; width:226px; height:33px; text-align:left; text-indent:-9999px; background:url(/sp/images/logo.png) no-repeat; -webkit-background-size: 226px 33px; background-size: 226px 33px;}
+#header h1 a {display:block; width:226px; height:33px;}
+#header .ghd_bnr {display:block; float:right; width:68px; height:38px; text-align:left; text-indent:-9999px; background:url(/sp/images/hd_button.png) no-repeat; -webkit-background-size: 68px 38px; background-size: 68px 38px;}
+#header .ghd_bnr a {display:block; width:68px; height:38px;}
+
+/*** PCのみ掲載の情報を非表示 **/
+
+#header p,
+#header ul,
+.pankuzu {display:none;}
+
+
+/*------------------------------------------------------------
+	グローバルメニュー
+------------------------------------------------------------*/
+
+ul#gl-menu {
+	width:100%;
+	margin:0;
+	padding:0;
+	border-top:1px solid #999999;
+	border-bottom:1px solid #999999;
+	background: #ffffff;
+	background: -moz-linear-gradient(top,  #ffffff 0%, #d7d7d7 100%);
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#d7d7d7 100%);
+	background: linear-gradient(to bottom,  #ffffff 0%,#d7d7d7 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d7d7d7',GradientType=0 );
+}
+
+ul#gl-menu li {
+	float:left;
+	width:20%;
+}
+ul#gl-menu li:first-child {border-left:none;}
+ul#gl-menu li.gl-menu05 {float:left;}
+
+ul#gl-menu li a {
+	display:block;
+	width:100%;
+	min-height:30px;
+	padding:15px 0;
+	text-align:left;
+	text-indent:-9999px;
+	border-left:1px solid #999999;
+}
+
+ul#gl-menu li.gl-menu01 a {background:url(/sp/images/gl_menu01.png) center center no-repeat;-webkit-background-size: 46px 30px; background-size : 46px 30px; border-left:none;}
+ul#gl-menu li.gl-menu02 a {background:url(/sp/images/gl_menu02.png) center center no-repeat;-webkit-background-size: 34px 30px; background-size : 34px 30px;}
+ul#gl-menu li.gl-menu03 a {background:url(/sp/images/gl_menu03.png) center center no-repeat;-webkit-background-size: 52px 30px; background-size : 52px 30px;}
+ul#gl-menu li.gl-menu04 a {background:url(/sp/images/gl_menu04.png) center center no-repeat;-webkit-background-size: 44px 30px; background-size : 44px 30px;}
+ul#gl-menu li.gl-menu05 a {background:url(/sp/images/gl_menu05.png) center center no-repeat;-webkit-background-size: 52px 30px; background-size : 52px 30px;}
+
+
+/*** Active **/
+
+ul#gl-menu li a.on,
+#about ul#gl-menu li.gl-menu01,
+#course ul#gl-menu li.gl-menu02,
+#application ul#gl-menu li.gl-menu03,
+#lesson ul#gl-menu li.gl-menu04,
+#free ul#gl-menu li.gl-menu05 {
+background: #ffffff;
+background: -moz-linear-gradient(top,  #ffffff 0%, #6cce68 100%);
+background: -webkit-linear-gradient(top,  #ffffff 0%,#6cce68 100%);
+background: linear-gradient(to bottom,  #ffffff 0%,#6cce68 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#6cce68',GradientType=0 );
+}
+
+
+/*** PCのみ掲載の情報を非表示 **/
+
+ul#gl-menu li.gl-menu06 {display:none;}
+
+
+/*------------------------------------------------------------
+	コンテンツ
+------------------------------------------------------------*/
+
+#contents {padding:5px 0 0;}
+
+
+/*** left_contents ------------------ ***/
+
+#contents .left_contents {}
+
+/*** local menu ***/
+
+#contents .left_contents .local_menu {margin-top:15px;}
+
+#contents .left_contents ul.local_menu {border-bottom:1px solid #999999; text-align:left;}
+#contents .left_contents ul.local_menu li {
+	border-top:1px solid #999999;
+	background: #ffffff;
+	background: -moz-linear-gradient(top,  #ffffff 0%, #d7d7d7 100%);
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#d7d7d7 100%);
+	background: linear-gradient(to bottom,  #ffffff 0%,#d7d7d7 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d7d7d7',GradientType=0 );
+}
+#contents .left_contents ul.local_menu li a {
+	display:block;
+	padding:10px 10px;
+	color:#333333;
+	text-decoration:none;
+	font-weight:bold;
+	background:url(/sp/images/list_arr.png) right center no-repeat;
+	-webkit-background-size: 25px 12px;
+	background-size: 25px 12px;
+}
+
+#contents .left_contents .sp_bnr{
+	display: none;
+}
+
+/*** PCのみ掲載の情報を非表示 **/
+
+#contents .left_contents h4,
+#contents .left_contents ul.left-bnr,
+#contents .left_contents dl {display:none;}
+
+
+/*** right_contents ------------------ ***/
+
+#contents .right_contents {}
+
+/*** title設定 ***/
+
+#contents .right_contents h2 {
+	width:315px;
+	height:64px;
+	margin:0 auto;
+	text-align:left;
+	text-indent:-9999px;
+}
+
+
+/*** 各ページ タイトル ***/
+
+/* 最新情報 */
+#news #contents .right_contents h2.index_ttl {background:url(/news/images/sp_h2_tit01.jpg) no-repeat; -webkit-background-size: 315px 64px; background-size: 315px 64px;}
+
+/* 日ナレについて */
+#about #contents .right_contents h2.index_ttl {background:url(/about/images/sp_h2_tit01.jpg) no-repeat; -webkit-background-size: 315px 64px; background-size: 315px 64px;}
+#about #contents .right_contents h2.step_ttl {background:url(/about/images/sp_h2_tit02.jpg) no-repeat; -webkit-background-size: 315px 64px; background-size: 315px 64px;}
+#about #contents .right_contents h2.studio_ttl {background:url(/about/images/sp_h2_tit03.jpg) no-repeat; -webkit-background-size: 315px 64px; background-size: 315px 64px;}
+#about #contents .right_contents h2.lecturer_ttl {background:url(/about/images/sp_h2_tit04.jpg) no-repeat; -webkit-background-size: 315px 64px; background-size: 315px 64px;}
+#about #contents .right_contents h2.native_ttl {background:url(/about/images/sp_h2_tit05.jpg) no-repeat; -webkit-background-size: 315px 64px; background-size: 315px 64px;}
+
+/* コース紹介 */
+#course #contents .right_contents h2.index_ttl {background:url(/course/images/sp_h2_tit01.jpg) no-repeat; -webkit-background-size: 315px 64px; background-size: 315px 64px;}
+#course #contents .right_contents h2.threedays_ttl {background:url(/course/images/sp_h2_tit02.jpg) no-repeat; -webkit-background-size: 315px 64px; background-size: 315px 64px;}
+#course #contents .right_contents h2.jr_ttl {background:url(/course/images/sp_h2_tit03.jpg) no-repeat; -webkit-background-size: 315px 64px; background-size: 315px 64px;}
+#course #contents .right_contents h2.narrater_ttl {background:url(/course/images/sp_h2_tit04.jpg) no-repeat; -webkit-background-size: 315px 64px; background-size: 315px 64px;}
+#course #contents .right_contents h2.starting_ttl {background:url(/course/images/sp_h2_tit05.jpg) no-repeat; -webkit-background-size: 315px 64px; background-size: 315px 64px;}
+#course #contents .right_contents h2.twodays_ttl {background:url(/course/images/sp_h2_tit06.jpg) no-repeat; -webkit-background-size: 315px 64px; background-size: 315px 64px;}
+
+#course #contents .right_contents h2.twodays_threedays_ttl {background:url(/course/images/sp_h2_tit08.jpg) no-repeat; -webkit-background-size: 315px 64px; background-size: 315px 64px;}
+#course #contents .right_contents h2.start_up_course_ttl {background:url(/course/images/sp_h2_tit07.jpg) no-repeat; -webkit-background-size: 315px 64px; background-size: 315px 64px;}
+
+/* 入所方法／面接日程 */
+#application #contents .right_contents h2.index_ttl {background:url(/application/images/sp_h2_tit01.jpg) no-repeat; -webkit-background-size: 315px 64px; background-size: 315px 64px;}
+#application #contents .right_contents h2.jr_ttl {background:url(/application/images/sp_h2_tit02.jpg) no-repeat; -webkit-background-size: 315px 64px; background-size: 315px 64px;}
+#application #contents .right_contents h2.starting_ttl {background:url(/application/images/sp_h2_tit03.jpg) no-repeat; -webkit-background-size: 315px 64px; background-size: 315px 64px;}
+#application #contents .right_contents h2.tuition_ttl {background:url(/application/images/sp_h2_tit04.jpg) no-repeat; -webkit-background-size: 315px 64px; background-size: 315px 64px;}
+
+/* レッスン見学 */
+#lesson #contents .right_contents h2.index_ttl {background:url(/lesson/images/sp_h2_tit01.jpg) no-repeat; -webkit-background-size: 315px 64px; background-size: 315px 64px;}
+
+/* 無料体験レッスン */
+#free #contents .right_contents h2.index_ttl {background:url(/free/images/sp_h2_tit01.jpg) no-repeat; -webkit-background-size: 315px 64px; background-size: 315px 64px;}
+
+/* よくあるご質問 */
+#faq #contents .right_contents h2.index_ttl {background:url(/faq/images/sp_h2_tit01.jpg) no-repeat; -webkit-background-size: 315px 64px; background-size: 315px 64px;}
+
+/* お問い合わせ */
+#contact #contents .right_contents h2.index_ttl {background:url(/contact/images/sp_h2_tit01.jpg) no-repeat; -webkit-background-size: 315px 64px; background-size: 315px 64px;}
+
+/* 会社概要 */
+#company #contents .right_contents h2.index_ttl {background:url(/company/images/sp_h2_tit01.jpg) no-repeat; -webkit-background-size: 315px 64px; background-size: 315px 64px;}
+
+/* 関連リンク */
+#link #contents .right_contents h2.index_ttl {background:url(/link/images/sp_h2_tit01.jpg) no-repeat; -webkit-background-size: 315px 64px; background-size: 315px 64px;}
+
+/* 個人情報の取り扱いについて */
+#privacy #contents .right_contents h2.index_ttl {background:url(/privacy/images/sp_h2_tit01.jpg) no-repeat; -webkit-background-size: 315px 64px; background-size: 315px 64px;}
+
+/* 資料請求 */
+#request #contents .right_contents h2.index_ttl {background:url(/request/images/sp_h2_tit01.jpg) no-repeat; -webkit-background-size: 315px 64px; background-size: 315px 64px;}
+
+/* サイトマップ */
+#sitemap #contents .right_contents h2.index_ttl {background:url(/sitemap/images/sp_h2_tit01.jpg) no-repeat; -webkit-background-size: 315px 64px; background-size: 315px 64px;}
+
+/* 講師募集のお知らせ */
+#recruit #contents .right_contents h2.lecturer_ttl {background:url(/recruit/images/sp_h2_tit01.jpg) no-repeat; -webkit-background-size: 315px 64px; background-size: 315px 64px;}
+
+
+
+/*** 見出し ***/
+
+#contents .right_contents .sec_main h3 {
+margin:0;
+padding:0 0 14px;
+color:#4ca778;
+text-align:left;
+}
+
+
+/*** カラム ***/
+
+#contents .right_contents .sec_main .line_column {
+margin:0 auto;
+padding:15px 10px;
+text-align:left;
+border-bottom:1px solid #999999;
+}
+
+#contents .right_contents .sec_main .line-none_column {
+margin:0 auto;
+padding:15px 10px 0;
+text-align:left;
+border-bottom:none;
+}
+
+
+/*** ページ内リンク ***/
+
+#contents .right_contents .sec_main ul.anchor_link {
+	width:85%;
+	padding:14px 20px 0;
+	margin:0 auto;
+	list-style:none;
+	border:1px solid #aaaaaa;
+	background:#ffffcc;
+}
+
+#contents .right_contents .sec_main ul.anchor_link li {
+	float:left;
+	padding:0 20px 14px 16px;
+	background:url(../../common/images/icon_arr03.gif) left 3px no-repeat;
+}
+
+
+/*** ページTOP ***/
+
+#contents .right_contents .sec_main .pagetop {
+margin:0;
+padding:20px 0 0;
+text-align:right;
+}
+
+#contents .right_contents .sec_main .pagetop a {
+padding-left:18px;
+background:url(../images/icon_arr02.gif) left no-repeat;
+}
+
+
+/*** 戻るボタン ***/
+
+#contents .right_contents .sp_btback {
+	width:24%;
+	font-weight:bold;
+	text-align:left;
+	margin:20px 10px 0;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	border:1px solid #999999;
+	background: #ffffff;
+	background: -moz-linear-gradient(top,  #ffffff 0%, #d7d7d7 100%);
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#d7d7d7 100%);
+	background: linear-gradient(to bottom,  #ffffff 0%,#d7d7d7 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d7d7d7',GradientType=0 );
+}
+#contents .right_contents .sp_btback a {
+	display:block;
+	padding:12px 5px 12px 30px;
+	color:#333333;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:0.875em;
+	background:url(/sp/images/icon_back.png) 10px center no-repeat;
+	-webkit-background-size: 12px 12px;
+	background-size: 12px 12px;
+}
+
+
+/*** ページ共通クラス ***/
+
+#contents .right_contents .sec_main .pad-t {padding-top:10px;}
+
+
+#contents .right_contents .sec_main .photo_l,
+#contents .right_contents .sec_main .photo_r,
+#contents .right_contents .sec_main .photo_c {
+	text-align:center;
+	padding-bottom:10px;
+}
+
+#contents .right_contents .sec_main .photo_c img {
+	height:auto;
+	padding:10px 0;
+}
+
+#contents .right_contents .sec_main .photo_ss {padding:8px 0 0;}
+
+#contents .right_contents .sec_main .photo_c img.mgn-r {margin-right:4px;}
+
+#contents .right_contents .sec_main .txt-r {
+	padding:0;
+	text-align:left;
+}
+
+
+/*** 赤文字 ***/
+
+#contents .right_contents .sec_main .red_txt {
+	padding:10px 0 0;
+	text-align:left;
+	color:#ff0000;
+}
+
+
+/*** リスト　1字下げインデントあり ***/
+
+#contents .right_contents .sec_main ul.attention {
+	padding-top:10px;
+	text-align:left;
+	list-style:none;
+}
+
+#contents .right_contents .sec_main ul.attention li {
+	padding-left:1em;
+	text-indent:-1em;
+}
+
+#contents .right_contents .sec_main ul.attention .red {color:#ff0000;}
+
+
+/*** table 料金 ***/
+
+#contents .right_contents table.tbl_tuition {border-collapse:collapse;}
+
+#contents .right_contents table.tbl_tuition th {
+	width:30%;
+	padding:5px 10px;
+	text-align:center;
+	border:1px solid #aaaaaa;
+	background:#daf6e2;
+}
+
+#contents .right_contents table.tbl_tuition td {
+	width:60%;
+	padding:5px 10px;
+	text-align:left;
+	border:1px solid #aaaaaa;
+	background:#ffffcc;
+}
+
+
+/*** table スケジュール ***/
+
+#contents .right_contents table.tbl_schedule {width:100%; border-collapse:collapse;}
+
+#contents .right_contents table.tbl_schedule th {
+	padding:5px 10px;
+	text-align:center;
+	border:1px solid #aaaaaa;
+	background:#daf6e2;
+}
+
+#contents .right_contents table.tbl_schedule th.left-cell {width:40%;}
+#contents .right_contents table.tbl_schedule th.right-cell {width:40%;}
+
+#contents .right_contents table.tbl_schedule td {
+	padding:5px 10px;
+	text-align:center;
+	border:1px solid #aaaaaa;
+	background:#ffffcc;
+}
+
+
+/*------------------------------------------------------------
+	フッター
+------------------------------------------------------------*/
+
+/*** サブ ------ ***/
+
+.sub_nav {padding:15px 10px;}
+.sub_nav.first {padding:15px 10px 0;}
+
+.sub_nav li {
+	float:right;
+	width:48%;
+	font-weight:bold;
+	text-align:left;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	border:1px solid #999999;
+	background: #ffffff;
+	background: -moz-linear-gradient(top,  #ffffff 0%, #d7d7d7 100%);
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#d7d7d7 100%);
+	background: linear-gradient(to bottom,  #ffffff 0%,#d7d7d7 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d7d7d7',GradientType=0 );
+}
+.sub_nav li:first-child {float:left;}
+
+.sub_nav li a {
+	display:block;
+	padding:12px 10px;
+	color:#333333;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:0.875em;
+	background:url(/sp/images/list_arr.png) right center no-repeat;
+	-webkit-background-size: 25px 12px;
+	background-size: 25px 12px;
+
+}
+
+
+/*** #footer ------ ***/
+
+#footer {
+	padding:10px 0;
+	text-align:center;
+	background:#f2f2f2;
+}
+
+#footer .footer_link,
+#footer .footer_link02{
+	padding:10px 10px 0;
+}
+#footer .footer_link span,
+#footer .footer_link02 span{
+	display:none;
+}
+
+#footer .footer_link02 span.fontL{
+	display:block;
+	font-size: 1.6em;
+    padding-bottom: 15px;
+}
+
+#footer .authors-copy {
+	padding:10px;
+	text-align:left;
+	font-size:0.75em;
+}
+
+#footer .copyright {
+	padding:10px 10px 0;
+	font-size:0.6em;
+	border-top:1px solid #aaaaaa;
+}
+

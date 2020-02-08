@@ -1,0 +1,43 @@
+From: seikyu@nichinare.co.jp
+To: seikyu@nichinare.co.jp
+Subject: 【日ナレ】資料請求フォームから申し込みがありました（<tmpl_var name=REG_DATETIME>）
+
+■お名前 
+<TMPL_VAR name1_1> <TMPL_VAR name1_2> 
+<TMPL_VAR name2_1> <TMPL_VAR name2_2> 
+
+■性別 
+<TMPL_VAR gender> 
+
+■生年月日 
+<TMPL_VAR birthday_y>年<TMPL_VAR birthday_m>月<TMPL_VAR birthday_d>日 満<TMPL_VAR age>歳 
+
+■郵便番号 
+<TMPL_VAR zip1>-<TMPL_VAR zip2> 
+
+■住所 
+<TMPL_VAR todouhuken> 
+<TMPL_VAR city> 
+<TMPL_VAR city2> 
+
+■電話番号 
+携帯電話番号 <TMPL_VAR tel_mob1>-<TMPL_VAR tel_mob2>-<TMPL_VAR tel_mob3> 
+固定電話番号 <TMPL_VAR tel1>-<TMPL_VAR tel2>-<TMPL_VAR tel3> 
+
+■学年（職業） 
+現在は <TMPL_VAR job> <TMPL_VAR grade> 
+
+■当所を知ったキッカケ 
+<TMPL_VAR textarea4> 
+
+■請求日
+<tmpl_var name=REG_DATE>
+
+■申し込みコード
+<tmpl_var name=CODE>
+
+■端末
+携帯
+
+------------------------------------------------------------------------
+※本メールは日ナレからシステムで自動的に配信しております。

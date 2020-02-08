@@ -1,0 +1,128 @@
+<$mt:Include module="ヘッダー"$>
+<body onload="addLinkURL('code');return false;">
+<a name="top" id="top"></a>
+<header id="gHeader">
+<h1><a href="/index.html">声優・ナレーターをめざすなら　日本ナレーション演技研究所</a></h1>
+<p class="ghd_bnr"><a href="https://nichinare.com/request/form.cgi">資料請求（無料）</a></p>
+</header>
+
+<section id="conts">
+<p class="topic"><strong>代々木校・池袋校・お茶の水校・立川校・町田校・大宮校・千葉校<br>柏校・横浜校・仙台校・名古屋校・京都校・大阪校・神戸校</strong></p>
+<div id="slides">
+<!--#include virtual="/sp/common/slider/sp_top_slider.inc" -->
+<p class="bt_prev"><img src="/sp/images/left_arr.png" width="33" height="33" alt=""></p>
+<p class="bt_next"><img src="/sp/images/right_arr.png" width="33" height="33" alt=""></p>
+<!--<script type="text/javascript" src="js/flick.js"></script>-->
+</div>
+
+<mt:Entries lastn="1" blog_ids="8">
+<div class="emergency"><p><$MTEntryBody$></p></div>
+</mt:Entries>
+
+<mt:SetVarBlock name="today"><$mt:Date format="%Y%j"%></mt:SetVarBlock>
+<section class="news">
+<h1 class="tit">最新情報</h1>
+<ul>
+<mt:Entries lastn="5" blog_ids="3">
+<li>
+<mtifnonempty tag="urldata">
+<a href="<mt:urldata>"><$mt:EntryTitle$><mt:SetVarBlock name="passed"><$mt:EntryDate format="%Y%j"%></mt:SetVarBlock><mt:SetVar name="passed" value="$today" op="sub"><mt:If name="passed" ge="-5"><span>NEW!</span></mt:If><mt:If name="passed" ge="-640"><mt:If name="passed" le="-635"><span>NEW!</span></mt:If></mt:If></a>
+<mtelse>
+<a href="<mt:EntryPermalink archive_type="Individual">"><$mt:EntryTitle$><mt:SetVarBlock name="passed"><$mt:EntryDate format="%Y%j"%></mt:SetVarBlock><mt:SetVar name="passed" value="$today" op="sub"><mt:If name="passed" ge="-5"><span>NEW!</span></mt:If><mt:If name="passed" ge="-640"><mt:If name="passed" le="-635"><span>NEW!</span></mt:If></mt:If></a>
+</mtelse>
+</mtifnonempty>
+</li>
+</mt:Entries>
+</ul>
+</section>
+
+<nav class="course_nav">
+<ul>
+<li><a href="/course/index.html"><img src="/sp/images/top_nav01.png" width="303" alt="週1回クラス" /></a></li>
+<li><a href="/course/twodays_threedays.html"><img src="/sp/images/top_nav02.png" width="303" alt="週2回・週3回クラス" /></a></li>
+
+<li><a href="/course/jr.html"><img src="/sp/images/top_nav03.png" width="303" alt="ジュニア声優クラス" /></a></li>
+<li><a href="/course/narrater.html"><img src="/sp/images/top_nav04.png" width="303" alt="ナレーターセミナー" /></a></li>
+
+<li><a href="/course/start_up_course.html"><img src="/sp/images/top_nav05.png" width="303" alt="スタートアップクラス" /></a></li>
+</ul>
+</nav>
+
+<p class="top_bnr"><a href="https://nichinare.com/request/form.cgi"><img src="/sp/images/top_bnr.png" width="303" height="62" alt="【無料】資料請求"></a></p>
+<ul class="snsBnr">
+<li class="bnr_left"><a href="https://twitter.com/nichinare" onclick="ga('send', 'event', 'link', 'click', 'sp_twitter', 1);"><img src="/sp/images/top_twibnr.png" height="45" alt="日ナレ公式Twitter" /></a></li>
+<li class="bnr_right"><a href="http://line.naver.jp/ti/p/%40nichinare" onclick="ga('send', 'event', 'link', 'click', 'sp_line', 1);"><img src="https://biz.line.naver.jp/line_business/img/btn/addfriends_ja.png" height="45" border="0" alt="LINE 友だち追加"></a></li>
+</ul>
+
+<nav class="sec_nav">
+<ul>
+<li><a href="/about/index.html"><img src="/sp/images/top_img01.jpg" width="66" height="47" alt=""><span>日ナレについて</span></a></li>
+<li><a href="/course/index.html"><img src="/sp/images/top_img02.jpg" width="66" height="47" alt=""><span>コース紹介</span></a></li>
+<li><a href="/application/index.html"><img src="/sp/images/top_img03.jpg" width="66" height="47" alt=""><span>入所方法／面接日程</span></a></li>
+<li><a href="/free/index.html"><img src="/sp/images/top_img04.jpg" width="66" height="47" alt=""><span>無料体験レッスン</span></a></li>
+<li><a href="/lesson/index.html"><img src="/sp/images/top_img05.jpg" width="66" height="47" alt=""><span>レッスン見学</span></a></li>
+</ul>
+</nav>
+
+<nav class="sub_nav first">
+<ul>
+<li><a href="/about/native.html">主な出身者</a></li>
+<li><a href="/about/lecturer.html">講師一覧</a></li>
+</ul>
+</nav>
+
+<nav class="sub_nav">
+<ul>
+<li><a href="/faq/index.html">よくあるご質問</a></li>
+<li><a href="/contact/index.html">お問い合わせ</a></li>
+</ul>
+</nav>
+
+<nav class="group_nav">
+<h1>グループプロダクション</h1>
+<ul>
+<li class="group01"><a href="http://www.artsvision.co.jp/" target="_blank" rel="nofollow" onclick="ga('send', 'event', 'link', 'click', 'sp_gp_arts', 1);"><img src="/sp/images/production_nav01.png" width="300" height="37" alt="アーツビジョン" /></a></li>
+<li class="group02"><a href="http://www.imenterprise.jp/" target="_blank" rel="nofollow" onclick="ga('send', 'event', 'link', 'click', 'sp_gp_ime', 1);"><img src="/sp/images/production_nav02.png" width="300" height="37" alt="アイムエンタープライズ" /></a></li>
+<li class="group03"><a href="http://www.crazy-box.co.jp/" target="_blank" rel="nofollow" onclick="ga('send', 'event', 'link', 'click', 'sp_gp_craz', 1);"><img src="/sp/images/production_nav03.png" width="300" height="37" alt="クレイジーボックス" /></a></li>
+<li class="group04"><a href="http://www.vims.co.jp/" target="_blank" rel="nofollow" onclick="ga('send', 'event', 'link', 'click', 'sp_gp_vims', 1);"><img src="/sp/images/production_nav04.png" width="300" height="37" alt="ヴィムス" /></a></li>
+<li class="group06"><a href="http://arise-pj.co.jp/" target="_blank" rel="nofollow" onclick="ga('send', 'event', 'link', 'click', 'sp_gp_arise', 1);"><img src="/sp/images/production_nav06.png" width="300" height="37" alt="アライズプロジェクト" /></a></li>
+<li class="group05"><a href="http://www1a.biglobe.ne.jp/mio/" target="_blank" rel="nofollow" onclick="ga('send', 'event', 'link', 'click', 'sp_gp_mio', 1);"><img src="/sp/images/production_nav05.png" width="300" height="37" alt="澪クリエーション" /></a></li>
+</ul>
+</nav>
+
+<!--#include virtual="/common/bnr/sp_top_banner.inc" -->
+</section>
+
+<p id="bnr_oshirase"><a href="https://nichinare.com/oshirase/jukou/index.cgi"><img src="/sp/images/bnr_oshirase.png" width="145" height="35" alt="受講生専用サイト"></a></p>
+
+<$mt:Include module="フッター"$>
+
+<!--2013.05.23挿入 -->
+<!-- Google Code for &#12522;&#12510;&#12540;&#12465;&#12486;&#12451;&#12531;&#12464; &#12479;&#12464; -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1010123678;
+var google_conversion_label = "w-ViCPL7tgQQnofV4QM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1010123678/?value=0&amp;label=w-ViCPL7tgQQnofV4QM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<!--2015.10.14挿入 -->
+<script type="text/javascript" language="javascript">
+/* <![CDATA[ */
+var yahoo_retargeting_id = 'RNAKWC7MG1';
+var yahoo_retargeting_label = '';
+/* ]]> */
+</script>
+<script type="text/javascript" language="javascript" src="//b92.yahoo.co.jp/js/s_retargeting.js"></script>
+</body>
+</html>

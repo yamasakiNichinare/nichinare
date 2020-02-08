@@ -1,0 +1,11 @@
+AuthUserFile  /usr/home/z304150/html/oshirase/kanristaff/.htpasswd
+AuthGroupFile /dev/null
+AuthName      "Basic Authentication"
+AuthType      Basic
+<Limit POST GET PUT>
+require valid-user
+</Limit>
+<Files .htaccess>
+order deny,allow
+deny from all
+</Files>

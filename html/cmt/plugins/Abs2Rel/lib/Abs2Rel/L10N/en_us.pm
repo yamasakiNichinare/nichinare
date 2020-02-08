@@ -1,0 +1,10 @@
+package Abs2Rel::L10N::en_us;
+
+use strict;
+use base 'Abs2Rel::L10N';
+use vars qw( %Lexicon );
+
+our %Lexicon = (
+);
+
+1;

@@ -1,0 +1,21 @@
+<TMPL_INCLUDE NAME="header-popup.tmpl">
+
+<h2><TMPL_VAR NAME=LEAD></h2>
+
+<TMPL_IF NAME=COMPLETE>
+
+<h4 class="message" id="keitaikit-success"><TMPL_VAR NAME=COMPLETE></h4>
+
+</TMPL_IF>
+
+<TMPL_IF NAME=ERROR>
+
+<div class="error-message" id="keitaikit-error"><TMPL_VAR NAME=ERROR></div>
+
+</TMPL_IF>
+
+<div align="center">
+<input type="button" onclick="<TMPL_VAR NAME=GOBACK>" value="<MT_TRANS phrase="Go Back">" />
+</div>
+
+<TMPL_INCLUDE NAME="footer-popup.tmpl">

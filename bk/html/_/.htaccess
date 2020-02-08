@@ -1,0 +1,11 @@
+AuthUserFile  /usr/home/z304150/html/_/.htpasswd
+AuthGroupFile /dev/null
+AuthName      "www.nichinare.com _"
+AuthType      Basic
+<Limit POST GET PUT>
+require valid-user
+</Limit>
+<Files .htaccess>
+order deny,allow
+deny from all
+</Files>

@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+div#sliderBox{
+	position:relative;
+}
+div#sliderBox div.slides{
+	width:937px;
+	height:340px;
+	margin:10px auto 0;
+	overflow:hidden;
+}
+div#sliderBox #new_pager{
+    position: absolute;
+    bottom: 11px;
+    z-index: 9999;
+    right: 23px;
+}
+div#sliderBox #new_pager a {
+	display: block;
+    margin-left: 3px;
+    border: none;
+    text-decoration: none;
+    float: left;
+    padding: 1px 1px 1px 1px;
+    background: #b2adaa;
+/*	 border:1px solid #b2adaa;*/}
+div#sliderBox #new_pager a.active{
+	background:#ff0064;
+}
+div#sliderBox #new_pager a:hover {
+	background:#ff0064;
+}
+div#sliderBox #new_pager a img{
+	width: 36px;
+}

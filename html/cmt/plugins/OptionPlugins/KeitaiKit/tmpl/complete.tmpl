@@ -1,0 +1,35 @@
+<mt:if name="error">
+    <mt:setvarblock name="page_title"><__trans phrase="An error occurred"></mt:setvarblock>
+<mt:else>
+    <mt:setvarblock name="page_title"><__trans phrase="Finish"></mt:setvarblock>
+</mt:if>
+<$mt:setvar name="error_page" value="1"$>
+<mt:include name="include/chromeless_header.tmpl">
+
+<mt:if name="error">
+    <mtapp:statusmsg
+        id="keitaikit-error"
+        class="msg msg-error">
+        <mt:var name="error">
+    </mtapp:statusmsg>
+<mt:else>
+    <mtapp:statusmsg
+        id="keitaikit-success"
+        class="msg msg-success">
+        <mt:var name="success">
+    </mtapp:statusmsg>
+</mt:if>
+
+<div class="actions-bar">
+    <div class="actions-bar-inner pkg actions right">
+        <button
+            onclick="<mt:var name="goback">"
+            type="submit"
+            accesskey="s"
+            class="primary-button"
+            ><__trans phrase="Go Back"></button>
+    </div>
+</div>
+
+<mt:include name="include/chromeless_footer.tmpl">
+

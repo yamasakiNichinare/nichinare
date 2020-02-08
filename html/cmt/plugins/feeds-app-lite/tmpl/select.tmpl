@@ -1,0 +1,53 @@
+<mt:include name="dialog/header.tmpl" page_title="<__trans phrase="Feeds.App Lite Widget Creator">">
+
+<mtapp:statusmsg
+    id="found"
+    class="success"
+    can_close="0">
+    <__trans phrase="Multiple feeds were found">
+</mtapp:statusmsg>
+
+<p><__trans phrase="Select the feed you wish to use. <em>Feeds.App Lite supports text-only RSS 1.0, 2.0 and Atom feeds.</em>"></p>
+
+<form method="post" action="<$mt:var name="script_url"$>">
+    <input type="hidden" name="__mode" value="feedswidget_config"/>
+    <input type="hidden" name="blog_id" value="<$mt:var name="blog_id"$>"/>
+
+    <div class="listing">
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th class="cb">&nbsp;</th>
+                    <th class="type"><__trans phrase="Type"></th>
+                    <th class="url primary-col"><__trans phrase="URI"></th>
+                </tr>
+            </thead>
+            <tbody>
+<mt:loop name="feeds">
+                <tr class="<mt:if name="__odd__">odd<mt:else>even</mt:if>">
+                    <td class="cb"><input type="radio" name="uri" value="<$mt:var name="uri" escape="html"$>" id="feed<$mt:var name="__counter__"$>" /></td>
+                    <td class="type"><label for="feed<$mt:var name="__counter__"$>"><$mt:var name="title" escape="html"$></label></td>
+                    <td class="url"><label for="feed<$mt:var name="__counter__"$>"><$mt:var name="uri" escape="html"$></label></td>
+                </tr>
+</mt:loop>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="actions-bar">
+        <button
+            type="submit"
+            accesskey="s"
+            title="<__trans phrase="Continue (s)">"
+            class="continue action primary-button"
+            ><__trans phrase="Continue"></button>
+        <button
+            type="submit"
+            accesskey="x"
+            title="<__trans phrase="Cancel (x)">"
+            class="cancel mt-close-dialog action"
+            ><__trans phrase="Cancel"></button>
+    </div>
+</form>
+
+<mt:include name="dialog/footer.tmpl">

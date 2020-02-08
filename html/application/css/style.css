@@ -1,0 +1,153 @@
+@charset "shift_jis";
+
+/** -------------------------------- **
+	カテゴリーメニュー
+*** ----------------------------------------------------------------- ***/
+
+#contents .left_contents h4 {
+width:200px;
+height:36px;
+margin:0;
+padding:0;
+text-align:left;
+text-indent:-9999px;
+background:url(../images/menu-tit.gif) no-repeat;
+}
+
+
+/**********************
+　ローカルメニュー
+**********************/
+
+#contents .left_contents ul.local_menu {
+width:200px;
+margin:0;
+padding:0;
+list-style:none;
+font-size:1%;
+line-height:1%;
+}
+
+#contents .left_contents ul.local_menu li {
+width:189px;
+height:42px;
+margin:0 auto;
+padding:0;
+text-align:left;
+text-indent:-9999px;
+}
+
+#contents .left_contents ul.local_menu li a {
+display:block;
+width:189px;
+height:42px;
+}
+
+#contents .left_contents ul.local_menu li.menu01 {
+height:49px;
+background:url(../images/local_menu01_on.jpg) no-repeat;
+}
+#contents .left_contents ul.local_menu li.menu01 a {
+height:49px;
+background:url(../images/local_menu01.jpg) no-repeat;
+}
+
+#contents .left_contents ul.local_menu li.menu02 {
+background:url(../images/local_menu02_on.jpg) no-repeat;
+}
+#contents .left_contents ul.local_menu li.menu02 a {
+background:url(../images/local_menu02.jpg) no-repeat;
+}
+
+#contents .left_contents ul.local_menu li.menu03 {
+background:url(../images/local_menu03_on.jpg) no-repeat;
+}
+#contents .left_contents ul.local_menu li.menu03 a {
+background:url(../images/local_menu03.jpg) no-repeat;
+}
+
+/*#contents .left_contents ul.local_menu li.menu04 {
+background:url(../images/local_menu04_on.jpg) no-repeat;
+}
+#contents .left_contents ul.local_menu li.menu04 a {
+background:url(../images/local_menu04.jpg) no-repeat;
+}*/
+
+#contents .left_contents ul.local_menu li.menu05 {
+background:url(../images/local_menu05_on.jpg) no-repeat;
+}
+#contents .left_contents ul.local_menu li.menu05 a {
+background:url(../images/local_menu05.jpg) no-repeat;
+}
+
+#contents .left_contents ul.local_menu li.menu06 {
+background:url(../images/local_menu06_on.jpg) no-repeat;
+}
+#contents .left_contents ul.local_menu li.menu06 a {
+background:url(../images/local_menu06.jpg) no-repeat;
+}
+
+#contents .left_contents ul.local_menu li.menu07 {
+background:url(../images/local_menu04_on.jpg) no-repeat;
+}
+#contents .left_contents ul.local_menu li.menu07 a {
+background:url(../images/local_menu04.jpg) no-repeat;
+}
+
+
+
+#contents #index ul.local_menu li.menu01 a,
+#contents #index ul.local_menu li.menu02 a,
+#contents #index ul.local_menu li.menu03 a,
+#contents #starting ul.local_menu li.menu04 a,
+#contents #jr ul.local_menu li.menu05 a,
+#contents #tuition ul.local_menu li.menu06 a,
+#contents #index ul.local_menu li.menu07 a,
+#contents .left_contents ul.local_menu li.menu01 a:hover,
+#contents .left_contents ul.local_menu li.menu02 a:hover,
+#contents .left_contents ul.local_menu li.menu03 a:hover,
+#contents .left_contents ul.local_menu li.menu04 a:hover,
+#contents .left_contents ul.local_menu li.menu05 a:hover,
+#contents .left_contents ul.local_menu li.menu06 a:hover,
+#contents .left_contents ul.local_menu li.menu07 a:hover {background:none;}
+
+
+/** -------------------------------- **
+	ページ共通スタイル
+*** ----------------------------------------------------------------- ***/
+
+/*** H4 ***/
+
+#application #contents .right_contents .sec_main h4 {
+width:694px;
+margin:0;
+padding:30px 0 14px;
+color:#444444;
+text-align:left;
+}
+
+.bg_color {
+	width:672px;
+	padding:10px;
+	text-align:left;
+	background:#ffffcc;
+	border:1px solid #aaaaaa;
+}
+
+#application #contents .right_contents .sec_main .red_txt2 {
+	width:400px;
+	padding:10px 0 0;
+	text-align:right;
+	color:#ff0000;
+}
+
+
+
+#contents .right_contents .app table.tbl_schedule,
+#contents .right_contents .jr table.tbl_schedule {width:400px;}
+
+#contents .right_contents .app table.tbl_schedule th.left-cell,
+#contents .right_contents .jr table.tbl_schedule th.left-cell {width:215px;}
+#contents .right_contents .app table.tbl_schedule th.right-cell,
+#contents .right_contents .jr table.tbl_schedule th.right-cell {width:185px;}
+

@@ -1,0 +1,63 @@
+<mt:include name="include/header.tmpl">
+
+<mt:if name="error">
+   <div id="generic-error" class="msg msg-error">
+       <mt:var name="error"><a href="javascript:void(0)" onclick="javascript:hide('generic-error');return false;" class="close-me"><span>close</span></a>
+   </div>
+</mt:if>
+
+<mt:if name="success">
+<div id="reset" class="msg msg-success">
+    <mt:var name="success"><a href="javascript:void(0)" onclick="javascript:hide('reset');return false;" class="close-me"><span>close</span></a>
+</div>
+</mt:if>
+
+<p class="descript" >
+<__trans phrase="Configuration of the blogs listing order. Please fill the numbers of listing order. The blog filled by smaller number will be arraged previous to the others.">
+</p>
+
+<mt:unless name="no_blog">
+  <form name="blogs_sort_settings" id="blogs_sort_settings" method="post" action="<mt:var name="mt_uri">">
+    <mt:loop name="query_params">
+      <input type="hidden" id="<mt:var name="name">" name="<mt:var name="name">" value="<mt:var name="value">">
+    </mt:loop>
+</mt:unless>
+
+    <div class="listing" id="blog-listing">
+    <table id="blog-listing-table" class="blog-listing-table compact" cellspacing="0" style="width:460px" >
+       <thead>
+         <tr id="headers">
+            <mt:loop name="headers">
+                <th class="cb" id="header_<mt:var name="col">"><mt:var name="display_name"></th>
+            </mt:loop>
+         </tr>
+      </thead>
+<mt:unless name="no_blog">
+      <tbody>
+      <mt:loop name="blogs">
+         <tr id="lists_<mt:var name="id">" class="<mt:if name="__odd__">odd<mt:else>even</mt:if>">
+           <input type="hidden" id="blog_ids" name="blog_ids" value="<mt:var name="id">">
+           <mt:loop name="headers">
+             <mt:if name="col" eq="sort_no">
+                <td class="cb" id="list_<mt:var name="col">_<mt:var name="id">"><input class="smaller-text" type="text" name="<mt:var name="col">_<mt:var name="id">" value="<mt:var name="$col">" size="2"  ></td>
+             <mt:else>
+                <td class="cb" id="list_<mt:var name="col">_<mt:var name="id">"><mt:var name="$col"></td>
+             </mt:if>
+           </mt:loop>
+         </tr>
+      </mt:loop>
+      </tbody>
+    </table>
+    </div>
+
+    <input type="submit" value="<__trans phrase="Save Changes">">
+
+  </form>
+<mt:else>
+    </table>
+    </div>
+
+    <div><p style="color: #990000;"><__trans phrase="Website ([_1]) blogs are not registered." params="<$mt:websitename$>"></p></div>
+</mt:unless>
+
+<mt:include name="include/footer.tmpl">

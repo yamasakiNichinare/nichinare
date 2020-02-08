@@ -1,0 +1,92 @@
+Options +SymLinksIfOwnerMatch
+RewriteEngine On
+RewriteCond %{SERVER_PORT} ^80$
+RewriteRule ^(.*)$ https://nichinare.com/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^(www\.nichinare\.com)(:80)?
+RewriteRule ^(.*) https://nichinare.com/$1 [R=301,L]
+
+DirectoryIndex index.cgi index.html
+AddHandler x-httpd-php528 .php
+
+## %%%%%%% Movable Type generated this part; don't remove this line! %%%%%%%
+# Disable fancy indexes, so mtview.php gets a chance...
+Options -Indexes +SymLinksIfOwnerMatch
+<IfModule mod_rewrite.c>
+  # The mod_rewrite solution is the preferred way to invoke
+  # dynamic pages, because of its flexibility.
+
+  # Add mtview.php to the list of DirectoryIndex options, listing it last,
+  # so it is invoked only if the common choices aren't present...
+  <IfModule mod_dir.c>
+    DirectoryIndex index.php index.html index.htm default.htm default.html default.asp /mtview.php
+  </IfModule>
+
+  RewriteEngine on
+
+  # don't serve mtview.php if the request is for a real directory
+  # (allows the DirectoryIndex lookup to function)
+  RewriteCond %{REQUEST_FILENAME} !-d
+
+  # don't serve mtview.php if the request is for a real file
+  # (allows the actual file to be served)
+  RewriteCond %{REQUEST_FILENAME} !-f
+  # anything else is handed to mtview.php for resolution
+  # passthrough query parameters
+  RewriteRule ^(.*)(\?.*)?$ /mtview.php$2 [L,QSA]
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+  # if mod_rewrite is unavailable, we forward any missing page
+  # or unresolved directory index requests to mtview
+  # if mtview.php can resolve the request, it returns a 200
+  # result code which prevents any 4xx error code from going
+  # to the server's access logs. However, an error will be
+  # reported in the error log file. If this is your only choice,
+  # and you want to suppress these messages, adding a "LogLevel crit"
+  # directive within your VirtualHost or root configuration for
+  # Apache will turn them off.
+  ErrorDocument 404 /mtview.php
+  ErrorDocument 403 /mtview.php
+</IfModule>
+
+## ******* Movable Type generated this part; don't remove this line! *******
+
+
+# Options -Indexes
+# < IfModule mod_rewrite.c>
+
+# DoCoMo
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} DoCoMo
+RewriteRule ^$ /m/ [R]
+
+# Softbank
+RewriteCond %{HTTP_USER_AGENT} J-PHONE
+RewriteRule ^$ /m/ [R]
+RewriteCond %{HTTP_USER_AGENT} Vodafone
+RewriteRule ^$ /m/ [R]
+RewriteCond %{HTTP_USER_AGENT} SoftBank
+RewriteRule ^$ /m/ [R]
+
+# AU KDDI
+RewriteCond %{HTTP_USER_AGENT} KDDI
+RewriteRule ^$ /m/ [R]
+RewriteCond %{HTTP_USER_AGENT} UP.Browser
+RewriteRule ^$ /m/ [R]
+
+# DDI Pocket
+RewriteCond %{HTTP_USER_AGENT} DDIPOCKET
+RewriteRule ^$ /m/ [R]
+
+# WILLCOM
+RewriteCond %{HTTP_USER_AGENT} WILLCOM
+RewriteRule ^$ /m/ [R]
+
+# WILLCOM
+RewriteCond %{HTTP_USER_AGENT} PDA
+RewriteRule ^$ /m/ [R]
+
+# < /IfModule>
+
+Options +Includes
+AddHandler server-parsed html

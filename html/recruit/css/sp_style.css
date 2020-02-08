@@ -1,0 +1,21 @@
+@charset "shift_jis";
+
+/*** H4 ***/
+
+#recruit #contents .right_contents .sec_main h4 {
+margin:0;
+padding:30px 0 14px;
+color:#444444;
+text-align:left;
+}
+
+
+/**********************
+　リンクアイコン
+**********************/
+
+#contents .right_contents .sec_main .arr {
+	padding-left:16px;
+	margin-bottom:10px;
+	background:url(../../common/images/icon_arr01.gif) left no-repeat;
+}

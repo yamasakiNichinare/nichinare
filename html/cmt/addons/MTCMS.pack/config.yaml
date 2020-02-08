@@ -1,0 +1,34 @@
+name: SKYARC MTCMS Smart Plus
+id: MTCMS
+key: MTCMS
+author_name: SKYARC System Co.,Ltd.
+author_link: http://www.skyarc.co.jp/
+doc_link: http://www.mtcms.jp/
+version: 5.24
+l10n_class: MT::MTCMS::L10N
+
+callbacks:
+    template_source.chromeless_header: $MTCMS::MT::MTCMS::Admin::login_logo_transform
+    template_source.header: $MTCMS::MT::MTCMS::Admin::header_logo_transform
+    template_output: $MTCMS::MT::MTCMS::Admin::footer_link_transform
+
+config_settings:
+    SKYARCProductName:
+        default: MTCMS
+    CMSThemePath:
+        default: common/
+    HideDisabledMenus:
+        default: 1
+    AutoSaveFrequency:
+        default: 0
+    SearchMaxResults:
+        default: 10
+    CGIMaxUpload:
+        default: 100000000
+    EntriesPerRebuild:
+        default: 100
+
+tags:
+    function:
+        SKYARCProductName: $MTCMS::MT::MTCMS::Tags::_hdlr_skyarc_product_name
+        CMSThemePath: $MTCMS::MT::MTCMS::Tags::_hdlr_cms_theme_path

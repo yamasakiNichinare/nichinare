@@ -1,0 +1,17 @@
+#!/usr/bin/perl
+$|++;
+use lib '../../extlib';
+use lib '../../lib';
+use MT;
+use MT::Asset;
+
+my $mt = MT->new;
+
+map {
+    print '.';
+    my $filepath = $_->column ('file_path') || '';
+    $filepath =~ s!^[^/]*/|[^/]*$!!g;
+    $filepath =~ s!/$!!;
+    $_->file_path_path ($filepath);
+    $_->update;
+} MT::Asset->load ({ class => '*' });

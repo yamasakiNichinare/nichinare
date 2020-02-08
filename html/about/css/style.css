@@ -1,0 +1,238 @@
+@charset "shift_jis";
+
+/** -------------------------------- **
+	カテゴリーメニュー
+*** ----------------------------------------------------------------- ***/
+
+#contents .left_contents h4 {
+width:200px;
+height:36px;
+margin:0;
+padding:0;
+text-align:left;
+text-indent:-9999px;
+background:url(../images/menu-tit.gif) no-repeat;
+}
+
+
+/**********************
+　ローカルメニュー
+**********************/
+
+#contents .left_contents ul.local_menu {
+width:200px;
+margin:0;
+padding:0;
+list-style:none;
+font-size:1%;
+line-height:1%;
+}
+
+#contents .left_contents ul.local_menu li {
+width:189px;
+height:42px;
+margin:0 auto;
+padding:0;
+text-align:left;
+text-indent:-9999px;
+}
+
+#contents .left_contents ul.local_menu li a {
+display:block;
+width:189px;
+height:42px;
+}
+
+#contents .left_contents ul.local_menu li.menu01 {
+height:49px;
+background:url(../images/local_menu01_on.jpg) no-repeat;
+}
+#contents .left_contents ul.local_menu li.menu01 a {
+height:49px;
+background:url(../images/local_menu01.jpg) no-repeat;
+}
+
+#contents .left_contents ul.local_menu li.menu02 {
+background:url(../images/local_menu02_on.jpg) no-repeat;
+}
+#contents .left_contents ul.local_menu li.menu02 a {
+background:url(../images/local_menu02.jpg) no-repeat;
+}
+
+#contents .left_contents ul.local_menu li.menu03 {
+background:url(../images/local_menu03_on.jpg) no-repeat;
+}
+#contents .left_contents ul.local_menu li.menu03 a {
+background:url(../images/local_menu03.jpg) no-repeat;
+}
+
+#contents .left_contents ul.local_menu li.menu04 {
+background:url(../images/local_menu04_on.jpg) no-repeat;
+}
+#contents .left_contents ul.local_menu li.menu04 a {
+background:url(../images/local_menu04.jpg) no-repeat;
+}
+
+#contents .left_contents ul.local_menu li.menu05 {
+background:url(../images/local_menu05_on.jpg) no-repeat;
+}
+#contents .left_contents ul.local_menu li.menu05 a {
+background:url(../images/local_menu05.jpg) no-repeat;
+}
+
+#contents .left_contents ul.local_menu li.menu06 {
+background:url(../images/local_menu06_on.jpg) no-repeat;
+}
+#contents .left_contents ul.local_menu li.menu06 a {
+background:url(../images/local_menu06.jpg) no-repeat;
+}
+
+#contents #index ul.local_menu li.menu01 a,
+#contents #step ul.local_menu li.menu02 a,
+#contents #system ul.local_menu li.menu03 a,
+#contents #studio ul.local_menu li.menu04 a,
+#contents #lecturer ul.local_menu li.menu05 a,
+#contents #native ul.local_menu li.menu06 a,
+#contents .left_contents ul.local_menu li.menu01 a:hover,
+#contents .left_contents ul.local_menu li.menu02 a:hover,
+#contents .left_contents ul.local_menu li.menu03 a:hover,
+#contents .left_contents ul.local_menu li.menu04 a:hover,
+#contents .left_contents ul.local_menu li.menu05 a:hover,
+#contents .left_contents ul.local_menu li.menu06 a:hover {background:none;}
+
+
+/** -------------------------------- **
+	日ナレの特色
+*** ----------------------------------------------------------------- ***/
+
+.pad-graph {padding-top:20px;}
+
+
+/** -------------------------------- **
+	入所までのステップ
+*** ----------------------------------------------------------------- ***/
+
+.pad-step {padding-top:5px;}
+
+
+/** -------------------------------- **
+	レッスンスタジオ
+*** ----------------------------------------------------------------- ***/
+
+.photo_c dl.fl_l {
+	float:left;
+	width:226px;
+	padding:0 8px 0 0;
+	text-align:left;
+}
+
+.photo_c dl.fl_r {
+	float:right;
+	width:226px;
+	padding:0;
+	text-align:left;
+}
+
+.txt_col01 {color:#ff6600 !important;}
+
+
+/** -------------------------------- **
+	講師一覧
+*** ----------------------------------------------------------------- ***/
+
+.lecturer_column-l {
+	float:left;
+	width:340px;
+	margin:0;
+	padding:0;
+	text-align:left;
+	background:none;
+}
+
+.lecturer_column-r {
+	float:right;
+	width:340px;
+	margin:0;
+	padding:0;
+	text-align:left;
+	background:none;
+}
+
+#contents .right_contents .sec_main .lecturer_column-l h3,
+#contents .right_contents .sec_main .lecturer_column-r h3 {
+	margin:0;
+	padding:20px 0 14px;
+}
+
+
+/** -------------------------------- **
+	主な出身者
+*** ----------------------------------------------------------------- ***/
+
+/*** アイコンカラー ***/
+
+.icon01 {color:#1e65c6;}
+.icon02 {color:#0e974f;}
+.icon03 {color:#ed7102;}
+.icon04 {color:#ed2e02;}
+.icon05 {color:#9d60f8;}
+.icon06 {color:#888888;}
+
+
+/*** 出身者リスト ***/
+
+dl.native_dl {
+	width:694px;
+	padding:15px 0 0;
+	text-align:left;
+	line-height:140%;
+	border-bottom:1px solid #dddddd;
+}
+
+dl.native_dl_none {
+	width:694px;
+	padding:15px 0 0;
+	text-align:left;
+	line-height:140%;
+	border-bottom:none;
+}
+
+dl.native_dl dt,
+dl.native_dl_none dt {
+	float:left;
+	width:130px;
+	padding:0;
+	text-align:left;
+}
+
+dl.native_dl dd,
+dl.native_dl_none dd {
+	float:right;
+	width:554px;
+	padding:0;
+	text-align:left;
+}
+
+dl.native_dl dd dl,
+dl.native_dl_none dd dl {
+	width:554px;
+	padding:0 0 5px;
+	text-align:left;
+}
+
+dl.native_dl dd dl dt,
+dl.native_dl_none dd dl dt {
+	float: left;
+	width:75px;
+	padding:0 0 5px;
+	text-align:left;
+}
+
+dl.native_dl dd dl dd,
+dl.native_dl_none dd dl dd {
+	float: right;
+	/*width:554px;*/
+	width:469px;
+	padding:0 0 10px;
+	text-align:left;
+}

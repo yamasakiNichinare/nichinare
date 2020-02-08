@@ -1,0 +1,51 @@
+<mt:Ignore>Copyright (c) 2008 ARK-Web Co.,Ltd.</mt:Ignore>
+<mt:setvarblock name="action_buttons">
+<!--
+            <mt:if name="can_rebuild">
+                <a href="javascript:void(0)"
+                    onclick="doForMarkedInThisWindow(getByID('<$mt:var name="object_type"$>-listing-form'), '<mt:var name="object_label" lower_case="1" escape="js">', '<mt:var name="object_label_plural" lower_case="1" escape="js">', null, 'rebuild_new_phase', {<mt:if name="blog_id">'blog_id': '<mt:var name="blog_id">'</mt:if>}, '<__trans phrase="to republish" escape="js">'); return false;"
+                    accesskey="r"
+                    title="<__trans phrase="Republish selected [_1] (r)" params="<mt:var name="object_label_plural" lower_case="1">">"
+                    ><__trans phrase="Republish"></a>
+            </mt:if>
+-->
+<!--
+                <a href="javascript:void(0)"
+                    onclick="doRemoveItems(getByID('<$mt:var name="object_type"$>-listing-form'), '<mt:var name="object_label" lower_case="1" escape="js">', '<mt:var name="object_label_plural" lower_case="1" escape="js">', null, {'aform_id' : '<$mt:var name="id"$>'}, 'delete_aform_input_error'); return false;"
+                    accesskey="x"
+                    title="<__trans phrase="Delete selected [_1] (x)" params="<mt:var name="object_label_plural">">"
+                    ><__trans phrase="Delete"></a>
+-->
+</mt:setvarblock>
+
+<mtapp:listing empty_message="<__trans phrase="No Input Errors.">">
+    <mt:if name="__first__">
+    <thead>
+        <tr>
+<!--            <th class="cb"><input type="checkbox" name="id-head" value="all" class="select" /></th>-->
+            <th id="bt-date"><__trans phrase="Error Datetime"></th>
+            <th id="bt-field" class="primary-col"><__trans phrase="Error Field"></th>
+            <th id="bt-type"><__trans phrase="Error Type"></th>
+            <th id="bt-value"><__trans phrase="Error Value"></th>
+            <th id="bt-page"><__trans phrase="Error Page"></th>
+        <mt:unless name="mode_search_replace">
+            <mt:unless name="is_administrator">
+            <th id="bt-delete"><__trans phrase="Delete"></th>
+            </mt:unless>
+        </mt:unless>
+        </tr>
+    </thead>
+    <tbody>
+    </mt:if>
+        <tr class="<mt:if name="__odd__">odd<mt:else>even</mt:if>">
+<!--            <td class="cb"><input type="checkbox" name="id" value="<mt:var name="id">" class="select" /></td>-->
+            <td><mt:var name="created_on" escape="html"></td>
+            <td><mt:var name="error_field_label" escape="html"></td>
+            <td><mt:var name="type" escape="html"></td>
+            <td><mt:var name="error_value" escape="html"></td>
+            <td class="view status-view"><a href="<mt:var name="aform_url" escape="html">" target="_blank"><img src="<$mt:var name="static_uri"$>images/spacer.gif" alt="<__trans phrase="Show">" width="13" height="9" /></a></td>
+        </tr>
+    <mt:if name="__last__">
+    </tbody>
+    </mt:if>
+</mtapp:listing>

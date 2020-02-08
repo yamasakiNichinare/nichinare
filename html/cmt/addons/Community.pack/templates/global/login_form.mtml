@@ -1,0 +1,108 @@
+<$mt:Var name="screen_id" value="sign-in"$>
+<$mt:Var name="body_class" value="mt-profile-login"$>
+<mt:SetVarBlock name="page_title"><__trans phrase="Sign in"></mt:SetVarBlock>
+<mt:SetVarBlock name="title"><mt:If name="blog_id"><$mt:BlogName encode_html="1"$>: </mt:If><$mt:Var name="page_title"$></mt:SetVarBlock>
+
+<__trans_section component="community">
+
+<$mt:Include module="<__trans phrase="Simple Header">"$>
+
+<mt:If name="auth_loop">
+<mtapp:setting
+    id="comment_signin_options"
+    label="<__trans phrase="Sign in using">...">
+    <select name="auth_options" id="auth_options">
+        <option value="<mt:var name="default_id" escape="html">"><mt:var name="default_signin" escape="html"></option>
+    <mt:loop name="auth_loop">
+        <option value="<mt:var name="id" escape="html">"><mt:var name="name" escape="html"></option>
+    </mt:loop>
+    </select>
+</mtapp:setting>
+</mt:If>
+
+<mt:If name="message">
+    <mtapp:statusmsg
+        id="message"
+        class="alert">
+        <$mt:Var name="message"$>
+    </mt:App:StatusMsg>
+</mt:If>
+<mt:If name="error">
+    <mtapp:statusmsg
+        id="generic-error"
+        class="error">
+        <$mt:Var name="error"$>
+    </mt:App:StatusMsg>
+</mt:If>
+
+<div id="signin_with_<mt:var name="default_id" escape="html">"<mt:Unless name="enabled_MovableType"> style="display: none"</mt:Unless>>
+    <form method="post" action="<$mt:Var name="script_url"$>">
+        <input type="hidden" name="__mode" value="do_login" />
+        <input type="hidden" name="blog_id" value="<$mt:Var name="blog_id"$>" />
+        <input type="hidden" name="return_to" value="<$mt:Var name="return_to"$>" />
+    <mt:Unless name="auth_mode_mt">
+        <input type="hidden" name="external_auth" value="1" />
+    </mt:Unless>
+
+        <mtapp:setting
+            id="username"
+            label="<__trans phrase="Username">"
+            label_class="top-label">
+            <input type="text" name="username" id="username" class="ti" />
+        </mt:App:Setting>
+
+        <mtapp:setting
+            id="password"
+            label="<__trans phrase="Password">"
+            label_class="top-label">
+            <input type="password" name="password" id="password" class="pw" />
+        </mt:App:Setting>
+
+        <p><label><__trans phrase="Remember me?"></label> <input type="checkbox" name="remember" value="1" accesskey="r" /></p>
+
+        <div class="actions-bar actions-bar-buttom">
+            <button
+                type="submit"
+                class="sign-in action primary-button"
+                accesskey="s"
+                ><__trans phrase="Sign in"></button>
+    <mt:If name="can_recover_password">
+                <p id="forget-password"><a href="<$mt:Var name="script_url"$>?__mode=start_recover&amp;return_to=<$mt:Var name="return_to" escape="url"$>"><__trans phrase="Forgot your password?"></a></p>
+    </mt:If>
+       </div>
+    <mt:IfCommenterRegistrationAllowed>
+        <mt:IfExternalUserManagement>
+        <mt:else>
+            <mt:If name="blog_id">
+       <p id="sign-up"><__trans phrase="Not a member?&nbsp;&nbsp;<a href="[_1]">Sign Up</a>!" params="<$mt:Var name="script_url"$>?__mode=register&amp;blog_id=<$mt:Var name="blog_id"$>&amp;return_to=<$mt:Var name="return_to" escape="url"$>"></p>
+            </mt:If>
+        </mt:IfExternalUserManagement>
+    </mt:IfCommenterRegistrationAllowed>
+
+   </form>
+</div>
+
+<mt:If name="auth_loop">
+<dl>
+<mt:Loop name="auth_loop">
+    <dd>
+        <div id="signin_with_<mt:var name="id" escape="html">"<mt:If name="name" ne="$default_signin"> style="display: none"</mt:If>>
+            <$mt:Var name="login_form"$>
+        </div>
+    </dd>
+</mt:Loop>
+</dl>
+</mt:If>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+jQuery(function() {
+    jQuery('#auth_options').change(function() {
+        jQuery('div[id^=signin_with_]').hide();
+        jQuery('#signin_with_'+jQuery(this).val()).show();
+    });
+});
+/* ]]> */
+</script>
+<$mt:Include module="<__trans phrase="Simple Footer">"$>
+</__trans_section>

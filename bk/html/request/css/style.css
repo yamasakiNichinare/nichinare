@@ -1,0 +1,125 @@
+@charset "shift_jis";
+/** -------------------------------- **
+カテゴリーメニュー
+*** ----------------------------------------------------------------- ***/
+#contents .left_contents h4 {
+width:200px;
+height:36px;
+margin:0;
+padding:0;
+text-align:left;
+text-indent:-9999px;
+background:url(../images/menu-tit.gif) no-repeat;
+}
+/*** 左エリア　バナー ***/
+#contents .left_contents ul.left-bnr {
+width:191px;
+margin:0 auto;
+padding:0 0 0;
+text-align:right;
+list-style:none;
+font-size:1%;
+line-height:1%;
+}
+/** -------------------------------- **
+資料請求フォーム以外のお申し込み方法
+*** ----------------------------------------------------------------- ***/
+ol {
+width:662px;
+padding:10px 0 0 20px;
+_padding:10px 0 0 25px;
+}
+*:first-child+html ol {
+width:662px;
+padding:10px 0 0 25px;
+}
+ol li {
+padding:0;
+margin:0;
+text-align:left;
+font-weight:bold;
+list-style:outside decimal;
+}
+ol li p {
+padding-left:4em;
+text-indent:-3.9em;
+}
+.bg_color {
+clear:left;
+width:672px;
+padding:10px;
+margin-top:15px;
+*margin-top:0px;
+text-align:left;
+background:#ffffcc;
+border:1px solid #aaaaaa;
+}
+#contents .right_contents .sec_main .photo_l {
+float:left;
+width:150px;
+padding:0 10px 15px 0;
+}
+/** -------------------------------- **
+フォーム
+*** ----------------------------------------------------------------- ***/
+.form_txt {padding-top:15px;}
+dl.form_dl {
+width:694px;
+margin:0;
+padding:20px 0 0;
+text-align:left;
+/*background:url(../../common/images/dotted_line01.gif) left bottom repeat-x;*/
+}
+dl.form_dl dt {
+margin:0;
+padding:0;
+color:#4ca778;
+text-align:left;
+font-weight:bold;
+}
+dl.form_dl dt strong {
+color:#ff0000;
+padding-left:5px;
+}
+dl.form_dl dd {
+margin:0;
+padding:5px 0 0;
+text-align:left;
+}
+dl.form_dl dd dl {
+margin:0;
+padding:0;
+text-align:left;
+}
+dl.form_dl dd dl dt {
+float:left;
+width:105px;
+margin:0;
+padding:0;
+color: #444444;
+text-align:left;
+}
+dl.form_dl dd dl dd {
+float:right;
+width:580px;
+margin:0;
+padding:0;
+text-align:left;
+}
+{ vertical-align:middle;}
+dl.form_dl dd #zipSuggest{font-size:12px; color:#FFF; background-color:#ff9e07; line-height:19px; vertical-align:top; text-decoration:none; display:inline-block; padding:0 10px; border-bottom: 1px solid #e08b06; border-right: 1px solid #e08b06;}
+
+.submit {
+display: block;
+width: 270px;
+margin: 0px auto;
+padding-top:15px;
+text-align:center;
+}
+.submit .mgn {margin-right:25px;}
+dl.form_dl .w1 {width:100px;}
+dl.form_dl .w2 {width:300px;}
+dl.form_dl .w3 {width:400px;}
+.arr {padding-left:16px; background:url(../../common/images/icon_arr01.gif) left no-repeat;}
+dl.form_dl dd.text_red strong{color: #ff0000;}
+

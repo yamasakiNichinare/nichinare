@@ -1,0 +1,14 @@
+<p>
+<MT_TRANS phrase="Blog site sets the character code.">
+</p>
+
+<mtapp:setting
+    id="trans_encoding_character_settings"
+    label="<MT_trans phrase="Character Code">"
+    hint=""
+    show_hint="0">
+    <mt:getvar name="trans_encoding" >
+    <select name="trans_encoding_charset" id="trans_encoding_charset">
+    <mt:getvar name="trans_encoding_charset_list">
+    </select>
+</mtapp:setting>

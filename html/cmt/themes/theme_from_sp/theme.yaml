@@ -1,0 +1,121 @@
+---
+author_link: ''
+class: blog
+description: ''
+elements:
+  template_set:
+    component: ~
+    data:
+      base_path: templates
+      label: 'exported_template set'
+      templates:
+        index:
+          javascript:
+            label: JavaScript
+            outfile: mt.js
+            rebuild_me: 1
+          main_index:
+            label: メインページ
+            outfile: index.html
+            rebuild_me: 1
+        module:
+          template_360:
+            label: ヘッダー
+          template_361:
+            label: フッター
+        system:
+          comment_listing:
+            label: コメント一覧
+          comment_preview:
+            label: コメントプレビュー
+          comment_response:
+            label: コメント完了
+          dynamic_error:
+            label: ダイナミックパブリッシングエラー
+          popup_image:
+            label: ポップアップ画像
+          search_results:
+            label: 検索結果
+        widget:
+          about_this_page:
+            label: About
+          archive_widgets_group:
+            label: アーカイブウィジェットグループ
+          author_archive_list:
+            label: ユーザーアーカイブ
+          calendar:
+            label: カレンダー
+          category_archive_list:
+            label: カテゴリアーカイブ
+          creative_commons:
+            label: クリエイティブ・コモンズ
+          current_author_monthly_archive_list:
+            label: ユーザー月別アーカイブ
+          current_category_monthly_archive_list:
+            label: カテゴリ月別アーカイブ
+          date_based_author_archives:
+            label: 日付ベースのユーザーアーカイブ
+          date_based_category_archives:
+            label: 日付ベースのカテゴリアーカイブ
+          main_index_widgets_group:
+            label: ホームページウィジェットグループ
+          monthly_archive_dropdown:
+            label: 月別アーカイブ(ドロップダウン)
+          monthly_archive_list:
+            label: 月別アーカイブ
+          openid:
+            label: OpenID対応
+          pages_list:
+            label: ページ一覧
+          powered_by:
+            label: 'Powered By'
+          recent_assets:
+            label: アイテム
+          recent_comments:
+            label: 最近のコメント
+          recent_entries:
+            label: 最近のブログ記事
+          search:
+            label: 検索
+          signin:
+            label: サインイン
+          syndication:
+            label: 購読
+          tag_cloud:
+            label: タグクラウド
+          technorati_search:
+            label: 'Technorati Search'
+        widgetset:
+          2column_layout_sidebar:
+            label: 2カラムのサイドバー
+            order: 1000
+            widgets:
+              - 検索
+              - About
+              - ホームページウィジェットグループ
+              - アーカイブウィジェットグループ
+              - ページ一覧
+              - 購読
+              - OpenID対応
+              - 'Powered By'
+          3column_layout_primary_sidebar:
+            label: 3カラムのサイドバー(メイン)
+            order: 1000
+            widgets:
+              - アーカイブウィジェットグループ
+              - ページ一覧
+              - 購読
+              - OpenID対応
+              - 'Powered By'
+          3column_layout_secondary_sidebar:
+            label: 3カラムのサイドバー(サブ)
+            order: 1000
+            widgets:
+              - 検索
+              - ホームページウィジェットグループ
+              - About
+    importer: template_set
+id: theme_from_sp
+label: スマートフォンのテーマ
+name: スマートフォンのテーマ
+version: 1.0

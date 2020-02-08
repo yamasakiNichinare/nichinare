@@ -1,0 +1,138 @@
+@charset "shift_jis";
+
+* {
+margin: 0px;
+padding: 0px;
+}
+
+html {
+width:100%;
+background-color:#ebf4eb;
+overflow-y:scroll;/* For Mozilla's bug */
+}
+
+body {
+margin:0;
+padding:0px;
+text-align:center;
+color: #444444;
+background-color:#ebf4eb;
+font-size: 81.25%; /*13px�ɐݒ�*/
+font-family:"�l�r �o�S�V�b�N", "MS PGothic", Osaka, sans-serif;
+}
+
+
+/** -------------------------------- **
+	Reset & �����ݒ�
+*** ----------------------------------------------------------------- ***/
+
+h1, h2, h3, h4, h5, h6, p, span, ul, ol, li, dl, dt, dd, table, th, td, input, legend, div, form, hr, address {
+margin:0;
+padding:0;
+list-style:none;
+font-weight: normal;
+font-style: normal;
+}
+
+p, h1, h2, h3, h4, h5, h6, ul, ol, dl, div, pre, blockquote, input {
+word-break:break-all;
+}
+
+hr {display: none;}
+
+a {
+/*\*/
+overflow: hidden;
+/**/
+}
+
+
+/** -------------------------------- **
+	Float �� Float Clear�w��
+*** ----------------------------------------------------------------- ***/
+
+.clear{clear:both;}
+
+div:after, ul:after, dl:after, dt:after, dd:after, td:after  {
+content:"";
+height:0;
+clear:both;
+display:block;
+visibility:hidden;
+}
+
+/* IE7�p*/
+div {zoom:100%;}
+
+
+/** -------------------------------- **
+	Link�w��
+*** ----------------------------------------------------------------- ***/
+
+a:link {text-decoration:underline; color:#005cb8;}
+a:visited {text-decoration:underline; color:#005cb8;}
+a:hover, a:active {text-decoration:underline; color:#4ca778;}
+
+a img {border:none;}
+
+
+/** -------------------------------- **
+	���{�t�H���g�T�C�Y�w��
+*** ----------------------------------------------------------------- ***/
+
+.small {
+font-size: 76.93%;
+line-height: 140%;
+}
+
+.normal {
+font-size: 92.31%;
+line-height: 166.7%;
+}
+
+.s-large {
+font-size: 107.77%;
+line-height: 110%;
+}
+
+.large {
+font-size: 138.47%;
+line-height: 110%;
+}
+
+/** -------------------------------- **
+	PCとSPの切り分け
+*** ----------------------------------------------------------------- ***/
+@media screen and (min-width: 768px) {
+	.PC {
+		display: block !important;
+	}
+	.SP {
+		display: none !important;
+	}
+}
+
+@media screen and (max-width: 766px) {
+	.PC {
+		display: none !important;
+	}
+	.SP {
+		display: block !important;
+	}
+}
+
+/** -------------------------------- **
+	声マガバナー(下層ページ用)
+*** ----------------------------------------------------------------- ***/
+@media screen and (min-width: 768px) {
+	.seimagaBtn_side {
+		margin: 5px auto 0;
+	}
+    .seimagaBtn_side img {
+        display: block;
+        margin: 0 auto;
+    }
+	.seimagaBtn_side img:hover {
+		opacity: 0.7;
+	}
+}

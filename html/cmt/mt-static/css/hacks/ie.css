@@ -1,0 +1,197 @@
+/* - Generic */
+/* -- form */
+body { 
+    word-break: break-all;
+}
+
+input.text, 
+input.password, 
+select, 
+textarea { 
+    padding: 2px 0 2px 2px ! important;
+    border: 1px solid #c8c2be;
+}
+
+input.text, 
+textarea { 
+    width: 28em;
+}
+
+input.password { 
+    width: 15em ! important;
+}
+
+input.smaller-text { 
+    width: 3.5em ! important;
+}
+
+input.extra-path { 
+    width: 12em ! important;
+}
+
+#basic-search input.search-query {
+    padding-left: 0 ! important;
+}
+
+.widget input[type="text"], 
+.widget textarea, 
+.edit-entry input[type="text"], 
+.edit-entry textarea, 
+.edit-template input[type="text"], 
+.edit-template textarea { 
+    width: 99%;
+}
+
+.edit-entry #editor-content-textarea { 
+    width: 100%;
+    padding-left: 0;
+}
+
+.widget input[type="text"], 
+.widget input[type="password"], 
+.widget textarea { 
+    width: 96%;
+}
+
+#sign-in input[type="text"] { 
+    width: 313px;
+}
+
+#sign-in #username, 
+#sign-in #password, 
+#reset-password input, 
+#change-password input { 
+    width: 335px ! important;
+}
+
+#sign-in .has-auth-icon input {
+    padding-left: 22px ! important;
+}
+
+/* -- Button */
+button { 
+    min-height: 20px;
+}
+
+button.action { 
+    font-weight: bold;
+    height: 23px;
+}
+
+/* - Component */
+.icon-left { 
+    background-position: left 2px;
+}
+
+/* - App Header */
+#header { 
+    z-index: 1200;
+}
+
+/* - Selector Nav */
+#selector-nav-list a.toggle-button img { 
+    margin-top: 0;
+}
+
+#selector-nav .selector a,
+#selector-nav .selector span { 
+    overflow: visible;
+}
+
+/* - Menu Bar Nav */
+#menu-bar-nav { 
+    width: 250px;
+}
+
+/* - Navigation Menu */
+#menu { 
+    z-index: 1100;
+}
+
+ul.menu-nav li.top-menu { 
+    margin-top: -4px;
+}
+ul.menu-nav li.top-menu.first-child { 
+    margin-top: 0;
+}
+ul.menu-nav li.first-child a { 
+    margin-top: 0;
+}
+
+ul.menu-nav a.top-menu-link .menu-label { 
+    word-break: normal;
+}
+
+/* - Widgets */
+/* -- Favorite Website, Blog Widget */
+.favorite-blogs-widget .blog-container { 
+    height: auto;
+    margin-right: 0;
+    overflow: visible;
+}
+
+.favorite-blogs-widget .blog-action {
+    right: 0;
+}
+
+ul#asset-list li a.remove-asset {
+    top: 6px;
+    margin-top: 0;
+}
+
+/* - Listing Table */
+.listing th, 
+.listing td { 
+    padding: 6px 8px;
+}
+
+.listing td.view, 
+.listing td.cb, 
+.listing td.si, 
+.listing td.number { 
+    padding-top: 8px;
+}
+
+/* - Fields */
+.field-header { 
+    word-break: normal; 
+}
+
+#template-options #template-options-header h3 { 
+    float: left;
+}
+
+/* - dialog */
+#tags-field {
+    z-index: 100;
+}
+
+/* - fake display: inline-block; */
+.ui-tabs-nav li, 
+ul.tabs li, 
+#utility-nav li, 
+#selector-nav .current, 
+.object-nav li, 
+#editor .editor-header .tab, 
+#field-convert_breaks, 
+#template-options #template-options-header h3, 
+#caching-field li li, 
+#permission-list li, 
+.settings-screen ul#editor-fields li, 
+.edit-author #system_permissions-field li, 
+.template-group-header h3, 
+#search-bar-advanced-search li, 
+.search-replace .advanced-options li, 
+.dialog .selected-items .items a .remove, 
+.mt-beta #footer #msg-beta p { 
+    display: inline;
+    height: 1%;
+}
+
+/* - haslayout */
+ul.menu-nav, 
+.welcome-widget, 
+#content-body, 
+.favorite-blogs-widget .blog-content { 
+    zoom: 1;
+}

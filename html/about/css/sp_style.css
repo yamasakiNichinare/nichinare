@@ -1,0 +1,125 @@
+@charset "shift_jis";
+
+/** -------------------------------- **
+	スマホ最適化
+*** ----------------------------------------------------------------- ***/
+
+/** -------------------------------- **
+	日ナレの特色
+*** ----------------------------------------------------------------- ***/
+
+.pad-graph {padding-top:20px;}
+
+
+/** -------------------------------- **
+	入所までのステップ
+*** ----------------------------------------------------------------- ***/
+
+.pad-step {padding-top:5px; text-align:center;}
+.pad-step img {width:300px; height:48px;}
+.pad-step.last img {width:300px; height:39px;}
+
+
+/** -------------------------------- **
+	レッスンスタジオ
+*** ----------------------------------------------------------------- ***/
+
+.photo_c dl.fl_l {
+	padding:0;
+	text-align:left;
+}
+
+.photo_c dl.fl_r {
+	padding:0;
+	text-align:left;
+}
+
+.photo_c dl.fl_l dd,
+.photo_c dl.fl_r dd {text-align:center;}
+
+.txt_col01 {color:#ff6600 !important;}
+
+/** -------------------------------- **
+	講師一覧
+*** ----------------------------------------------------------------- ***/
+
+.lecturer_column-l {
+	margin:0;
+	padding:0 10px;
+	text-align:left;
+	background:none;
+}
+
+.lecturer_column-r {
+	margin:0;
+	padding:0 10px;
+	text-align:left;
+	background:none;
+}
+
+#contents .right_contents .sec_main .lecturer_column-l h3,
+#contents .right_contents .sec_main .lecturer_column-r h3 {
+	margin:0;
+	padding:20px 0 14px;
+}
+
+
+/** -------------------------------- **
+	主な出身者
+*** ----------------------------------------------------------------- ***/
+
+/*** アイコンカラー ***/
+
+.icon01 {color:#1e65c6;}
+.icon02 {color:#0e974f;}
+.icon03 {color:#ed7102;}
+.icon04 {color:#ed2e02;}
+.icon05 {color:#9d60f8;}
+.icon06 {color:#888888;}
+
+
+/*** 出身者リスト ***/
+
+dl.native_dl {
+	padding:15px 0 0;
+	text-align:left;
+	line-height:140%;
+	border-bottom:1px solid #dddddd;
+}
+
+dl.native_dl_none {
+	padding:15px 0 0;
+	text-align:left;
+	line-height:140%;
+	border-bottom:none;
+}
+
+dl.native_dl dt,
+dl.native_dl_none dt {
+	padding:0 0 5px;
+	text-align:left;
+}
+
+dl.native_dl dd,
+dl.native_dl_none dd {
+	padding:0;
+	text-align:left;
+}
+
+dl.native_dl dd dl,
+dl.native_dl_none dd dl {
+	padding:0 0 5px;
+	text-align:left;
+}
+
+dl.native_dl dd dl dt,
+dl.native_dl_none dd dl dt {
+	padding:0 0 5px;
+	text-align:left;
+}
+
+dl.native_dl dd dl dd,
+dl.native_dl_none dd dl dd {
+	padding:0 0 10px;
+	text-align:left;
+}

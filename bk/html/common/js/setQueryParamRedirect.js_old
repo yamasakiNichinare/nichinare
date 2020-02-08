@@ -1,0 +1,20 @@
+// 自URLクエリーセットのリンク付加又はリダイレクト処理
+function setQueryRedirect(inputString) {
+	var queryString = window.location.search.substring(1);
+	var baseURL;
+	var redirectURL;
+	if((navigator.userAgent.indexOf('iPhone') > 0 &&
+		navigator.userAgent.indexOf('iPad') == -1) ||
+		navigator.userAgent.indexOf('iPod') > 0 ||
+		navigator.userAgent.indexOf('Android') > 0) {	// スマートフォンの場合
+		baseURL = window.location.pathname;
+	} else {											// スマートフォンでない場合
+		baseURL = inputString;
+	}
+	if(queryString.length > 0) {
+		redirectURL = baseURL+'?'+queryString;
+	} else {
+		redirectURL = baseURL;
+	}
+	location.href = redirectURL;
+}

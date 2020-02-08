@@ -1,0 +1,30 @@
+#!/usr/bin/perl
+
+# Usage.
+# Change the following cgi base url(except for mt.cgi) and lib path. Then run:
+# % perl update-db [username] [password]
+
+# Change here.
+my $cgi_base = 'http://localhost/mt/';
+use lib '../../../extlib';
+
+# Pragma and libraries.
+use strict;
+use LWP::UserAgent;
+use HTTP::Request;
+
+# Set as command arguments.
+my ($username, $password) = @ARGV;
+
+# Build url.
+$cgi_base =~ s!/+$!!;
+my $url = "$cgi_base/plugins/KeitaiKit/keitaikit.cgi?__mode=download";
+$url .= "&username=$username&password=$password";
+
+# Send request.
+my $ua = new LWP::UserAgent;
+my $req = new HTTP::Request(GET => $url);
+my $resp = $ua->request($req);
+
+die 'Failure to update database.'
+    if $resp->content() !~ /id="keitaikit-success"/;

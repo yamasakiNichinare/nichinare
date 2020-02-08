@@ -1,0 +1,273 @@
+<mt:setvarblock name="html_title"><__trans phrase="DynamicViewer Settings"></mt:setvarblock>
+<mt:setvarblock name="page_title"><__trans phrase="DynamicViewer Settings"></mt:setvarblock>
+<mt:include name="include/header.tmpl" id="header_include">
+
+<form method="post" action="<mt:var name='script_uri' encode_html='1'>">
+    <input type="hidden" name="__mode" value="<mt:var name='mode'>" />
+    <input type="hidden" name="return_args" value="<mt:var name='return_args' encode_html="1">" />
+    <input type="hidden" name="_type" value="<mt:if name='is_blog'>blog<mt:else>website</mt:if>" />
+    <input type="hidden" name="phase" value="<mt:var name='phase'>" />
+    <input type="hidden" name="blog_id" value="<mt:var name='blog_id'>" />
+    <input type="hidden" name="saved" value="1" />
+
+<fieldset>
+
+<mt:if name="saved">
+	<mtapp:statusmsg
+         id="saved-added"
+         class="success">
+		<__trans phrase="Your plugin settings have been saved.">
+		<$mt:var name="view_link"$>
+	</mtapp:statusmsg>
+</mt:if>
+<mt:if name="error">
+	<mtapp:statusmsg
+         id="generic-error"
+         class="error">
+		<mt:var name="error">
+	</mtapp:statusmsg>
+</mt:if>
+
+<script type="text/javascript">
+function DynamicViewerToggleSetting( e , s ) {
+	var f =e.checked;
+	var id = e.id;
+	if( id ){
+		id = id + '_child_setting';
+		var child = document.getElementById(id);
+		if( child ){
+			if( f ){
+				s ? child.style.display = 'none'
+				  : child.style.display = 'block';
+			}else{
+				s ? child.style.display = 'block'
+				  : child.style.display = 'none';
+			}
+                        if ( f ) {
+                           document.getElementById('status_child2_settings').style.display = 'block';
+                        }else{
+                           if ( document.getElementById('status').value == 0 ) {
+                               document.getElementById('status_child2_settings').style.display = 'none';
+                           }
+                        }
+		}
+	}
+}
+function DynamicViewerToggleSelectSetting( e , t ) {
+	var f =e.value;
+	var id = e.id;
+	if( !t ){
+		t = '_child_setting';
+	}
+	if( id ){
+		id = id + t;
+		var child = document.getElementById(id);
+		if( child ){
+				if( f > 0 ){
+					child.style.display = 'block';
+				}else{
+					child.style.display = 'none';
+				}
+		}
+	}
+}
+</script>
+<mt:if name=is_blog>
+
+<mtapp:setting
+ id="inheritance"
+ label="<__trans phrase="Inheritance">:"
+>
+	<ul>
+		<li><input name="inheritance" id="inheritance" onClick="DynamicViewerToggleSetting( this , 1 );" value="1" <mt:if name="inheritance">checked</mt:if> type="checkbox" />&nbsp;<__trans phrase="Enable"></li>
+	</ul>
+	<p class="hint">
+		<__trans phrase='"Settings Inheritance" to enable the higher the "Website" and follow the set.'><br />
+		<br />
+		&nbsp;<__trans phrase="example)&nbsp;System&nbsp;&gt;&nbsp;Website&nbsp;&gt;&nbsp;Blog">
+	</p>
+</mtapp:setting>
+<div id="inheritance_child_setting" <mt:if name="inheritance">style="display:none"<mt:else>style="display:block"</mt:if>>
+
+	<p style="border-bottom: 1px solid rgb(204, 204, 204);">
+</mt:if>
+
+	<mtapp:setting
+        id="status"
+        label="<__trans phrase="Status">:"
+	>
+		<select name="status" id="status" onChange="DynamicViewerToggleSelectSetting( this );DynamicViewerToggleSelectSetting( this , '_child2_settings' )" >
+			<option value="0" <mt:unless name="status">selected="selected" </mt:unless>><__trans phrase="Disabled"></option>
+			<option value="1" <mt:if name="status">selected="selected" </mt:if>><__trans phrase="Enable"></option>
+		</select>
+		<p class="hint">
+			<__trans phrase='"Enable" By selecting top sites CGI-PROXY can establishing.'><br />
+			<__trans phrase='"Disabled" that into,PROXY remove settings.'><br />
+		</p>
+	</mtapp:setting>
+	<div id="status_child_setting" <mt:unless name="status">style="display:none"<mt:else>style="display:block"</mt:unless>>
+	<mtapp:setting
+       id="exclude_files"
+       label="<__trans phrase="Exclude Files">:"
+	>
+		<ul>
+			<li><input type="checkbox" value="1" name="exclude_js" id="exclude_js" class="cb" <mt:if name="exclude_js">checked="checked"</mt:if> />&nbsp;JavaScript</li>
+			<li><input type="checkbox" value="1" name="exclude_css" id="exclude_css" class="cb" <mt:if name="exclude_css">checked="checked"</mt:if> />&nbsp;CSS</li>
+		</ul>
+		<p class="hint">
+			<__trans phrase="PROXY above file can be referenced directly without going through.">
+		</p>
+	</mtapp:setting>
+
+	<mtapp:setting
+       id="authentication"
+       label="<__trans phrase="Authentication">:"
+	>
+		<input type="checkbox" value="1" name="authentication" id="authentication" class="cb" <mt:if name="authentication">checked="checked"</mt:if> onClick="DynamicViewerToggleSetting( this , 0 );" />&nbsp;<__trans phrase="Enable">
+		<p class="hint">
+			<__trans phrase="">
+		</p>
+	</mtapp:setting>
+
+	<div id="authentication_child_setting" <mt:if name="authentication">style="display:block"<mt:else>style="display:none"</mt:if>>
+		<mtapp:setting
+            id="login_page_type"
+            label="<__trans phrase="Login Page">:"
+		>
+			<ul>
+			<li>
+				<select name="login_page_type" id="login_page_type" onChange="DynamicViewerToggleSelectSetting( this );" >
+					<option value="0" <mt:if name="login_page_type" eq="0">selected="selected" </mt:if>><__trans phrase="Default template."></option>
+					<option value="1" <mt:if name="login_page_type" eq="1">selected="selected" </mt:if>><__trans phrase="File path."></option>
+					<option value="2" <mt:if name="login_page_type" eq="2">selected="selected" </mt:if>><__trans phrase="Template name."></option>
+				</select>
+			</li>
+			<li>
+				<span><label style="color:#7B7C7D;font-weight:bold;" ><__trans phrase="Page Name">:</label></span>
+				<input type="text" id="login_page_name" name="login_page_name" style="width:16em" value="<mt:var name="login_page_name">" />
+				<p class="hint">
+					<__trans phrase=''>
+				</p>
+			</li>
+			<li id="login_page_type_child_setting" <mt:unless name="login_page_type">style="display:none"</mt:unless>>
+				<span><label style="color:#7B7C7D;font-weight:bold;"><__trans phrase="Template Location">:</label></span>
+				<input type="text" id="login_page_tmpl" name="login_page_tmpl" value="<mt:var name="login_page_tmpl">" />
+			</li>
+			</li>
+				<p class="hint">
+					<__trans phrase='Default template: Uses the template named (DynamicViewer Login)'><br />
+					<__trans phrase='File Path: The path to the file descriptor is stored on the server where the template.'><br />
+					<__trans phrase='Template name: Write the name of the template.'>
+				</p>
+			</li>
+			</ul>
+			<p class="hint">
+				<__trans phrase=''>
+			</p>
+		</mtapp:setting>
+
+		<mtapp:setting
+            id="logout_page_type"
+            label="<__trans phrase="Logout Page">:"
+		>
+			<ul>
+			<li>
+				<select name="logout_page_type" id="logout_page_type" onChange="DynamicViewerToggleSelectSetting( this );" >
+					<option value="0" <mt:if name="logout_page_type" eq="0">selected="selected" </mt:if>><__trans phrase="Default template."></option>
+					<option value="1" <mt:if name="logout_page_type" eq="1">selected="selected" </mt:if>><__trans phrase="File path."></option>
+					<option value="2" <mt:if name="logout_page_type" eq="2">selected="selected" </mt:if>><__trans phrase="Template name."></option>
+				</select>
+			</li>
+			<li>
+				<span><label style="color:#7B7C7D;font-weight:bold;" ><__trans phrase="Page Name">:</label></span>
+				<input type="text" id="logout_page_name" name="logout_page_name" style="width:16em" value="<mt:var name="logout_page_name">" />
+				<p class="hint">
+					<__trans phrase=''>
+				</p>
+			</li>
+			<li id="logout_page_type_child_setting" <mt:unless name="logout_page_type">style="display:none"</mt:unless>>
+				<span><label style="color:#7B7C7D;font-weight:bold;"><__trans phrase="Template Location">:</label></span>
+				<input type="text" id="logout_page_tmpl" name="logout_page_tmpl" value="<mt:var name="logout_page_tmpl">" />
+			</li>
+			</li>
+				<p class="hint">
+					<__trans phrase='Default template: Uses the template named (DynamicViewer Logout)'><br />
+					<__trans phrase='File Path: The path to the file descriptor is stored on the server where the template.'><br />
+					<__trans phrase='Template name: Write the name of the template.'>
+				</p>
+			</li>
+			</ul>
+			<p class="hint">
+				<__trans phrase=''>
+			</p>
+		</mtapp:setting>
+	</div>
+
+	<mtapp:setting
+        id="error_page_type"
+        label="<__trans phrase="Error Page">:"
+	>
+		<ul>
+		<li>
+			<select name="error_page_type" id="error_page_type" onChange="DynamicViewerToggleSelectSetting( this );" >
+				<option value="0" <mt:if name="error_page_type" eq="0">selected="selected" </mt:if>><__trans phrase="Default template."></option>
+				<option value="1" <mt:if name="error_page_type" eq="1">selected="selected" </mt:if>><__trans phrase="File path."></option>
+				<option value="2" <mt:if name="error_page_type" eq="2">selected="selected" </mt:if>><__trans phrase="Template name."></option>
+			</select>
+		</li>
+		<li>
+			<span><label style="color:#7B7C7D;font-weight:bold;" ><__trans phrase="Page Name">:</label></span>
+			<input type="text" id="error_page_name" name="error_page_name" style="width:16em" value="<mt:var name="error_page_name">" />
+			<p class="hint">
+				<__trans phrase=''>
+			</p>
+		</li>
+		<li id="error_page_type_child_setting" <mt:unless name="error_page_type">style="display:none"</mt:unless>>
+			<span><label style="color:#7B7C7D;font-weight:bold;"><__trans phrase="Template Location">:</label></span>
+			<input type="text" id="error_page_tmpl" name="error_page_tmpl" value="<mt:var name="error_page_tmpl">" />
+		</li>
+		</li>
+			<p class="hint">
+				<__trans phrase='Default template: Uses the template named (DynamicViewer Error)'><br />
+				<__trans phrase='File Path: The path to the file descriptor is stored on the server where the template.'><br />
+				<__trans phrase='Template name: Write the name of the template.'>
+			</p>
+		</li>
+		</ul>
+		<p class="hint">
+			<__trans phrase=''>
+		</p>
+	</mtapp:setting>
+	</div>
+</div>
+
+<mt:if name="is_blog">
+
+<p style="border-bottom: 1px solid rgb(204, 204, 204);">
+</mt:if>
+
+<div id="status_child2_settings" <mt:unless name="status">style="display:none"<mt:else>style="display:block"</mt:unless>>
+	<mtapp:setting
+       id="exclude_path"
+       label="<__trans phrase="Exclude Path">:"
+	>
+		<TEXTAREA name="exclude_path" rows="10" cols="60" ><mt:var name="exclude_path" encode_html="1"></TEXTAREA>
+		<p class="hint">
+			<__trans phrase="PROXY certain directories and files can be refarenced directly without going through."><br />
+			<br />
+			<__trans phrase="Description method">:<br />
+			&nbsp; <__trans phrase="The relative path from the top sites."><br />
+			&nbsp; <__trans phrase="To specigy more than one are written separated by a newline."><br />
+		</p>
+	</mtapp:setting>
+</div>
+
+</fieldset>
+
+<button
+   type="submit"
+   class="primary-button action"
+><__trans phrase="Save"></button>
+</form>
+
+<mt:include name="include/footer.tmpl" id="footer_include">
